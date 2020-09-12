@@ -1,0 +1,84 @@
+@import '../../styles/fonts.scss';
+div.landing-div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	min-height: 825px;
+	align-items: flex-start;
+	align-self: flex-start;
+}
+.header__text--div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	padding: 32px 0;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	height: 100%;
+	padding-bottom: 24px;
+}
+div.header__text--row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	font-size: 1rem;
+	line-height: 1.5rem;
+	align-items: center;
+	justify-content: space-around;
+	max-width: 400px;
+}
+h1.header__second {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 24px;
+}
+span.ellipse {
+	padding: 0px 16px;
+}
+h1.header__text--row {
+	font-size: 1rem;
+	line-height: 1.5rem;
+	padding-bottom: 24px;
+}
+h2.header__text {
+	font-size: 2.5rem;
+	line-height: 3.5rem;
+	font-weight: 600;
+	padding-bottom: 24px;
+	text-align: center;
+}
+h1.header__text {
+	line-height: 3.75rem;
+	font-size: 2.75rem;
+	font-weight: 600;
+	padding-bottom: 24px;
+}
+.tech__icons {
+	height: 200px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: center;
+}
+.brand-icon {
+	border: 1px solid white;
+	text-shadow: black 0.1em 0.1em 0.2em;
+	box-shadow: -20px 25px 30px -10px rgba(0, 0, 0, 0.53);
+	min-width: 50px;
+	max-width: 50px;
+	min-height: 50px;
+	max-height: 50px;
+	padding: 5px;
+	margin: 16px;
+	border-radius: 6px;
+	outline: black 0.1em 0.1em 0.2em;
+}
+@media screen and (min-width: 768px){
+	div.landing-div {
+		justify-content: center;
+}
+}
