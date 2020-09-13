@@ -1,15 +1,41 @@
-//override here
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap');
+@import '../styles/fonts.scss';
+$theme-colors: (
+	'info': tomato,
+	'danger': teal,
+);
+// $font-family: 'DM Sans', sans-serif;
+// $font-family: 'Hind Guntur', sans-serif;
+// $font-family: 'Josefin Sans', sans-serif;
+// $font-family: 'Josefin Slab', serif;
+// $font-family: 'Laila', serif;
+// $font-family: 'Montserrat', sans-serif;
+// $font-family: 'Raleway', sans-serif;
+// $font-family: 'Rozha One', serif;
+
 * {
-	font-family: 'Montserrat Alternates', 'Abril Fat-Face', 'Poppins';
+	// font-family: 'Raleway', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+	// font-weight: 700;
+	//font-family: 'Josefin Slab', serif;
+
+	// font-family: 'Work Sans', sans-serif;
+	//  font-family: 'DM Sans', sans-serif;
+	// font-family: 'Hind Guntur', sans-serif;
+	//font-family: 'Laila', serif;
+	// font-family: 'Montserrat', sans-serif;
+	//font-family: 'Rozha One', serif;
 	box-sizing: border-box;
+	font-size: 16px;
 }
-ol, ul {
+ol,
+ul {
 	text-decoration: none;
 	list-style: none;
 }
 .main {
-	filter: drop-shadow(0 6mm 4mm #4444dd);
-	box-shadow: -5px 21px 50px 23px rgba(0, 0, 0, 0.91);
+	// filter: drop-shadow(0 6mm 4mm #4444dd);
+	box-shadow: 0px 5px 15px 15px rgba(0, 0, 0, 0.6);
 }
 ::root {
 	max-width: 100%;
@@ -20,15 +46,73 @@ h1 {
 	font-weight: 900;
 }
 
+// .bg{
+// 	background-image: url('https://images.unsplash.com/photo-1599842364915-6d3b065f15a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80')
+// }
+
+// .bg {
+// 	// background-image: url(	'https://images.unsplash.com/photo-1562619425-c307bb83bc42?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+
+// 'rgb(81,24,5)' 'rgb(207,195,201)',
+// 'rgb(120,101,112)',
+// 'rgb(68,58,6)',
+// 'rgb(60,52,6)'
+
 .bg {
-	background-image: url('https://images.unsplash.com/photo-1599842364915-6d3b065f15a0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80');
+	background-size: cover;
+	background: linear-gradient(
+		45deg,
+		#2962ff,
+		#263238,
+		#9fa8da,
+		#ffe0b2,
+		#1a237e
+	);
+	background-size: 400% 400%;
+	animation: gradient 20s ease infinite alternate;
 }
 
-$theme-colors: (
-	'info': tomato,
-	'danger': teal,
-);
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
 
+// .bg {
+// 	background-image: url('https://images.unsplash.com/photo-1598361621183-3f5c55b34c97?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1575&q=80');
+// 	background-size: cover;
+// 	background-repeat: no-repeat;
+// 	width: 100%;
+// 	background-position: center;
+// }
+// .main {
+// 	width: 100%;
+// 	height: 100%;
+// 	display: flex;
+// 	align-items: center;
+// 	justify-content: center;
+// }
+.nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+	.nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+	}
+}
+@import '../styles/fonts.scss';
+@import '../components/portfolio/portfolio.scss';
 @import '../components/about/about.scss';
 @import '../components/intro/intro.scss';
 @import '~bootstrap/scss/bootstrap';

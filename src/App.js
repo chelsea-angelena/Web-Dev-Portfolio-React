@@ -4,6 +4,7 @@ import Resume from './screens/resume/resume';
 import './styles/App.scss'
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+
 function App() {
 	return (
 

@@ -1,8 +1,8 @@
-// const bio = [{
-//   "Hello, my name is Chelsea. I write code and make responsive and interactive web and mobile applications.  I am a full-stack developer, the tech stack that I primarily work with is JavaScript, React and React-Native for front end development, and Node.js/Express.js for the back-end. I also use CSS/SCSS and javascript components for styling."},{
-// "I hold a Diploma in Web Development,which I recently attained from BranStation, Vancouver, BC. accomplishment 2, among other distinctions in the field. Name helps   your target employer’s industry e.g. marketing agencies, IT companies, or hotels, etc. to appropriate action verb + goal or problem you can solve because of your professional skills   e.g. for IT support professionals you may write “troubleshoot software and hardware issues to ensure all systems are operational both for your clients and internal employees."
-//   },{
-// "Name is a hobby 1, hobby 2 from city or state you live in. Please email your email address or go to your website domain and link to contact Name."
-// }
-// }]
-// export default bio
+const bio = {
+	intro:
+    "My name is Chelsea Angelena Brown. I write code and build applications for web and mobile devices. I am a full stack developer, working on both the front end UI/UX interfaces, as well as building and connecting a back-end server and database.The tech stack that I primarily work with to achieve this is JavaScript, React and React-Native for front end development, and Node.js/Express.js for the server-side. I also use CSS/SCSS and javascript components for styling. I am always trying to learn new things and adapt to different technologies, so this changes depending upon the application I am buidling. I have recently graduated from BrainStation's web development diploma program, in August 2020. In projects section you can find links to my school projects, and the projects features are projects that I have built since the course. All of the source code is available through my github account, and each project is linked to a demo or url. I'm always trying to learn new things and grow as a developer. If you're interested in collaberting, or if you have any questions, please don't hesitate to get in touch.",
+    header: "Welcome to my portfolio site",
+    subHeader: "Hello..."
+};
+
+export default bio;

@@ -5,8 +5,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 export default function Intro() {
 	return (
+
 		<div className='landing-div'>
-			<div>
+				<div id="overlay">
+
+
 				<div className='header__text--div'>
 					<h2 className='header__text'>Chelsea Brown</h2>
 					<h2 className='header__text'>Full Stack Developer</h2>
@@ -110,19 +113,6 @@ export default function Intro() {
 				</div>
 			</div>
 		</div>
+
 	);
 }
-// const styles = {
-// 	brandIcon: {
-// 		width: 32,
-// 	},
-// };
-// const styles = {
-// 	landing: {
-// 		width: '100%',
-// 		display: 'flex',
-// 		alignItems: '',
-// 		justifyContent: 'center',
-// 		flexDirection: 'column',
-// 	},
-// };

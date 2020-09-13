@@ -1,0 +1,122 @@
+.projects {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 16px;
+	max-width: 100%;
+	&__header {
+		align-self: center;
+		margin-top: 40px;
+		margin-bottom: 32px;
+	}
+	&__card--main-div {
+		width: 100%;
+		padding: 0;
+		margin: 0 auto;
+		display: flex;
+		flex-direction: column;
+	}
+	&__card--ol {
+		margin: 0;
+		padding: 0;
+	}
+	&__card--li {
+		width: 320px;
+	}
+	&__card {
+		margin: 0 auto;
+		padding: 0;
+		display: flex;
+		width: 320px;
+		align-items: center;
+		justify-content: flex-start;
+		flex-direction: column;
+		margin-top: 32px;
+    box-shadow: 6px 10px 13px 0px rgba(50, 50, 50, 0.21);
+    height: 500px;
+	}
+	&__card--img-div {
+display: flex;
+    justify-content: flex-start;
+		width: 320px;
+	}
+	&__card--img {
+		align-self: flex-start;
+    width: 320px;
+    height: 220px;
+	}
+	&__card--header {
+		padding-top: 16px;
+	}
+	&__card--text {
+		font-size: 1rem;
+		font-weight: 200;
+		padding: 0px 16px 24px 16px;
+		margin: 0px 16px;
+	}
+}
+@media (min-width: 768px) {
+  .projects__card--ol {
+		display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+
+		&__card--ol {
+			display: flex;
+			flex-direction: row;
+		}
+	}
+}
+
+// .card {
+// 	padding: 24px;
+// 	width: 300px;
+// 	align-self: center;
+// 	text-align: center;
+// 	box-shadow: 6px 10px 13px 0px rgba(50, 50, 50, 0.21);
+// 	margin-top: 24px;
+// 	&__div {
+// 		display: flex;
+// 		justify-content: center;
+// 		flex-direction: column;
+// 		align-items: center;
+// 	}
+// }
+// .card__div.card__div--project {
+// 	display: flex;
+// 	width: 320px;
+// 	margin: 0;
+// 	padding: 0;
+// }
+// .card--project {
+// 	position: relative;
+// 	text-align: center;
+// 	color: white;
+// }
+
+// .card__header--project {
+// 	position: absolute;
+// 	z-index: 999;
+// 	margin: 0 auto;
+// 	left: 0;
+// 	right: 0;
+// 	position: absolute;
+// 	bottom: 8px;
+// 	left: 16px;
+// }
+
+// yarn start
+
+// @media screen and (min-width: 768px) {
+// 	.card__div {
+// 		flex-direction: row;
+// 	}
+// 	.card {
+// 		margin: 24px;
+// 	}
+// }

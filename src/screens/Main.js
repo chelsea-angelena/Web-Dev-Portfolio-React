@@ -5,10 +5,12 @@ import NavBar from '../components/NavBar';
 // import Landing from './Landing';
 import Intro from '../components/intro/intro';
 import WhatIdo from '../components/whatIdo/whatIdo';
+import FooterNav from '../components/footer/footer';
 
 function Main() {
 	return (
-		<div style={styles.div}>
+		// <div style={styles.div}>
+		<>
 			<div className='bg'>
 				<div className='main'>
 					<NavBar />
@@ -25,19 +27,21 @@ function Main() {
 				<div>
 					<Portfolio />
 				</div>
+				<div>
+					<FooterNav />
+				</div>
 			</div>
-			{/* <div>
-				<Projects />
-			</div> */}
-		</div>
+		</>
+
+		// </div>
 	);
 }
 
 export default Main;
-const styles = {
-	div: {
-		display: 'flex',
-		flexDirection: 'column',
-		maxWidth: '100%',
-	},
-};
+// const styles = {
+// 	div: {
+// 		display: 'flex',
+// 		flexDirection: 'column',
+// 		maxWidth: '100%',
+// 	},
+// };

@@ -1,5 +1,6 @@
 import React from 'react';
-import '../whatIdo/whatIdo.scss';
+import './portfolio.scss';
+// import '../../styles/custom.scss'
 
 const content = [
 	{
@@ -26,23 +27,66 @@ const content = [
 		text:
 			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  in culpa qui officia deserunt mollit anim id est laborum.'",
 	},
+	{
+		image:
+			'https://images.unsplash.com/photo-1599913824804-2d4c8a33a3e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
+		title: 'Esse cillum dolore',
+		text:
+			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  in culpa qui officia deserunt mollit anim id est laborum.'",
+	},
+	{
+		image:
+			'https://images.unsplash.com/photo-1599918693295-76b4cc244431?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=893&q=80',
+		title: 'Esse cillum dolore',
+		text:
+			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'",
+	},
 ];
+
+// export default function Portfolio() {
+// 	return (
+// 		<div className='projects'>
+// 			<h2 className='projects__header'>Featured Projects</h2>
+// 			<div>
+// 			<ol className='projects__list'>
+// 				{content.map((content) => (
+// 					<li key={content.title}>
+// 						<div className='projects__card'>
+// 							<div className='projects__card--image-div'>
+// 								<img src={content.image} alt='' className='projects__card--img' />
+// 								<h4 className='projects__card--header'>
+// 									{content.title}
+// 								</h4>
+// 							</div>
+// 							<div className='projects__card--text'>{content.text}</div>
+// 						</div>
+// 					</li>
+// 				))}
+// 			</ol>
+// 			</div>
+// 		</div>
+// 	);
+// }
 
 export default function Portfolio() {
 	return (
-		<div className='card__div--project'>
+		<div className='projects'>
 			<h2 className='projects__header'>Featured Projects</h2>
-			<ol className='list'>
+			{/* <div className="projects__card--main-div"> */}
+			{/* <ol className='projects__list'> */}
+			<ol className='projects__card--ol'>
 				{content.map((content) => (
-					<li key={content.title}>
-						<div className='card--project'>
-							<div className='image'>
-								<img src={content.image} alt='' className='card__img' />
-								<h4 className='card__header card__header--project'>
-									{content.title}
-								</h4>
+					<li key={content.title} className='projects__card--li'>
+						<div className='projects__card'>
+							<div className='projects__card--image-div'>
+								<img
+									src={content.image}
+									alt=''
+									className='projects__card--img'
+								/>
 							</div>
-							<div className='cardBody cardBody--project'>{content.text}</div>
+							<h4 className='projects__card--header'>{content.title}</h4>
+							<div className='projects__card--text'>{content.text}</div>
 						</div>
 					</li>
 				))}

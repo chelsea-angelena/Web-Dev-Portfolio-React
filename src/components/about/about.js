@@ -3,57 +3,61 @@ import './about.scss';
 import { Link } from 'react-router-dom';
 // import './navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-const profilePic = require('./profile.png');
+import bio from '../../assets/bio';
 
 export default function About() {
 	return (
 		<div className='about'>
 			<div className='about__pic'>
-				<img className='about__pic' src={profilePic} alt='' width='100'></img>
+				<img
+					className='about__pic'
+					src={require('./profile.png')}
+					alt=''
+					width='100'
+				></img>
 			</div>
 			<div className='about__body'>
 				<div className='about__header'>
-					<h4>My name is Chelsea</h4>
+					<h4>{bio.subHeader}</h4>
 				</div>
 				<div className='about__divider'></div>
 				<div className='about__subHeader'>
-					<h3>I am a full stack developer maybe ?</h3>
+					<h3>{bio.header}</h3>
 				</div>
 				<div className='about__divider--2'></div>
 				<div className='about__text'>
-					<p>
-						I am a full stack developer maybe ?I am a full stack developer maybe
-						?I am a full stack developer maybe ?I am a full stack developer
-						maybe ?I am a full stack developer maybe ?I am a full stack
-						developer maybe ?I am a full stack developer maybe ?I am a full
-						stack developer maybe ?I am a full stack developer maybe ?I am a
-						full stack developer maybe ?I am a full stack developer maybe ?I am
-						a full stack developer maybe ?I am a full stack developer maybe ?I
-						am a full stack developer maybe ?I am a full stack developer maybe
-						?vI am a full stack developer maybe ?I am a full stack developer
-						maybe ?I am a full stack developer maybe ?I am a full stack
-						developer maybe ?I am a full stack developer maybe ?
-					</p>
+					<p>{bio.intro}</p>
 					<div className='about__divider--2'></div>
 					<div className='about__stats'>
-						<h3>Full Name:</h3>
-						<h4>Chelsea Angelena Brown</h4>
-						<h3>Location:</h3>
-						<h4>Victoria, British Columbia, Canada</h4>
-						<h3>Credentials:</h3>
-						<h4>Web Development Diploma</h4>
-						<h3>School:</h3>
-						<h4>BrainStation, Vancouver, B.C. 2020</h4>
+						<h4>
+							<span className='stats__header'>Full Name:</span>
+							<span className='stats__text'>Chelsea Angelena Brown</span>
+						</h4>
+						<h4>
+							<span className='stats__header'>Location:</span>
+							<span className='stats__text'>
+								Victoria, British Columbia, Canada
+							</span>
+						</h4>
+						<h4>
+							<span className='stats__header'>Credentials:</span>
+							<span className='stats__text'>Web Development Diploma</span>
+						</h4>
+						<h4>
+							<span className='stats__header'>School: </span>
+							<span className='stats__text'>
+								BrainStation, Vancouver, B.C. 2020
+							</span>
+						</h4>
 					</div>
-					<div className='about__divider--2'></div>
+					<div className='about__divider--3'></div>
 					<p className='about__snippet'>
 						{' '}
 						I am available to work! I'm also interested in collaberating on cool
 						projects. Feel free to email me, or get in touch using any of the
 						links below
 					</p>
-					<div className='about__divider--2'></div>
+					<div className='about__divider--3'></div>
 					<div style={styles.nav} className='icon__div'>
 						<Link
 							rel='noopener noreferrer'
