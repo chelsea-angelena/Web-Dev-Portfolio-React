@@ -70,7 +70,7 @@ const content = [
 
 export default function Portfolio() {
 	return (
-		<div className='projects'>
+		<div className='projects' id='Projects'>
 			<h2 className='projects__header'>Featured Projects</h2>
 			{/* <div className="projects__card--main-div"> */}
 			{/* <ol className='projects__list'> */}

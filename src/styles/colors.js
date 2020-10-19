@@ -1,4 +1,7 @@
 const colors = {
+	grey: 'hsl(180, 1%, 75%)',
+	medGrey: 'hsl(218, 17%, 62%)',
+	darkgrey: 'hsl(218, 19%, 38%)',
 	wildHoney: {
 		honey1: 'rgb(251,212,164)',
 		honey2: 'rgb(251,221,164)',

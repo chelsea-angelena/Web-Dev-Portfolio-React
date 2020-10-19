@@ -1,18 +1,42 @@
 import React from 'react';
+import PDF from '../../assets/CBrown-Resume.pdf';
+import './resume.scss';
 
-export default function Resume() {
+const Resume = () => {
 	return (
-		<div>
-			<div class='bg'>
-				<div class='resume-wrap bg'>
-					Resume
-					{/* <iframe
-						src='https://drive.google.com/file/d/1m3TnrfwyAMZ_u_5Ogr82jQpQ6Jn6fx6m/preview'
-						width='640'
-						height='850'
-					></iframe> */}
-				</div>
-			</div>
+		<div style={styles.div} className='resume--div'>
+			<embed
+				className='resume'
+				style={styles.resume}
+				src={PDF}
+				type='application/pdf'
+				height={800}
+				width={640}
+			/>
 		</div>
 	);
-}
+};
+export default Resume;
+
+const styles = {
+	div: {
+		width: '100%',
+		display: 'flex',
+		justifyContent: 'center',
+		overflow: 'hidden',
+		alignItems: 'center',
+	},
+	resume: {
+		width: '100%',
+		height: 1200,
+		paddingTop: 0,
+		marginTop: 0,
+	
+		// paddingLeft: 56,
+		// paddingRight: 56,
+		backgroundColor: '#616161',
+		overflow: 'hidden',
+		scrollbar: 'none',
+		alignSelf: 'center',
+	},
+};

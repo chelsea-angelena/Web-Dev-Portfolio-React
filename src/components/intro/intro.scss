@@ -1,14 +1,16 @@
-// @import '../../styles/fonts.scss';
+@import '../../styles/fonts.scss';
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Sans:wght@400;500;700&family=Hind+Guntur:wght@300;500;700&family=Josefin+Sans:wght@300;600;700&family=Josefin+Slab:wght@300;600;700&family=Laila:wght@300;500;700&family=Montserrat:wght@300;400;600;900&family=Raleway:wght@300;600;900&family=Rozha+One&family=Work+Sans:wght@300;600;900&display=swap');
 
 div.landing-div {
 	display: flex;
 	flex-direction: column;
 	width: 100%;
-	min-height: 825px;
+	min-height: 1400px;
 	align-items: center;
+	color: 'hsl(0, 0%, 100%)';
 	justify-content: flex-start;
 	// margin-top: 64px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-weight: 700;
 }
 
@@ -16,24 +18,43 @@ div.landing-div {
 	position: absolute; /* Sit on top of the page content */
 	// display: none; /* Hidden by default */
 	width: 100%; /* Full width (cover the whole page) */
-	height: 825px; /* Full height (cover the whole page) */
-	// top: 0;
-	// left: 0;
-	// right: 0;
-	// bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
-	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	height: 1000px; /* Full height (cover the whole page) */
+
+	top: 200px;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+	z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
 	cursor: pointer; /* Add a pointer on hover */
 }
+
+// #overlay2 {
+// 	position: absolute; /* Sit on top of the page content */
+// 	// display: none; /* Hidden by default */
+// 	width: 100%; /* Full width (cover the whole page) */
+// 	height: 825px; /* Full height (cover the whole page) */
+// 	// top: 0;
+// 	// left: 0;
+// 	// right: 0;
+// 	// bottom: 0;
+// 	background-color:hsl(81, 28%, 90%); /* Black background with opacity */
+// 	z-index: 5; /* Specify a stack order in case you're using a different order for other elements */
+// 	cursor: pointer; /* Add a pointer on hover */
+// }
+
+h1 {
+	font-family: Montserrat;
+	color: hsl(90, 4%, 90%);
+}
 .header__text--div {
-	font-family: 'Josefin Sans', sans-serif;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	// justify-content: center;
-	color: white;
-	padding: 32px 0;
+	color: hsl(0, 0%, 100%);
+	padding: 64px 0;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	height: 100%;
 	padding-bottom: 24px;
@@ -49,28 +70,43 @@ div.header__text--row {
 	align-items: center;
 	justify-content: space-around;
 	max-width: 400px;
+	font-family: 'Raleway', sans-serif;
 }
-h1.header__second {
+.header__second {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	display: flex;
 	justify-content: space-between;
 	// padding-bottom: 24px;
+	font-family: 'Raleway', sans-serif;
 }
 span.ellipse {
 	padding: 0px 16px;
 }
-h1.header__text--row {
+.header__text--row {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	// padding-bottom: 24px;
 }
-h2.header__text {
-	font-size: 2rem;
-	line-height: 2.5rem;
+.header__text {
+	font-size: 3rem;
+	line-height: 4.5rem;
+	margin: 24px 24px 24px 24px;
 	// font-weight: 600;
 	// padding-bottom: 24px;
 	text-align: center;
+}
+
+h1.header__text--row-2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2.5rem;
+	margin-top: 24;
+	line-height: 3.5rem;
+}
+h2.header__text--row-2 {
+	font-family: 'Raleway', sans-serif;
+	font-size: 2rem;
+	line-height: 3.5rem;
 }
 // h2.header__text {
 // 	line-height: 2.5rem;
@@ -148,11 +184,38 @@ h2.header__text {
 }
 
 @media screen and (min-width: 768px) {
-	div.landing-div {
-		justify-content: center;
-		margin-top: 0;
-	}
 	.header__text--div {
 		justify-content: center;
+		padding-top: 0;
+	}
+
+	div.landing-div {
+		justify-content: center;
+
+		display: flex;
+		flex-direction: column;
+		width: 100%;
+		min-height: 1000px;
+		align-items: center;
+		color: 'hsl(0, 0%, 100%)';
+		justify-content: flex-start;
+		// margin-top: 64px;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 700;
+	}
+
+	#overlay {
+		position: absolute; /* Sit on top of the page content */
+		// display: none; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 1000px; /* Full height (cover the whole page) */
+
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+		z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+		cursor: pointer; /* Add a pointer on hover */
 	}
 }

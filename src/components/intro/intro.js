@@ -2,27 +2,31 @@ import React from 'react';
 import './intro.scss';
 import '../../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../styles/fonts.scss';
+
+const intro = {
+	blurb: '',
+
+	blurb2: 'Interactive Applications and Responsive Design',
+};
 
 export default function Intro() {
 	return (
-
 		<div className='landing-div'>
-				<div id="overlay">
-
-
+			<div id='overlay'>
+				{/* <div id="overlay2"> */}
 				<div className='header__text--div'>
-					<h2 className='header__text'>Chelsea Brown</h2>
-					<h2 className='header__text'>Full Stack Developer</h2>
+					<h1 className='header__text'>Chelsea Angelena Brown</h1>
+					<h1 className='header__text--row-2'>Full Stack</h1>
+					<h2 className='header__text--row-2'>Web and Mobile</h2>
+					<h2 className='header__text--row-2'>Applications</h2>
+					<h2 className='header__text--row-2'>Developer</h2>
+
 					<div className='header__text--row'>
-						<h1 className='header__text--row'>Interactive</h1>
-						<p>•</p>
-						<h1 className='header__text--row'>Responsive</h1>
-						<p>•</p>
-						<h1 className='header__text--row'>Applications</h1>
-						<h1 className='header__second'>
+						<h3 className='header__second'>
 							Mobile <span className='ellipse'>•</span> Web
 							<span className='ellipse'>•</span>Desktop
-						</h1>
+						</h3>
 					</div>
 					<div className='tech__icons'>
 						<p>
@@ -113,6 +117,6 @@ export default function Intro() {
 				</div>
 			</div>
 		</div>
-
+		// </div>
 	);
 }

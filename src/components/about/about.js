@@ -7,10 +7,15 @@ import bio from '../../assets/bio';
 
 export default function About() {
 	return (
-		<div className='about'>
-			<div className='about__pic'>
+		<div className='about' id='About'>
+			{/* <div className='about__border'>
+				<div className='about__border--3'>
+					<div className='about__border--2'>
+						<div className='about__border--4'> */}
+			<div className='about__pic--div'>
 				<img
 					className='about__pic'
+					// src={require('../../assets/profilebw.jpg')}
 					src={require('./profile.png')}
 					alt=''
 					width='100'
@@ -92,6 +97,10 @@ export default function About() {
 				</div>
 			</div>
 		</div>
+		// 			</div>
+		// 		</div>
+		// 	</div>
+		// </div>
 	);
 }
 const styles = {

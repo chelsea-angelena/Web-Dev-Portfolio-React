@@ -10,12 +10,13 @@ function App() {
 
 			<BrowserRouter>
 				<Switch>
+				<Route exact={true} path='/resume'>
+						<Resume />
+					</Route>
 					<Route path='/'>
 						<Main />
 					</Route>
-					<Route path='/resume'>
-						<Resume />
-					</Route>
+
 				</Switch>
 			</BrowserRouter>
 

@@ -24,8 +24,9 @@
 	color: white;
 }
 
-
-
+.card__body {
+	font-weight: 100;
+}
 .card__header--project {
 	position: absolute;
 	z-index: 999;
