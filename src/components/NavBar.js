@@ -12,6 +12,7 @@ import Resume from '../screens/resume/resume';
 import { Link } from 'react-scroll';
 // import '../styles/custom.scss';
 import './nav.scss';
+
 export default function NavBar() {
 	return (
 		<Navbar
@@ -42,32 +43,27 @@ export default function NavBar() {
 						justifyContent: 'space-around',
 					}}
 				>
-					<Nav.Link className='nav-link'>
-						<Link className='draw' to='overlay' spy={true} smooth={true}>
-							Home
-						</Link>
-					</Nav.Link>
-					<Nav.Link className='nav-link'>
-						<Link className='draw' to='Projects' spy={true} smooth={true}>
-							Projects
-						</Link>
-					</Nav.Link>
-					<Nav.Link className='nav-link'>
-						<Link className='draw' to='About' spy={true} smooth={true}>
-							About
-						</Link>
-					</Nav.Link>
-					<Nav.Link className='nav-link'>
-						<Link className='draw' to='Footer' spy={true} smooth={true}>
-							Contact
-						</Link>
-					</Nav.Link>
-					<Nav.Link
-						className='draw'
-						eventKey={2}
-						href='/resume'
-						component={Resume}
+					<Link to='overlay' className='draw nav-link' spy={true} smooth='true'>
+						Home
+					</Link>
+
+					<Link
+						to='projects'
+						spy={true}
+						smooth='true'
+						className='nav-link draw'
 					>
+						Projects
+					</Link>
+
+					<Link to='About' spy={true} smooth='true' className='nav-link draw'>
+						About
+					</Link>
+
+					<Link className='draw nav-link' to='Footer' spy={true} smooth='true'>
+						Contact
+					</Link>
+					<Nav.Link className='draw' eventKey={2} href='/resume'>
 						Resume
 					</Nav.Link>
 				</Nav>
@@ -76,6 +72,8 @@ export default function NavBar() {
 	);
 }
 
+{
+	/*
 // const NavBar = () => {
 // 	return (
 // 		<Nav as='nav' style={styles.navStyles}>
@@ -109,7 +107,8 @@ export default function NavBar() {
 // 			</div>
 // 		</Nav>
 // 	);
-// };
+// }; */
+}
 
 const styles = {
 	nav: {

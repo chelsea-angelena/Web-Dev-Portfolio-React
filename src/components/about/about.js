@@ -1,6 +1,6 @@
 import React from 'react';
 import './about.scss';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
 // import './navbar.scss';
 
 import Resume from '../../screens/resume/resume';
@@ -14,29 +14,15 @@ import bio from '../../assets/bio';
 export default function About() {
 	return (
 		<div className='about' id='About'>
-			{/* <div className='about__border'>
-				<div className='about__border--3'>
-					<div className='about__border--2'>
-						<div className='about__border--4'> */}
 			<div className='about__pic--div'>
 				<img
 					className='about__pic'
 					src={require('../../assets/profilebw.jpg')}
-					// src={require('./profilebw.png')}
-					alt=''
+					alt='profile picture'
 					width='100'
 				></img>
-				{/* <img
-					className='about__pic'
-					src={require('../../assets/CBrown-Resume.png')}
-					// src={require('./profilebw.png')}
-					alt=''
-					width='800px'
-				></img> */}
 			</div>
-			{/* <div>
-				<Resume />
-			</div> */}
+
 			<div className='about__body'>
 				<div className='about__header'>
 					<h4>{bio.subHeader}</h4>
@@ -78,19 +64,20 @@ export default function About() {
 					</div>
 					<div className='about__divider--3'></div>
 					<p className='about__snippet'>
-						{' '}
 						I am available to work! I'm also interested in collaberating on cool
 						projects. Feel free to email me, or get in touch using any of the
 						links below
 					</p>
 					<div className='about__divider--3'></div>
 					<div style={styles.nav} className='icon__div'>
-						<Link
-							rel='noopener noreferrer'
-							href='https://www.linkedin.com/in/chelsea-a-brown'
-							active
-							style={styles.nav}
-						>
+						<Route
+							path='h'
+							component={() => {
+								window.location.href =
+									'https://www.linkedin.com/in/chelsea-a-brown';
+							}}
+						/>
+						<Link to='/h' style={styles.nav}>
 							<FontAwesomeIcon
 								className='icon'
 								style={styles.icon}
@@ -98,7 +85,13 @@ export default function About() {
 								icon={['fab', 'linkedin-in']}
 							/>
 						</Link>
-						<Link href='https://github.com/chelsea-angelena' style={styles.nav}>
+						<Route
+							path='/github'
+							component={() => {
+								window.location.href = 'https://github.com/chelsea-angelena';
+							}}
+						/>
+						<Link to='/github' style={styles.nav}>
 							<FontAwesomeIcon
 								className='icon'
 								style={styles.icon}
@@ -106,7 +99,13 @@ export default function About() {
 								icon={['fab', 'github']}
 							/>
 						</Link>
-						<Link href='@mailto:chelsea.angelena@gmail.com' style={styles.nav}>
+						<Route
+							path='/myemail'
+							component={() => {
+								window.location.href = '@mailto:chelsea.angelena@gmail.com';
+							}}
+						/>
+						<Link to='/myemail' style={styles.nav}>
 							<FontAwesomeIcon
 								className='icon'
 								style={styles.icon}
@@ -118,10 +117,6 @@ export default function About() {
 				</div>
 			</div>
 		</div>
-		// 			</div>
-		// 		</div>
-		// 	</div>
-		// </div>
 	);
 }
 const styles = {

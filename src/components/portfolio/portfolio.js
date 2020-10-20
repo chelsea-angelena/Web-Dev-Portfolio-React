@@ -5,10 +5,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav } from 'bootstrap-4-react';
 import { Link, Route } from 'react-router-dom';
 
-// const link = {
-// 	link: 'https://github.com/chelsea-angelena/Expo-Saturday-Market',
-// };
-
 const content = [
 	{
 		image: require('../../assets/saturday.png'),
@@ -33,7 +29,7 @@ const content = [
 		text:
 			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'",
 		link: 'https://github.com/chelsea-angelena/',
-		linkName: '/D',
+		linkName: '/M',
 	},
 
 	{
@@ -52,43 +48,46 @@ const content = [
 			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  in culpa qui officia deserunt mollit anim id est laborum.'",
 
 		link: 'https://github.com/chelsea-angelena/',
-		linkName: '/H',
+		linkName: '/T',
 	},
 ];
 
 export default function Portfolio() {
 	return (
-		<div className='projects' id='Projects'>
-			<h2 className='projects__header'>Featured Projects</h2>
-			{/* <div className="projects__card--main-div"> */}
-			{/* <ol className='projects__list'> */}
-			<ol className='projects__card--ol'>
-				{content.map((content) => (
-					<li key={content.title} className='projects__card--li'>
-						<div className='projects__card'>
-							<div className='projects__card--image-div'>
-								<img
-									src={content.image}
-									alt=''
-									className='projects__card--img'
-								/>
-							</div>
-							<h4 className='projects__card--header'>{content.title}</h4>
-							<div className='projects__card--text'>{content.text}</div>
-
-							<div className='projects__card--link'>
-								<Route
-									path={content.linkName}
-									component={() => (window.location = content.link)}
-								/>
-								<a href={content.linkName}>
-									<FontAwesomeIcon size='2x' icon={['fa', 'code']} />
-								</a>
-							</div>
-						</div>
-					</li>
-				))}
-			</ol>
-		</div>
+		<>
+			<div className='projects' id='projects'>
+				<h2 className='projects__header'>Featured Projects</h2>
+				<div className='projects__card--main-div'>
+					<ol className='projects__card--ol'>
+						{content.map((content) => (
+							<li key={content.title} className='projects__card--li'>
+								<div className='projects__card'>
+									<div className='projects__card--image-div'>
+										<img
+											src={content.image}
+											alt=''
+											className='projects__card--img'
+										/>
+									</div>
+									<h4 className='projects__card--header'>{content.title}</h4>
+									<div className='projects__card--text'>{content.text}</div>
+									<div className='projects__card--link'>
+										<Route
+											path={content.linkName}
+											component={() => {
+												window.location.href = content.link;
+											}}
+										/>
+										<Link to={content.linkName}>
+											<FontAwesomeIcon size='2x' icon={['fa', 'code']} />
+										</Link>
+									</div>
+								</div>
+							</li>
+						))}
+					</ol>
+				</div>
+			</div>
+		</>
 	);
 }
