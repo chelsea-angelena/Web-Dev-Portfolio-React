@@ -16,17 +16,10 @@ export default function NavBar() {
 			fixed='top'
 			style={styles.nav}
 		>
-			{/* <Navbar.Brand href='#home'>App</Navbar.Brand> */}
+
 			<Navbar.Toggle />
 			<Navbar.Collapse>
 				<Nav className='mr-auto'>
-					{/* <NavDropdown title='Dropdown' id='collasible-nav-dropdown'>
-							<NavDropdown.Item href='#action/1'>action 1</NavDropdown.Item>
-							<NavDropdown.Item href='#action/2'>action 2</NavDropdown.Item>
-							<NavDropdown.Item href='#action/3'>action 3</NavDropdown.Item>
-							<NavDropdown.Divider />
-							<NavDropdown.Item href='#action/4'>action 4</NavDropdown.Item>
-						</NavDropdown> */}
 				</Nav>
 				<Nav
 					style={{
@@ -65,42 +58,6 @@ export default function NavBar() {
 }
 
 
-// 	/*
-// // const NavBar = () => {
-// // 	return (
-// // 		<Nav as='nav' style={styles.navStyles}>
-// // 			<div style={styles.navBarIcons} className='nav'>
-// // 				<Nav.Link
-// // 					rel='noopener noreferrer'
-// // 					href='https://www.linkedin.com/in/chelsea-a-brown'
-// // 					active
-// // 					style={styles.nav}
-// // 				>
-// // 					<FontAwesomeIcon
-// // 						style={styles.icon}
-// // 						size='3x'
-// // 						icon={['fab', 'linkedin-in']}
-// // 					/>
-// // 				</Nav.Link>
-// // 				<Nav.Link href='https://github.com/chelsea-angelena' style={styles.nav}>
-// // 					<FontAwesomeIcon
-// // 						style={styles.icon}
-// // 						size='3x'
-// // 						icon={['fab', 'github']}
-// // 					/>
-// // 				</Nav.Link>
-// // 				<Nav.Link href='@mailto:chelsea.angelena@gmail.com' style={styles.nav}>
-// // 					<FontAwesomeIcon
-// // 						style={styles.icon}
-// // 						size='3x'
-// // 						icon={['far', 'envelope']}
-// // 					/>
-// // 				</Nav.Link>
-// // 			</div>
-// // 		</Nav>
-// // 	);
-// // }; */
-// }
 
 const styles = {
 	nav: {

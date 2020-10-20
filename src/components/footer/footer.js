@@ -1,6 +1,5 @@
 import React from 'react';
 import { Nav } from 'bootstrap-4-react';
-// import '../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './footer.scss';
 
@@ -54,33 +53,6 @@ const FooterNav = () => {
 	);
 };
 
-// <div class='contact__icon--div'>
-// 					<a
-// 						class='contact__icon'
-// 						href='https://www.linkedin.com/in/chelsea-a-brown'
-// 						target='_blank'
-// 					>
-// 						<img src='../../assets/WHITEin-icon.png' icon color='white' />
-// 					</a>
-// 					<a
-// 						class='contact__icon'
-// 						href='https://github.com/chelsea-angelena'
-// 						target='_blank'
-// 					>
-// 						<img
-// 							src='../../assets/invert-github-icon.png'
-// 							alt='icon'
-// 							color='white'
-// 						/>
-// 					</a>
-// 					<a
-// 						class='contact__icon'
-// 						href='https://www.linkedin.com/in/chelsea-a-brown'
-// 						target='_blank'
-// 					>
-// 						<img src='../../GMAIL.png' alt='icon' color='white' />
-// 					</a>
-
 export default FooterNav;
 
 const styles = {
@@ -92,26 +64,4 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'row',
 	},
-	// navBarIcons: {
-	// 	maxWidth: '100%',
-	// 	display: 'flex',
-	// 	flexDirection: 'row',
-	// 	flexWrap: 'no-wrap',
-	// 	alignItems: 'center',
-	// 	justifyContent: 'center',
-	// },
-	// icon: {
-	// 	color: 'white',
-	// 	borderWidth: 2,
-	// 	borderColor: 'white',
-	// 	borderStyle: 'solid',
-	// 	width: 50,
-	// 	height: 50,
-	// 	padding: 4,
-	// 	borderRadius: 6,
-	// 	display: 'inline-block',
-	// 	marginTop: 24,
-	// 	marginBottom: 24,
-	// 	flexDirection: 'row',
-	// },
 };

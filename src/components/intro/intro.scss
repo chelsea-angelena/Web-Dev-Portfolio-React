@@ -20,7 +20,7 @@ div.landing-div {
 	width: 100%; /* Full width (cover the whole page) */
 	height: 1000px; /* Full height (cover the whole page) */
 
-	top: 200px;
+	top: 0px;
 	left: 0;
 	right: 0;
 	bottom: 0;
@@ -45,7 +45,7 @@ div.landing-div {
 
 h1 {
 	font-family: Montserrat;
-	color: hsl(90, 4%, 90%);
+	color: hsl(60, 100%, 96%);
 }
 .header__text--div {
 	width: 100%;
@@ -55,7 +55,7 @@ h1 {
 	// justify-content: center;
 	color: hsl(0, 0%, 100%);
 	padding: 64px 0;
-	text-shadow: black 0.1em 0.1em 0.2em;
+	text-shadow: black 0.1em 0.1em 0.1em;
 	height: 100%;
 	padding-bottom: 24px;
 	z-index: 5;
@@ -203,19 +203,18 @@ h2.header__text--row-2 {
 		font-family: 'Raleway', sans-serif;
 		font-weight: 700;
 	}
-}
-	// #overlay {
-	// 	position: absolute; /* Sit on top of the page content */
-	// 	// display: none; /* Hidden by default */
-	// 	width: 100%; /* Full width (cover the whole page) */
-	// 	height: 1000px; /* Full height (cover the whole page) */
 
-	// 	top: 0;
-	// 	left: 0;
-	// 	right: 0;
-	// 	bottom: 0;
-	// 	background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
-	// 	z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
-	// 	cursor: pointer; /* Add a pointer on hover */
-// 	}
-// }
+	#overlay {
+		position: absolute; /* Sit on top of the page content */
+		// display: none; /* Hidden by default */
+		width: 100%; /* Full width (cover the whole page) */
+		height: 1000px; /* Full height (cover the whole page) */
+		top: 200;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+		z-index: 3; /* Specify a stack order in case you're using a different order for other elements */
+		cursor: pointer; /* Add a pointer on hover */
+	}
+}
