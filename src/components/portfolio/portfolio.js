@@ -5,9 +5,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav } from 'bootstrap-4-react';
 import { Link, Route } from 'react-router-dom';
 
-const link = {
-	link: 'https://github.com/chelsea-angelena/Expo-Saturday-Market',
-};
+// const link = {
+// 	link: 'https://github.com/chelsea-angelena/Expo-Saturday-Market',
+// };
 
 const content = [
 	{
@@ -76,7 +76,7 @@ export default function Portfolio() {
 							<h4 className='projects__card--header'>{content.title}</h4>
 							<div className='projects__card--text'>{content.text}</div>
 
-							<div className='projects__card--text'>
+							<div className='projects__card--link'>
 								<Route
 									path={content.linkName}
 									component={() => (window.location = content.link)}

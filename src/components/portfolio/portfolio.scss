@@ -59,6 +59,16 @@
 		font-family: 'Raleway';
 		padding: 0px 16px 24px 16px;
 		margin: 0px 16px;
+		height: 200;
+	}
+	&__card--link {
+		font-size: 1rem;
+		font-weight: 100;
+		flex-direction: column;
+		justify-content: 'flex-end';
+		align-self: flex-end;
+		padding: 0px 16px 24px 16px;
+		margin: 0px 16px;
 	}
 }
 @media (min-width: 768px) {
@@ -74,4 +84,3 @@
 		}
 	}
 }
-
