@@ -15,8 +15,8 @@ export default function About() {
 			<div className='about__pic--div'>
 				<img
 					className='about__pic'
-					// src={require('../../assets/profilebw.jpg')}
-					src={require('./profile.png')}
+					src={require('../../assets/profilebw.jpg')}
+					// src={require('./profilebw.png')}
 					alt=''
 					width='100'
 				></img>
@@ -32,6 +32,11 @@ export default function About() {
 				<div className='about__divider--2'></div>
 				<div className='about__text'>
 					<p>{bio.intro}</p>
+					<p>{bio.intro0}</p>
+					<p>{bio.intro5}</p>
+					<p>{bio.intro1}</p>
+					<p>{bio.intro2}</p>
+					<p>{bio.intro3}</p>
 					<div className='about__divider--2'></div>
 					<div className='about__stats'>
 						<h4>

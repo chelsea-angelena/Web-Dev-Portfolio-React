@@ -22,15 +22,15 @@ function Main() {
 				<div id='about'>
 					<About />
 				</div>
-				<div>
+				{/* <div>
 					<WhatIdo />
-				</div>
+				</div> */}
 				<div>
 					<Portfolio />
 				</div>
-				<div>
+				{/* <div>
 					<ContactSection />
-				</div>
+				</div> */}
 				<div>
 					<FooterNav />
 				</div>

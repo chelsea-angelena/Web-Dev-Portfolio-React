@@ -23,7 +23,7 @@ export default function NavBar() {
 			fixed='top'
 			style={styles.nav}
 		>
-			<Navbar.Brand href='#home'>App</Navbar.Brand>
+			{/* <Navbar.Brand href='#home'>App</Navbar.Brand> */}
 			<Navbar.Toggle />
 			<Navbar.Collapse>
 				<Nav className='mr-auto'>
@@ -59,7 +59,7 @@ export default function NavBar() {
 					</Nav.Link>
 					<Nav.Link className='nav-link'>
 						<Link className='draw' to='Footer' spy={true} smooth={true}>
-							Contacts
+							Contact
 						</Link>
 					</Nav.Link>
 					<Nav.Link
@@ -114,6 +114,7 @@ export default function NavBar() {
 const styles = {
 	nav: {
 		maxWidth: '100%',
+		height: 75,
 	},
 	navStyles: {
 		maxWidth: '100%',

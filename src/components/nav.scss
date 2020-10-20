@@ -76,7 +76,13 @@
 	margin: 0;
 }
 
-a:visited {
+a.draw:visited {
+	color: white;
+}
+
+.draw {
+	font-family: Montserrat;
+	font-size: 1.25rem;
 	color: white;
 }
 

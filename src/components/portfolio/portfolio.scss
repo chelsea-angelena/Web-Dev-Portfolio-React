@@ -36,18 +36,19 @@
 		justify-content: flex-start;
 		flex-direction: column;
 		margin-top: 32px;
-    box-shadow: 6px 10px 13px 0px rgba(50, 50, 50, 0.21);
-    height: 500px;
+		box-shadow: 6px 10px 13px 0px rgba(50, 50, 50, 0.21);
+		height: 600px;
 	}
 	&__card--img-div {
-display: flex;
-    justify-content: flex-start;
+		display: flex;
+		justify-content: flex-start;
 		width: 320px;
 	}
 	&__card--img {
 		align-self: flex-start;
-    width: 320px;
-    height: 220px;
+		width: 320px;
+		height: 220px;
+		padding: 16px 16px 16px 16px;
 	}
 	&__card--header {
 		padding-top: 16px;
@@ -61,11 +62,11 @@ display: flex;
 	}
 }
 @media (min-width: 768px) {
-  .projects__card--ol {
+	.projects__card--ol {
 		display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
 
 		&__card--ol {
 			display: flex;
@@ -74,50 +75,3 @@ display: flex;
 	}
 }
 
-// .card {
-// 	padding: 24px;
-// 	width: 300px;
-// 	align-self: center;
-// 	text-align: center;
-// 	box-shadow: 6px 10px 13px 0px rgba(50, 50, 50, 0.21);
-// 	margin-top: 24px;
-// 	&__div {
-// 		display: flex;
-// 		justify-content: center;
-// 		flex-direction: column;
-// 		align-items: center;
-// 	}
-// }
-// .card__div.card__div--project {
-// 	display: flex;
-// 	width: 320px;
-// 	margin: 0;
-// 	padding: 0;
-// }
-// .card--project {
-// 	position: relative;
-// 	text-align: center;
-// 	color: white;
-// }
-
-// .card__header--project {
-// 	position: absolute;
-// 	z-index: 999;
-// 	margin: 0 auto;
-// 	left: 0;
-// 	right: 0;
-// 	position: absolute;
-// 	bottom: 8px;
-// 	left: 16px;
-// }
-
-// yarn start
-
-// @media screen and (min-width: 768px) {
-// 	.card__div {
-// 		flex-direction: row;
-// 	}
-// 	.card {
-// 		margin: 24px;
-// 	}
-// }
