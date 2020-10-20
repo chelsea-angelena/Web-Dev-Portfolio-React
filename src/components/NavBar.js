@@ -16,11 +16,9 @@ export default function NavBar() {
 			fixed='top'
 			style={styles.nav}
 		>
-
 			<Navbar.Toggle />
 			<Navbar.Collapse>
-				<Nav className='mr-auto'>
-				</Nav>
+				<Nav className='mr-auto'></Nav>
 				<Nav
 					style={{
 						display: 'flex',
@@ -48,7 +46,12 @@ export default function NavBar() {
 					<Link className='draw nav-link' to='Footer' spy={true} smooth='true'>
 						Contact
 					</Link>
-					<Nav.Link className='draw' eventKey={2} href='/resume'>
+					<Nav.Link
+						className='nav-link draw'
+						eventKey={2}
+						to='/resume'
+						href='/resume'
+					>
 						Resume
 					</Nav.Link>
 				</Nav>
@@ -56,8 +59,6 @@ export default function NavBar() {
 		</Navbar>
 	);
 }
-
-
 
 const styles = {
 	nav: {

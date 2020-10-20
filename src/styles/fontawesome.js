@@ -1,10 +1,8 @@
-
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
 	fab,
 	faGithub,
-faLinkedinIn,
-	faAdobe,
+	faLinkedinIn,
 	faSass,
 	faCss3,
 	faNode,
@@ -14,7 +12,7 @@ faLinkedinIn,
 	faAppStore,
 	faAndroid,
 	faHtml5,
-	faAppStoreIos
+	faAppStoreIos,
 } from '@fortawesome/free-brands-svg-icons';
 import {
 	fas,
@@ -23,11 +21,11 @@ import {
 	faCodeBranch,
 } from '@fortawesome/free-solid-svg-icons';
 
-import {  faEnvelope }from '@fortawesome/free-regular-svg-icons';
+import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 library.add(
 	faGithub,
-faLinkedinIn,
+	faLinkedinIn,
 	faEnvelope,
 	faAppStoreIos,
 	faCodeBranch,
@@ -35,7 +33,6 @@ faLinkedinIn,
 	faDatabase,
 	fab,
 	fas,
-	faAdobe,
 	faSass,
 	faCss3,
 	faNode,

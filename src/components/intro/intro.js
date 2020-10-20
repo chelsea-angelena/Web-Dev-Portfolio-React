@@ -92,13 +92,6 @@ export default function Intro() {
 							<FontAwesomeIcon
 								size='3x'
 								className='brand-icon'
-								icon={['fab', 'adobe']}
-							/>
-						</p>
-						<p>
-							<FontAwesomeIcon
-								size='3x'
-								className='brand-icon'
 								icon={['fab', 'android']}
 							/>
 						</p>
