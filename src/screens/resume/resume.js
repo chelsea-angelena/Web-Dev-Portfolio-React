@@ -1,20 +1,10 @@
 import React from 'react';
-import PDF from '../../assets/CBrown-Resume.pdf';
 import './resume.scss';
 
 const Resume = () => {
 	return (
 		<div style={styles.container}>
-			<div style={styles.div} className='resume--div'>
-				{/* <embed
-				className='resume'
-				style={styles.resume}
-				src={PDF}
-				type='application/pdf'
-				height={800}
-				width={640}
-			/> */}
-			</div>
+			<div style={styles.div} className='resume--div'></div>
 		</div>
 	);
 };
