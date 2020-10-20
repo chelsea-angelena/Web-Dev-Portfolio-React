@@ -2,8 +2,14 @@ import React from 'react';
 import './about.scss';
 import { Link } from 'react-router-dom';
 // import './navbar.scss';
+
+import Resume from '../../screens/resume/resume';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import bio from '../../assets/bio';
+
+// const resume = {
+// 	require('../../assets/CBrown-Resume.png')
+// }
 
 export default function About() {
 	return (
@@ -20,7 +26,17 @@ export default function About() {
 					alt=''
 					width='100'
 				></img>
+				{/* <img
+					className='about__pic'
+					src={require('../../assets/CBrown-Resume.png')}
+					// src={require('./profilebw.png')}
+					alt=''
+					width='800px'
+				></img> */}
 			</div>
+			{/* <div>
+				<Resume />
+			</div> */}
 			<div className='about__body'>
 				<div className='about__header'>
 					<h4>{bio.subHeader}</h4>

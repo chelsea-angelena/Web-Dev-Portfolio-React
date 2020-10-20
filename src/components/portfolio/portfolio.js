@@ -3,7 +3,11 @@ import './portfolio.scss';
 // import '../../styles/custom.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Nav } from 'bootstrap-4-react';
-import { Link } from 'react-router-dom';
+import { Link, Route } from 'react-router-dom';
+
+const link = {
+	link: 'https://github.com/chelsea-angelena/Expo-Saturday-Market',
+};
 
 const content = [
 	{
@@ -11,50 +15,46 @@ const content = [
 		title: 'Saturday Market',
 		text:
 			"		This is a mobile application built using react-native. It's a social app and virtual market place for selling handcrafted goods, art, etc. Currently it has been built for ios, and will be released for an Apple Test Flight in the next few days. The Android version will be coming soon, as well as new features such as in app messaging.",
-		link: " 'https://github.com/chelsea-angelena/Expo-Saturday-Market' ",
+		link: 'https://github.com/chelsea-angelena/Expo-Saturday-Market',
+		linkName: '/B',
 	},
 	{
-		image: 'http://placeimg.com/300/200/any',
+		image: require('../../assets/simulatorshot.png'),
 		title: 'OMDB Movie App',
 		text:
 			'Built with React Native. Simple Movie search app. Save your favorite movies',
-		link: " 'https://github.com/chelsea-angelena/react-native-omdb-redux' ",
+		link: 'https://github.com/chelsea-angelena/react-native-omdb-redux',
+		linkName: '/C',
 	},
 
 	{
 		image: 'https://picsum.photos/320/220',
-		title: 'Coming Soon',
+		title: 'Project #3  Coming Soon',
 		text:
 			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'",
-		link: 'href="https://github.com/chelsea-angelena/"',
+		link: 'https://github.com/chelsea-angelena/',
+		linkName: '/D',
 	},
 
 	{
 		image: 'https://placekitten.com/320/220',
-		title: 'Coming Soon',
+		title: 'Project #4  Coming Soon',
 		text:
 			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  in culpa qui officia deserunt mollit anim id est laborum.'",
-		link: 'href="https://github.com/chelsea-angelena/"',
+		link: 'https://github.com/chelsea-angelena/',
+		linkName: '/E',
 	},
 	{
 		image:
 			'https://images.unsplash.com/photo-1599913824804-2d4c8a33a3e0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80',
-		title: 'Coming Soon',
+		title: 'Project #5  Coming Soon',
 		text:
 			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut  in culpa qui officia deserunt mollit anim id est laborum.'",
 
-		link: 'href="https://github.com/chelsea-angelena/"',
-	},
-	{
-		image:
-			'https://images.unsplash.com/photo-1599918693295-76b4cc244431?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=893&q=80',
-		title: 'Coming Soon!',
-		text:
-			"		'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut ore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'",
-		link: 'href="https://github.com/chelsea-angelena/"',
+		link: 'https://github.com/chelsea-angelena/',
+		linkName: '/H',
 	},
 ];
-
 
 export default function Portfolio() {
 	return (
@@ -77,9 +77,13 @@ export default function Portfolio() {
 							<div className='projects__card--text'>{content.text}</div>
 
 							<div className='projects__card--text'>
-								<Link href={content.link}>
+								<Route
+									path={content.linkName}
+									component={() => (window.location = content.link)}
+								/>
+								<a href={content.linkName}>
 									<FontAwesomeIcon size='2x' icon={['fa', 'code']} />
-								</Link>
+								</a>
 							</div>
 						</div>
 					</li>
