@@ -1,8 +1,7 @@
 {
-	"homepage": "https://www.chelsea-angelena.com",
 	"name": "portfolio-site-react",
+	"homepage": "https://www.chelsea-angelena.com",
 	"version": "0.1.0",
-	"private": true,
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.30",
 		"@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -34,8 +33,6 @@
 		"yup": "^0.29.3"
 	},
 	"scripts": {
-		"predeploy": "yarn run build",
-		"deploy": "netlify deploy",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
