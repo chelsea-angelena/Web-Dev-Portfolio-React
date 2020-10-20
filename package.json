@@ -1,6 +1,6 @@
 {
 	"name": "portfolio-site-react",
-	"homepage": "https://www.chelsea-angelena.com",
+	"homepage": ".",
 	"version": "0.1.0",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.30",
