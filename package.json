@@ -34,6 +34,8 @@
 		"yup": "^0.29.3"
 	},
 	"scripts": {
+		"predeploy": "yarn run build",
+		"deploy": "netlify deploy",
 		"start": "react-scripts start",
 		"build": "react-scripts build",
 		"test": "react-scripts test",
