@@ -4,11 +4,7 @@ import '../../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/fonts.scss';
 
-const intro = {
-	blurb: '',
 
-	blurb2: 'Interactive Applications and Responsive Design',
-};
 
 export default function Intro() {
 	return (

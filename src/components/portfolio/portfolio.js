@@ -1,8 +1,6 @@
 import React from 'react';
 import './portfolio.scss';
-// import '../../styles/custom.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { Nav } from 'bootstrap-4-react';
 import { Link, Route } from 'react-router-dom';
 
 const content = [

@@ -38,3 +38,5 @@ const colors = {
 		Navgundy5: 'rgb(0,0,5)',
 	},
 };
+
+export default colors;

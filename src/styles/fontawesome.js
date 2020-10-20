@@ -1,5 +1,4 @@
-import React from 'react';
-// import the library
+
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
 	fab,
@@ -24,7 +23,7 @@ import {
 	faCodeBranch,
 } from '@fortawesome/free-solid-svg-icons';
 
-import { far, faEnvelope }from '@fortawesome/free-regular-svg-icons';
+import {  faEnvelope }from '@fortawesome/free-regular-svg-icons';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import your iconsfaDatabase
 

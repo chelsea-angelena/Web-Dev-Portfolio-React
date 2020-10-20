@@ -4,8 +4,8 @@ import Portfolio from '../components/portfolio/portfolio';
 import NavBar from '../components/NavBar';
 // import Landing from './Landing';
 import Intro from '../components/intro/intro';
-import WhatIdo from '../components/whatIdo/whatIdo';
-import ContactSection from './Contact';
+// import WhatIdo from '../components/whatIdo/whatIdo';
+// import ContactSection from './Contact';
 import FooterNav from '../components/footer/footer';
 
 function Main() {

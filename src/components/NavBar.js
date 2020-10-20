@@ -1,16 +1,8 @@
 import React from 'react';
-// import { Nav } from 'bootstrap-4-react';
-// import '../styles/fontawesome';
 import '../styles/custom.scss';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
-// import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import NavDropdown from 'react-bootstrap/NavDropdown';
-import Resume from '../screens/resume/resume';
 import { Link } from 'react-scroll';
-// import '../styles/custom.scss';
 import './nav.scss';
 
 export default function NavBar() {
@@ -72,43 +64,43 @@ export default function NavBar() {
 	);
 }
 
-{
-	/*
-// const NavBar = () => {
-// 	return (
-// 		<Nav as='nav' style={styles.navStyles}>
-// 			<div style={styles.navBarIcons} className='nav'>
-// 				<Nav.Link
-// 					rel='noopener noreferrer'
-// 					href='https://www.linkedin.com/in/chelsea-a-brown'
-// 					active
-// 					style={styles.nav}
-// 				>
-// 					<FontAwesomeIcon
-// 						style={styles.icon}
-// 						size='3x'
-// 						icon={['fab', 'linkedin-in']}
-// 					/>
-// 				</Nav.Link>
-// 				<Nav.Link href='https://github.com/chelsea-angelena' style={styles.nav}>
-// 					<FontAwesomeIcon
-// 						style={styles.icon}
-// 						size='3x'
-// 						icon={['fab', 'github']}
-// 					/>
-// 				</Nav.Link>
-// 				<Nav.Link href='@mailto:chelsea.angelena@gmail.com' style={styles.nav}>
-// 					<FontAwesomeIcon
-// 						style={styles.icon}
-// 						size='3x'
-// 						icon={['far', 'envelope']}
-// 					/>
-// 				</Nav.Link>
-// 			</div>
-// 		</Nav>
-// 	);
-// }; */
-}
+
+// 	/*
+// // const NavBar = () => {
+// // 	return (
+// // 		<Nav as='nav' style={styles.navStyles}>
+// // 			<div style={styles.navBarIcons} className='nav'>
+// // 				<Nav.Link
+// // 					rel='noopener noreferrer'
+// // 					href='https://www.linkedin.com/in/chelsea-a-brown'
+// // 					active
+// // 					style={styles.nav}
+// // 				>
+// // 					<FontAwesomeIcon
+// // 						style={styles.icon}
+// // 						size='3x'
+// // 						icon={['fab', 'linkedin-in']}
+// // 					/>
+// // 				</Nav.Link>
+// // 				<Nav.Link href='https://github.com/chelsea-angelena' style={styles.nav}>
+// // 					<FontAwesomeIcon
+// // 						style={styles.icon}
+// // 						size='3x'
+// // 						icon={['fab', 'github']}
+// // 					/>
+// // 				</Nav.Link>
+// // 				<Nav.Link href='@mailto:chelsea.angelena@gmail.com' style={styles.nav}>
+// // 					<FontAwesomeIcon
+// // 						style={styles.icon}
+// // 						size='3x'
+// // 						icon={['far', 'envelope']}
+// // 					/>
+// // 				</Nav.Link>
+// // 			</div>
+// // 		</Nav>
+// // 	);
+// // }; */
+// }
 
 const styles = {
 	nav: {

@@ -1,15 +1,8 @@
 import React from 'react';
 import './about.scss';
 import { Link, Route } from 'react-router-dom';
-// import './navbar.scss';
-
-import Resume from '../../screens/resume/resume';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import bio from '../../assets/bio';
-
-// const resume = {
-// 	require('../../assets/CBrown-Resume.png')
-// }
 
 export default function About() {
 	return (
@@ -18,9 +11,9 @@ export default function About() {
 				<img
 					className='about__pic'
 					src={require('../../assets/profilebw.jpg')}
-					alt='profile picture'
+					alt='profile'
 					width='100'
-				></img>
+				/>
 			</div>
 
 			<div className='about__body'>

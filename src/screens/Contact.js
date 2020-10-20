@@ -1,18 +1,17 @@
 import React from 'react';
-import colors from '../styles/colors.js';
 import './contact.scss';
 import ContactForm from './contactForm';
 
-const contact = {
-	title: 'Title Of Section',
+// const contact = {
+// 	title: 'Title Of Section',
 
-	paragraph:
-		"Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc",
-	emailBlurb: 'email:',
-	email: 'chelsea.angelena@gmail.com',
-	blurb:
-		'Use any of the links in this section, or the icons below to get in touch. You can also send me an email using this form.',
-};
+// 	paragraph:
+// 		"Where can I get some? There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc",
+// 	emailBlurb: 'email:',
+// 	email: 'chelsea.angelena@gmail.com',
+// 	blurb:
+// 		'Use any of the links in this section, or the icons below to get in touch. You can also send me an email using this form.',
+// };
 
 export default function ContactSection() {
 	return (
@@ -52,7 +51,7 @@ const styles = {
 		display: 'flex',
 		alignSelf: 'center',
 		alignItems: 'center',
-		display: 'flex',
+
 		flexDirection: 'column',
 		paddingLeft: 12,
 		paddingRight: 12,
@@ -65,7 +64,6 @@ const styles = {
 	},
 	blurb: {
 		fontFamily: 'Montserrat',
-		paddingTop: 16,
 		paddingLeft: 32,
 		paddingRight: 32,
 		paddingTop: 32,
