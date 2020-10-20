@@ -31,7 +31,7 @@ const styles = {
 		height: 1200,
 		paddingTop: 0,
 		marginTop: 0,
-	
+
 		// paddingLeft: 56,
 		// paddingRight: 56,
 		backgroundColor: '#616161',
