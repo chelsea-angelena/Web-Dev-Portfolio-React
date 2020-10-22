@@ -3,6 +3,7 @@ import './intro.scss';
 import '../../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/fonts.scss';
+import Nav from 'react-bootstrap/Nav';
 
 import { Link } from 'react-scroll';
 import '../nav.scss';
@@ -12,21 +13,17 @@ export default function Intro() {
 		<>
 			<div className='landing-div'>
 				<div id='overlay'>
-					{/* <div id="overlay2"> */}
 					<div className='header__text--div'>
-						<h1 className='header__text'>Chelsea Angelena Brown</h1>
-						<div className='header__text--row-div'>
-							<h2 className='header__text--row-2'>Full Stack</h2>
-							{/* <h2 className='header__text--row-2'>Web and Mobile</h2>
-							<h2 className='header__text--row-2'>Applications</h2> */}
-							<h2 className='header__text--row-2'>Developer</h2>
+						<div className='headerTextBorder'>
+							<h1 className='header__text'>Chelsea Angelena Brown</h1>
 
-							<div className='header__text--row'>
-								<h3 className='header__second'>
-									Mobile <span className='ellipse'>•</span> Web
-									<span className='ellipse'>•</span>Desktop
-								</h3>
-							</div>
+							<h2 className='header__text'>Full Stack Developer</h2>
+						</div>
+						<div className='header__text--row'>
+							<h3 className='header__second'>
+								MOBILE APPLICATIONS <span className='ellipse'>•</span> WEB
+								DEVELOPMENT
+							</h3>
 						</div>
 						<div className='tech__icons'>
 							<p>
@@ -85,7 +82,7 @@ export default function Intro() {
 							</div>
 							<div style={styles.col2}>
 								<Link
-									to='Contact'
+									to='Footer'
 									spy={true}
 									smooth='true'
 									className='projects'
@@ -98,12 +95,10 @@ export default function Intro() {
 										icon={['fas', 'angle-right']}
 									/>
 								</Link>
-
-								<Link
+								<Nav.Link
 									to='/resume'
-									spy={true}
-									smooth='true'
-									className='projects'
+									href='/resume'
+									id='resumeLink'
 									style={styles.anchorLink}
 								>
 									Resume
@@ -111,8 +106,9 @@ export default function Intro() {
 										size='1x'
 										// className='brand-icon'
 										icon={['fas', 'angle-right']}
+										style={{ marginLeft: 12 }}
 									/>
-								</Link>
+								</Nav.Link>
 							</div>
 						</div>
 					</div>
@@ -135,6 +131,7 @@ const styles = {
 		border: 'solid',
 		padding: 8,
 		marginTop: 24,
+		cursor: 'pointer',
 	},
 	rowLink: {
 		display: 'flex',

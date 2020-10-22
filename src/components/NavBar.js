@@ -31,6 +31,7 @@ export default function NavBar() {
 						listStyle: 'none',
 						justifyContent: 'space-around',
 						backgroundColor: 'hsl(10%, 10%, 0%)',
+						cursor: 'default',
 					}}
 				>
 					<Link

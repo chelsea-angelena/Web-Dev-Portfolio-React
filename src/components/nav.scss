@@ -1,52 +1,3 @@
-// .Navbar {
-// 	background-color: #46acc2;
-// 	display: flex;
-// 	padding: 16px;
-// 	font-family: sans-serif;
-// 	color: white;
-// }
-
-// .Navbar__Link {
-//   padding-right: 8px;
-// }
-
-// .Navbar__Items {
-//   display: flex;
-// }
-
-// .Navbar__Items--right {
-//   margin-left:auto;
-// }
-
-// .Navbar__Link-toggle {
-//   display: none;
-// }
-
-// @media only screen and (max-width: 768px) {
-//   .Navbar__Items,
-//   .Navbar {
-//     flex-direction: column;
-//   }
-
-// .Navbar__Items {
-//     display:none;
-//   }
-
-// .Navbar__Items--right {
-//     margin-left:0;
-//   }
-
-// .Navbar__ToggleShow {
-//     display: flex;
-//   }
-
-// .Navbar__Link-toggle {
-//     align-self: flex-end;
-//     display: initial;
-//     position: absolute;
-//     cursor: pointer;
-//    }
-// }
 @import '../styles/fonts.scss';
 
 .navbar {
@@ -58,72 +9,34 @@
 }
 
 .draw:after {
-	content: ''; /* This is necessary for the pseudo element to work. */
-	display: block; /* This will put the pseudo element on its own line. */
-	width: 0%; /* Change this to whatever width you want to have before hover. */
+	content: '';
+	cursor: pointer;
+	display: block;
+	width: 0%;
 	border-bottom: 3px solid hsl(81, 28%, 90%);
-	// padding-top: 5px; /* This creates some space between the element and the border. */
-	// border-bottom: 3px solid #827717; /* This creates the border. Replace black with whatever color you want. */
-	transition: 0.5s; /* This establishes the amount of time in seconds the animation should take from start to finish */
+	transition: 0.5s;
 }
 
 .draw:hover:after {
-	width: 100%; /* This will be the new width of your border when on hover */
+	width: 100%;
+	cursor: pointer;
 }
 
 .nav-link {
 	padding: 0;
 	margin: 0;
 	background-color: 'hsl(10%, 10%, 0%)';
+	cursor: pointer;
 }
 
 a.draw:visited {
 	color: white;
+	cursor: pointer;
 }
 
 .draw {
 	font-family: Montserrat;
+	cursor: pointer;
 	font-size: 1.25rem;
 	color: white;
 }
-
-// .draw {
-//   transition: color 0.25s;
-// }
-// .draw::before, .draw::after {
-//   border-bottom: 2px solid transparent;
-//   width: 0;
-//   height: 0;
-// }
-// .draw::before {
-//   top: 0;
-//   left: 0;
-// }
-// .draw::after {
-//   bottom: 0;
-//   right: 0;
-// }
-// .draw:hover {
-//   color: #0eb7da;
-// }
-// .draw:hover::before, .draw:hover::after {
-//   width: 100%;
-//   height: 100%;
-// }
-// .draw:hover::before {
-//   border-top-color: #0eb7da;
-//   border-right-color: #0eb7da;
-//   transition: width 0.25s ease-out, height 0.25s ease-out 0.25s;
-// }
-// .draw:hover::after {
-//   border-bottom-color: #0eb7da;
-//   border-left-color: #0eb7da;
-//   transition: border-color 0s ease-out 0.5s, width 0.25s ease-out 0.5s, height 0.25s ease-out 0.75s;
-// }
-// .navbar.navbar-expand-sm.bg-dark.fixed-top {
-// 	max-width: '100%';
-// 	background-color: 'hsl(10%, 10%, 0%)';
-// }
-// div#basic-navbar-nav {
-// 	max-width: '100%';
-// }

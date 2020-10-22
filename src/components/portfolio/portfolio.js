@@ -10,8 +10,8 @@ const content = [
 	{
 		id: 1,
 		tech: 'React-Native',
-		tech2: 'Firebase',
-		image: require('../../assets/saturday.png'),
+		tech2: '../../assets/logo-logomark.png',
+		image: require('../../assets /saturday.png'),
 		title: 'Saturday Market',
 		text:
 			"		This is a mobile application built using react-native. It's a social app and virtual market place for selling handcrafted goods, art, etc. Currently it has been built for ios, and will be released for an Apple Test Flight in the next few days. The Android version will be coming soon, as well as new features such as in app messaging.",
@@ -24,7 +24,7 @@ const content = [
 		id: 2,
 		tech: 'React-Native',
 		tech2: 'OMDB API',
-		image: require('../../assets/simulatorshot.png'),
+		image: require('../../assets /simulatorshot.png'),
 		title: 'OMDB Movie App',
 		text:
 			'Built with React Native and the open movie database API. Search for your favorite movies and save the list to reference later',
@@ -93,7 +93,9 @@ export default function Portfolio() {
 								<Card style={styles.card} className='mb-2 text-center'>
 									<Card.Header>{content.tech}</Card.Header>
 									<div>
-										<Card.Header>{content.tech2}</Card.Header>
+										<Card.Header>
+											{/* <img src={require(content.tech2)} alt='' width='50px' /> */}
+										</Card.Header>
 										<div></div>
 										<Card.Img
 											variant='top'
@@ -188,6 +190,7 @@ const styles = {
 	text: {
 		fontFamily: 'Montserrat',
 		fontWeight: 200,
+		cursor: 'default',
 	},
 	title: {
 		fontSize: 28,

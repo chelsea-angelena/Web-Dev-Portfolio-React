@@ -13,6 +13,7 @@ span.stats__text {
 
 .about {
 	background-color: #fafafa;
+	border: 2px solid black;
 	box-sizing: border-box;
 	max-width: 100%;
 	height: auto;
@@ -31,15 +32,7 @@ span.stats__text {
 
 		align-self: center;
 	}
-	&__pic {
-		width: 200px;
-		height: 200px;
-		border-radius: 200px;
-		align-self: center;
-		border: 0.5px solid #827717;
-		padding: 0;
-		margin: 0;
-	}
+
 	&__body {
 		display: flex;
 		flex-direction: column;
@@ -86,7 +79,7 @@ div.about__border {
 	max-width: '100%';
 }
 div.about__body {
-	background-color: 'red';
+	background-color: 'white';
 }
 @media only screen and (min-width: 768px) {
 	.about {
@@ -116,14 +109,11 @@ div.about__body {
 		width: 700px;
 	}
 	div.about__body {
-		background-color: 'red';
+		background-color: 'white';
 	}
 }
 @media (min-width: 1200px) {
 	.about {
 		padding: 0px 120px 0px 120px;
-	}
-	div.about__body {
-		background-color: 'red';
 	}
 }

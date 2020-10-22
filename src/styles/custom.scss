@@ -10,6 +10,7 @@ div.landing-div {
 	// font-family: 'Raleway', sans-serif;
 	font-family: 'Josefin Sans', sans-serif;
 	font-weight: 300;
+	cursor: pointer;
 	color: hsl(0, 0%, 100%);
 }
 
@@ -103,7 +104,13 @@ ul {
 	flex-direction: row;
 	justify-content: center;
 }
+#resumeLink {
+	color: white;
+}
 
+#resumeLink:visited {
+	color: white;
+}
 @media screen and (min-width: 768px) {
 	.nav {
 		display: flex;
