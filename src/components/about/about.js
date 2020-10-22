@@ -2,7 +2,7 @@ import React from 'react';
 import './about.scss';
 import { Link, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import bio from '../../assets /bio';
+import bio from '../../assets/bio';
 
 export default function About() {
 	return (
@@ -18,7 +18,7 @@ export default function About() {
 							style={styles.profile}
 							alt='profile'
 							width='150px'
-							src={require('../../assets /profile.png')}
+							src={require('../../assets/profile.png')}
 						/>
 					</div>
 
@@ -54,7 +54,7 @@ export default function About() {
 						</div>
 						<div className='about__divider--3'></div>
 						<p className='about__snippet'>
-							I am available to work! I'm also interested in collaberating on
+							I am available to work! I'm also interested in collaborating on
 							cool projects. Feel free to email me, or get in touch using any of
 							the links below
 						</p>
@@ -123,11 +123,10 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'row',
 		alignItems: 'center',
-		justifyContent: 'flex-end',
-		width: '30%',
+		justifyContent: 'center',
+		width: 250,
 		marginTop: 16,
 	},
-
 	profile: {
 		borderRadius: 150,
 		marginTop: 32,
@@ -136,7 +135,7 @@ const styles = {
 		backgroundColor: 'white',
 	},
 	aboutDiv: {
-		maxWidth: '25rem',
+		maxWidth: '100%',
 		borderColor: 'black',
 		borderWidth: 2,
 		border: 'solid',

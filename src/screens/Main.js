@@ -3,7 +3,9 @@ import About from '../components/about/about';
 import Portfolio from '../components/portfolio/portfolio';
 import NavBar from '../components/NavBar';
 import Intro from '../components/intro/intro';
-import FooterNav from '../components/footer/footer';
+// import FooterNav from '../components/footer/footer';
+import ContactSection from './Contact';
+import ClassProjects from '../components/portfolio/ClassProjects';
 
 function Main() {
 	return (
@@ -15,17 +17,15 @@ function Main() {
 					<Intro />
 				</div>
 			</div>
-
 			<div>
 				<div id='about'>
 					<About />
 				</div>
-				<div>
+				<div id='projects'>
 					<Portfolio />
+					<ClassProjects />
 				</div>
-				<div>
-					<FooterNav />
-				</div>
+				<ContactSection />
 			</div>
 		</>
 	);

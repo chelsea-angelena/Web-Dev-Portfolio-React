@@ -4,7 +4,6 @@ import '../../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/fonts.scss';
 import Nav from 'react-bootstrap/Nav';
-
 import { Link } from 'react-scroll';
 import '../nav.scss';
 
@@ -111,6 +110,7 @@ export default function Intro() {
 								</Nav.Link>
 							</div>
 						</div>
+
 					</div>
 				</div>
 			</div>

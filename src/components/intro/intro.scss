@@ -3,44 +3,46 @@
 .projects {
 	font-family: 'Montserrat';
 	font-weight: 300;
+	width: 100%;
 }
 #overlay {
-	position: absolute;
-	// display: none;
+	position: relative;
+	display: flex;
+	align-self: center;
+	// min-width: 320px;
 	width: 100%;
-	height: 600px;
+	height: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
 	// background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.7);
 	z-index: 3;
+	// margin-top: 64px;
 	cursor: default;
 }
 
-h1 {
-	font-weight: 700;
-}
 .header__text--div {
-	margin-top: 72px;
 	width: 100%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	padding: 64px 0;
+	padding: 24px 0 24px 0;
+	margin-top: 64px;
+	padding-bottom: 64px;
 	// text-shadow: black 0.1em 0.1em 0.1em 0.1em;
-	height: 100%;
-	padding-bottom: 24px;
+	// height: 100%;
 	z-index: 5;
-	font-weight: 700;
-	font-family: 'Montserrat';
+	// font-weight: 700;
+	// font-family: 'Montserrat';
 }
-.header__text--row-div {
-	border-radius: 8px;
-	padding: 32px 72px 32px 72px;
-	text-align: center;
-	margin-top: 64;
-}
+// .header__text--row-div {
+// 	border-radius: 8px;
+// 	padding: 32px 72px 32px 72px;
+// 	text-align: center;
+// 	margin-top: 64;
+// }
 .header__second {
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -54,7 +56,8 @@ span.ellipse {
 .header__text {
 	font-size: 2.5rem;
 	line-height: 4.5rem;
-	margin: 24px 24px 24px 24px;
+	font-weight: demi-bold;
+	// margin: 24px 24px 24px 24px;
 	text-align: center;
 }
 
@@ -66,17 +69,17 @@ h1.header__text {
 	padding-bottom: 24px;
 	border-bottom: 0.5px solid white;
 }
-h2.header__text {
-	font-size: 2rem;
-	padding-bottom: 24px;
-	border-bottom: 0.5px solid white;
-}
-h2.header__text--row-2 {
-	font-size: 2rem;
-	line-height: 3rem;
-	border-bottom: 0.5px solid white;
-	margin-bottom: 64px;
-}
+// h2.header__text {
+// 	font-size: 2rem;
+// 	padding-bottom: 24px;
+// 	border-bottom: 0.5px solid white;
+// }
+// h2.header__text--row-2 {
+// 	font-size: 2rem;
+// 	line-height: 3rem;
+// 	border-bottom: 0.5px solid white;
+// 	// margin-bottom: 64px;
+// }
 
 @keyframes bounceInUp {
 	0% {
@@ -102,12 +105,12 @@ h2.header__text--row-2 {
 	// color: hsl(60, 100%, 96%);
 	text-shadow: black 0.1em 0.1em 0.2em;
 	//  box-shadow: -20px 25px 30px -10px rgba(0, 0, 0, 0.3);
-	min-width: 100px;
+	// min-width: 100px;
 	max-width: 100px;
-	min-height: 100px;
+	// min-height: 100px;
 	max-height: 100px;
 	padding: 5px;
-	margin: 24px;
+	// margin: 24px;
 	border-radius: 6px;
 	outline: black 0.1em 0.1em 0.1em;
 	animation: fadeIn 4s;
@@ -160,38 +163,91 @@ h2.header__text--row-2 {
 	}
 }
 
+// @media screen and (min-width: 576px) {
+// 	#overlay {
+// 		position: relative;
+// 		margin-top: 64px;
+// 		display: flex;
+// 		align-self: center;
+// 		// top: 164;
+// 		left: 0;
+// 		right: 0;
+// 		bottom: 0;
+// 		height: 900px;
+// 		min-width: 576px;
+// 		width: 100%;
+// 		// background-color: rgba(0, 0, 0, 0.1); /* Black background with opacity */
+// 		z-index: 3;
+// 		cursor: default;
+// 		margin: 0 auto;
+// 	}
+// }
+
 @media screen and (min-width: 768px) {
 	.header__text--div {
 		justify-content: center;
-		padding-top: 0;
+		// padding: 0px 0px 64px 0px;
+		width: '100%';
+		padding-bottom: 64px;
+	}
+	.header__second {
+		padding-bottom: 40px;
+		font-size: 1rem;
+		line-height: 1.5rem;
+		display: flex;
+		justify-content: space-between;
+	}
+	span.ellipse {
+		padding: 0px 16px;
 	}
 
+	.header__text {
+		font-size: 2.5rem;
+		line-height: 4.5rem;
+		padding-bottom: 40px;
+		font-weight: demi-bold;
+		// margin: 24px 24px 24px 24px;
+		text-align: center;
+	}
+
+	h1.header__text {
+		font-size: 2.5rem;
+		line-height: 4.5rem;
+		margin: 24px 24px 24px 24px;
+		text-align: center;
+		padding-bottom: 40px;
+	}
 	#overlay {
-		position: absolute;
-		// display: none;
-		width: 100%;
-		height: 1000px;
-		top: 0;
+		position: relative;
+		margin-top: 64px;
+		display: flex;
+		align-self: center;
+		// top: 164;
 		left: 0;
 		right: 0;
 		bottom: 0;
+		height: 900px;
+		min-width: 768px;
 		// background-color: rgba(0, 0, 0, 0.1); /* Black background with opacity */
 		z-index: 3;
 		cursor: default;
+		margin: 0 auto;
 	}
 }
 
-a#resumeLink {
-	color: 'white';
+@media screen and (min-width: 1024px) {
+	#overlay {
+		min-width: 1024px;
+	}
 }
 
-a#resumeLink:visited {
-	color: 'white';
+@media screen and (min-width: 1200px) {
+	#overlay {
+		min-width: 1200px;
+	}
 }
-.border {
-	align-items: center;
-	align-self: center;
-	justify-content: center;
-	margin-bottom: 64px;
-	// border: 2px solid white;
+@media screen and (min-width: 1440px) {
+	#overlay {
+		min-width: 1440px;
+	}
 }
