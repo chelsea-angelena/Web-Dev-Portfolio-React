@@ -1,4 +1,6 @@
 const colors = {
+superLightGrey: 'hsl(240, 1%, 86%)',
+
 	grey: 'hsl(180, 1%, 75%)',
 	medGrey: 'hsl(218, 17%, 62%)',
 	darkgrey: 'hsl(218, 19%, 38%)',

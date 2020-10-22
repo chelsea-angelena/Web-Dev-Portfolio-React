@@ -6,25 +6,21 @@ import bio from '../../assets/bio';
 
 export default function About() {
 	return (
-		<div className='about' id='About'>
-			<div className='about__pic--div'>
-				<img
-					className='about__pic'
-					src={require('../../assets/profilebw.jpg')}
-					alt='profile'
-					width='100'
-				/>
-			</div>
-
+		<div className='about' id='About' style={styles.background}>
 			<div className='about__body'>
-				<div className='about__header'>
-					<h4>{bio.subHeader}</h4>
-				</div>
-				<div className='about__divider'></div>
 				<div className='about__subHeader'>
 					<h3>{bio.header}</h3>
 				</div>
 				<div className='about__divider--2'></div>
+				<div>
+					<img
+						style={styles.profile}
+						alt='profile'
+						width='150px'
+						src={require('../../assets/profile3.png')}
+					/>
+				</div>
+
 				<div className='about__text'>
 					<p>{bio.intro}</p>
 					<p>{bio.intro0}</p>
@@ -125,8 +121,15 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'row',
 		alignItems: 'center',
-		justifyContent: 'center',
+		justifyContent: 'flex-end',
 		width: '100%',
 		marginTop: 16,
+	},
+	profile: {
+		borderRadius: 150,
+		marginTop: 32,
+	},
+	background: {
+		backgroundColor: '#FAFAFA',
 	},
 };

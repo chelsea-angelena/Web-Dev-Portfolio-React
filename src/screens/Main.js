@@ -15,6 +15,7 @@ function Main() {
 					<Intro />
 				</div>
 			</div>
+
 			<div>
 				<div id='about'>
 					<About />

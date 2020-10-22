@@ -19,6 +19,8 @@ import {
 	faServer,
 	faDatabase,
 	faCodeBranch,
+	faCode,
+	faAngleDown,
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
@@ -37,9 +39,11 @@ library.add(
 	faCss3,
 	faNode,
 	faReact,
+	faAngleDown,
 	faNodeJs,
 	faJsSquare,
 	faAppStore,
 	faAndroid,
-	faHtml5
+	faHtml5,
+	faCode
 );

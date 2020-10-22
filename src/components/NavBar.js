@@ -16,25 +16,30 @@ export default function NavBar() {
 			fixed='top'
 			style={styles.nav}
 		>
+			<Navbar.Brand>
+				<Link to='overlay' className='draw nav-link' spy={true} smooth='true'>
+					Home
+				</Link>
+			</Navbar.Brand>
 			<Navbar.Toggle />
-			<Navbar.Collapse>
-				<Nav className='mr-auto'></Nav>
+			<Navbar.Collapse id='basic-navbar-nav' bg='dark'>
+				<Nav bg='dark' className='mr-auto'></Nav>
 				<Nav
+					bg='dark'
 					style={{
 						display: 'flex',
 						listStyle: 'none',
 						justifyContent: 'space-around',
+						backgroundColor: 'hsl(10%, 10%, 0%)',
 					}}
 				>
-					<Link to='overlay' className='draw nav-link' spy={true} smooth='true'>
-						Home
-					</Link>
-
 					<Link
+						bg='dark'
 						to='projects'
 						spy={true}
 						smooth='true'
 						className='nav-link draw'
+						style={{ backgroundColor: 'hsl(10%, 10%, 0%)' }}
 					>
 						Projects
 					</Link>
@@ -67,7 +72,7 @@ const styles = {
 	},
 	navStyles: {
 		maxWidth: '100%',
-		backgroundColor: 'rgba(0,0,0,.4)',
+		// backgroundColor: 'rgba(0,0,0,.4)',
 		borderBottomColor: 'white',
 		borderBottomWidth: 2,
 	},
@@ -87,6 +92,6 @@ const styles = {
 		borderRadius: 6,
 		display: 'inline-block',
 		marginTop: 24,
-		marginBottom: 24,
+		// marginBottom: 24,
 	},
 };
