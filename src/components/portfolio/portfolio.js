@@ -4,8 +4,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from 'react-bootstrap/Card';
 import { Link, Route } from 'react-router-dom';
 import { Lead } from 'bootstrap-4-react';
-// import colors from '../../styles/colors';
-// import Item from 'react-bootstrap/Item';
 
 const content = [
 	{
@@ -15,7 +13,7 @@ const content = [
 		image: require('../../assets/saturday.png'),
 		title: 'Saturday Market',
 		text:
-			"		This is a mobile application built using react-native. It's a social app and virtual market place for selling handcrafted goods, art, etc. Currently it has been built for ios, and will be released for an Apple Test Flight in the next few days. The Android version will be coming soon, as well as new features such as in app messaging.",
+			'		This is a mobile application built with React-Native. It is a social application and virtual market place for selling handcrafted goods and art. Currently it has been built for ios, and will be released on an Apple Test Flight in the next few days. The Android version will be coming soon, as well as new features such as in app messaging.',
 		link: 'https://github.com/chelsea-angelena/Expo-SaturdayMarket',
 		linkName: '/SaturdayMarket',
 		demolink: 'https://chelsea-angelena.github.io/',
@@ -28,7 +26,7 @@ const content = [
 		image: require('../../assets/simulatorshot.png'),
 		title: 'OMDB Movie App',
 		text:
-			'Built with React Native and the open movie database API. Search for your favorite movies and save the list to reference later',
+			'A movie search app, built with React-Native and the open movie database API. Search for your favorite movies and save the list to reference later',
 		link: 'https://github.com/chelsea-angelena/react-native-omdb',
 		linkName: '/react-native-omdb',
 		demolink: 'https://chelsea-angelena.github.io',
@@ -42,7 +40,7 @@ const content = [
 		image: require('../../assets/GoodEats.png'),
 		title: 'Good Eats',
 		text:
-			'React-Native restaurant search App. Set to automatically use location so all search results are local. Find the hours, location, ratings and price range of restuarants near you.',
+			'Mobile App, built with React-Native. Search for  nearby restaurants by the type of cuisine, or business name. The app will automatically use location, only after explicit permission has been granted by the user, so all search results are local. Find the hours, location, ratings and price range of restuarants near you.',
 		link:
 			'https://github.com/chelsea-angelena/react-native-local-restaurant-search',
 		linkName: '/goodEats',
@@ -52,20 +50,12 @@ const content = [
 ];
 
 export default function Portfolio() {
-	// function changeBackground(e) {
-	// 	e.target.style.background = 'red';
-	// }
-	// function changeBackgroundBack(e) {
-	// 	e.target.style.background = 'white';
-	// }
-
 	return (
 		<div style={styles.projects}>
 			<div className='projects' id='projects'>
 				<h2 className='projects__header'>React-Native Projects</h2>
 				<Lead style={styles.lead}>
-					Side Projects that I have built on my own since gradutation using
-					React-Native and Expo.
+					Projects that I have built on my own since gradutation using React-Native and Expo.
 				</Lead>
 				<div className='projects__card--main-div'>
 					<ol className='projects__card--ol' style={styles.list}>
@@ -122,27 +112,6 @@ export default function Portfolio() {
 				</div>
 			</div>
 			<div>
-				{/* <div style={styles.row}>
-					<img
-						src={require('../../assets/logo-logomark.png')}
-						alt='logomarkFirebase'
-						width='50px'
-					/>
-					<img
-						src={require('../../assets/reactnative.png')}
-						alt='reactnative'
-						width='50px'
-					/>
-
-					<FontAwesomeIcon
-						size='3x'
-						icon={['fab', 'app-store-ios']}
-						color='black'
-					/>
-
-					<FontAwesomeIcon size='2x' icon={['fab', 'android']} color='black' /> */}
-				{/*
-					<FontAwesomeIcon size='3x' icon={['fab', 'react']} color='black' /> */}
 			</div>
 		</div>
 	);
@@ -190,17 +159,8 @@ const styles = {
 	},
 	list: {
 		backgroundColor: '#FAFAFA',
-		// marginRight: 24,
-		// marginLeft: 24,
 	},
 	cardback: {
-		// marginRight: 24,
-		// marginLeft: 24,
-		// backgroundColor: 'rgba(0, 0, 0, 0.3)',
-		// paddingLeft: 24,
-		// paddingRight: 24,
 		paddingTop: 24,
-		// paddingBottom: 24,
-		// marginTop: 24,
 	},
 };

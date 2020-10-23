@@ -15,7 +15,6 @@ export default function Intro() {
 					<div className='header__text--div'>
 						<div className='headerTextBorder'>
 							<h1 className='header__text'>Chelsea Angelena Brown</h1>
-
 							<h2 className='header__text'>Full Stack Developer</h2>
 						</div>
 						<div className='header__text--row'>
@@ -94,6 +93,7 @@ export default function Intro() {
 										icon={['fas', 'angle-right']}
 									/>
 								</Link>
+
 								<Nav.Link
 									to='/resume'
 									href='/resume'
@@ -103,14 +103,12 @@ export default function Intro() {
 									Resume
 									<FontAwesomeIcon
 										size='1x'
-										// className='brand-icon'
 										icon={['fas', 'angle-right']}
 										style={{ marginLeft: 12 }}
 									/>
 								</Nav.Link>
 							</div>
 						</div>
-
 					</div>
 				</div>
 			</div>

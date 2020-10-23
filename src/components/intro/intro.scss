@@ -9,17 +9,17 @@
 	position: relative;
 	display: flex;
 	align-self: center;
-	// min-width: 320px;
+
 	width: 100%;
 	height: 100%;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	// background-color: rgba(0, 0, 0, 0.1);
+
 	background-color: rgba(0, 0, 0, 0.7);
 	z-index: 3;
-	// margin-top: 64px;
+
 	cursor: default;
 }
 
@@ -31,18 +31,13 @@
 	padding: 24px 0 24px 0;
 	margin-top: 64px;
 	padding-bottom: 64px;
-	// text-shadow: black 0.1em 0.1em 0.1em 0.1em;
+	text-shadow: black 0.1em 0.1em 0.1em 0.1em;
 	// height: 100%;
 	z-index: 5;
 	// font-weight: 700;
 	// font-family: 'Montserrat';
 }
-// .header__text--row-div {
-// 	border-radius: 8px;
-// 	padding: 32px 72px 32px 72px;
-// 	text-align: center;
-// 	margin-top: 64;
-// }
+
 .header__second {
 	font-size: 1rem;
 	line-height: 1.5rem;
@@ -69,17 +64,6 @@ h1.header__text {
 	padding-bottom: 24px;
 	border-bottom: 0.5px solid white;
 }
-// h2.header__text {
-// 	font-size: 2rem;
-// 	padding-bottom: 24px;
-// 	border-bottom: 0.5px solid white;
-// }
-// h2.header__text--row-2 {
-// 	font-size: 2rem;
-// 	line-height: 3rem;
-// 	border-bottom: 0.5px solid white;
-// 	// margin-bottom: 64px;
-// }
 
 @keyframes bounceInUp {
 	0% {
@@ -99,26 +83,18 @@ h1.header__text {
 	flex-wrap: wrap;
 	align-items: center;
 	justify-content: center;
-	// color: hsl(60, 100%, 96%);
 }
 .brand-icon {
-	// color: hsl(60, 100%, 96%);
 	text-shadow: black 0.1em 0.1em 0.2em;
-	//  box-shadow: -20px 25px 30px -10px rgba(0, 0, 0, 0.3);
-	// min-width: 100px;
 	max-width: 100px;
-	// min-height: 100px;
 	max-height: 100px;
 	padding: 5px;
-	// margin: 24px;
 	border-radius: 6px;
 	outline: black 0.1em 0.1em 0.1em;
 	animation: fadeIn 4s;
 }
 .brand-icon-small {
-	// color: hsl(60, 100%, 96%);
 	text-shadow: black 0.1em 0.1em 0.2em;
-	//  box-shadow: -20px 25px 30px -10px rgba(0, 0, 0, 0.3);
 	min-width: 40px;
 	max-width: 40px;
 	min-height: 40px;
@@ -163,30 +139,9 @@ h1.header__text {
 	}
 }
 
-// @media screen and (min-width: 576px) {
-// 	#overlay {
-// 		position: relative;
-// 		margin-top: 64px;
-// 		display: flex;
-// 		align-self: center;
-// 		// top: 164;
-// 		left: 0;
-// 		right: 0;
-// 		bottom: 0;
-// 		height: 900px;
-// 		min-width: 576px;
-// 		width: 100%;
-// 		// background-color: rgba(0, 0, 0, 0.1); /* Black background with opacity */
-// 		z-index: 3;
-// 		cursor: default;
-// 		margin: 0 auto;
-// 	}
-// }
-
 @media screen and (min-width: 768px) {
 	.header__text--div {
 		justify-content: center;
-		// padding: 0px 0px 64px 0px;
 		width: '100%';
 		padding-bottom: 64px;
 	}
@@ -218,36 +173,28 @@ h1.header__text {
 		padding-bottom: 40px;
 	}
 	#overlay {
-		position: relative;
-		margin-top: 64px;
-		display: flex;
-		align-self: center;
-		// top: 164;
-		left: 0;
-		right: 0;
-		bottom: 0;
 		height: 900px;
 		min-width: 768px;
-		// background-color: rgba(0, 0, 0, 0.1); /* Black background with opacity */
-		z-index: 3;
-		cursor: default;
-		margin: 0 auto;
+		max-width: '100%';
 	}
 }
 
 @media screen and (min-width: 1024px) {
 	#overlay {
 		min-width: 1024px;
+		max-width: '100%';
 	}
 }
 
 @media screen and (min-width: 1200px) {
 	#overlay {
 		min-width: 1200px;
+		max-width: '100%';
 	}
 }
 @media screen and (min-width: 1440px) {
 	#overlay {
 		min-width: 1440px;
+		max-width: '100%';
 	}
 }

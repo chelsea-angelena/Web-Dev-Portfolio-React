@@ -76,22 +76,13 @@ const content = [
 ];
 
 export default function ClassProjects() {
-	// function changeBackground(e) {
-	// 	e.target.style.background = 'red';
-	// }
-	// function changeBackgroundBack(e) {
-	// 	e.target.style.background = 'white';
-	// }
-
 	return (
 		<div style={styles.projects}>
 			<div className='projects' id='projects'>
 				<h2 className='projects__header'>School Projects</h2>
 				<Lead style={styles.lead}>
-					Assigned Projects from the Web Development Diploma course at
-					BrainStation May 2020-Aug 2020. We began learning basic HTML/CSS, then
-					SASS/SCSS, on to JavaScript, React.js, Node.js, Express.js to name a
-					few.
+					Projects from the Web Development Diploma course at BrainStation May
+					2020-Aug 2020.
 				</Lead>
 				<div className='projects__card--main-div'>
 					<ol className='projects__card--ol' style={styles.list}>
@@ -143,29 +134,7 @@ export default function ClassProjects() {
 					</ol>
 				</div>
 			</div>
-			<div>
-				{/* <div style={styles.row}>
-					<img
-						src={require('../../assets/logo-logomark.png')}
-						alt='logomarkFirebase'
-						width='50px'
-					/>
-					<img
-						src={require('../../assets/reactnative.png')}
-						alt='reactnative'
-						width='50px'
-					/>
-
-					<FontAwesomeIcon
-						size='3x'
-						icon={['fab', 'app-store-ios']}
-						color='black'
-					/>
-
-					<FontAwesomeIcon size='2x' icon={['fab', 'android']} color='black' /> */}
-				{/*
-					<FontAwesomeIcon size='3x' icon={['fab', 'react']} color='black' /> */}
-			</div>
+			<div></div>
 		</div>
 	);
 }
@@ -174,7 +143,6 @@ const styles = {
 		paddingTop: 64,
 		paddingBottom: 32,
 		fontFamily: 'Montserrat',
-		// backgroundColor: '#E0E0E0',
 	},
 	card: {
 		maxWidth: '24rem',
@@ -212,17 +180,5 @@ const styles = {
 	},
 	list: {
 		backgroundColor: '#E0E0E0',
-		// marginRight: 24,
-		// marginLeft: 24,
 	},
-	// cardback: {
-	// 	marginRight: 24,
-	// 	marginLeft: 24,
-	// 	// backgroundColor: 'rgba(0, 0, 0, 0.3)',
-	// 	paddingLeft: 24,
-	// 	paddingRight: 24,
-	// 	paddingTop: 24,
-	// 	// paddingBottom: 24,
-	// 	// marginTop: 24,
-	// },
 };
