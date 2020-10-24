@@ -30,7 +30,7 @@ export default function IntroFile() {
 				backgroundImage: `url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60')`,
 				backgroundRepeat: 'no-repeat',
 				backgroundSize: 'cover',
-				minHeight: 700,
+				minHeight: 1000,
 				flexDirection: 'column',
 				alignSelf: 'center',
 				alignItems: 'center',
