@@ -1,75 +1,96 @@
 import React from 'react';
 import './contact.scss';
-import ContactInfo from './ContactInfo';
 import { Nav } from 'bootstrap-4-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import contact from './contactData';
+import { Jumbotron, Container } from 'bootstrap-4-react';
 import '../components/footer/footer.scss';
-
-const contact = {
-	title: 'Get In Touch',
-	blurb:
-		"If you have any questions about my page or projects, or, if you're interested in working together, please feel free to contact me. I can be reached via email, linkedIn, or github.",
-	emailBlurb: 'email:',
-	email: 'chelsea.angelena@gmail.com',
-};
 
 export default function ContactSection() {
 	return (
-		<div style={styles.view} className='ContactForm'>
-			<div style={styles.innerView} className='contactOverlay'>
-				<div style={styles.title}>{contact.title}</div>
-				<div style={styles.blurb}>{contact.blurb}</div>
-				<div style={styles.email}>{contact.emailBlurb}</div>
-				<div style={styles.email}>{contact.email}</div>
-
-				<ContactInfo />
-				<div style={styles.navBarIcons} className='nav' id='Footer'>
-					<Nav.Link
-						rel='noopener noreferrer'
-						href='https://www.linkedin.com/in/chelsea-a-brown'
-						active
-						style={styles.nav}
-						className='nav__iconLink'
-					>
-						<FontAwesomeIcon
-							style={styles.icon}
-							size='3x'
-							icon={['fab', 'linkedin-in']}
-							className='nav__icon'
-							id='iconID3'
-						/>
-					</Nav.Link>
-					<Nav.Link
-						href='https://github.com/chelsea-angelena'
-						style={styles.nav}
-						className='nav__iconLink'
-					>
-						<FontAwesomeIcon
-							className='nav__icon'
-							style={styles.icon}
-							size='3x'
-							icon={['fab', 'github']}
-							id='iconID2'
-						/>
-					</Nav.Link>
-					<Nav.Link
-						href='@mailto:chelsea.angelena@gmail.com'
-						style={styles.nav}
-						className='nav__iconLink'
-						id='iconID'
-					>
-						<FontAwesomeIcon
-							className='nav__icon'
-							style={styles.icon}
-							size='3x'
-							icon={['far', 'envelope']}
-						/>
-					</Nav.Link>
-				</div>
-			</div>
-		</div>
+		<Jumbotron
+			fluid
+			style={{
+				backgroundImage: `url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60')`,
+				backgroundRepeat: 'no-repeat',
+				backgroundSize: 'cover',
+				minHeight: 700,
+				display: 'flex',
+				flexDirection: 'column',
+				alignSelf: 'center',
+				alignItems: 'center',
+				justifyContent: 'center',
+			}}
+		>
+			<Container
+				fluid
+				mx='auto'
+				style={{
+					textAlign: 'center',
+				}}
+			>
+				<Container style={styles.innerView} className='contactOverlay'>
+					<div style={styles.title}>{contact.title}</div>
+					<div style={styles.blurb}>{contact.blurb}</div>
+					<div style={styles.email}>{contact.emailBlurb}</div>
+					<div style={styles.email}>{contact.email}</div>
+					<div style={styles.navBarIcons} className='nav' id='Footer'>
+						<Nav.Link
+							rel='noopener noreferrer'
+							href='https://www.linkedin.com/in/chelsea-a-brown'
+							active
+							style={styles.nav}
+							className='nav__iconLink'
+						>
+							<FontAwesomeIcon
+								style={styles.icon}
+								size='3x'
+								icon={['fab', 'linkedin-in']}
+								className='nav__icon'
+								id='iconID3'
+							/>
+						</Nav.Link>
+						<Nav.Link
+							href='https://github.com/chelsea-angelena'
+							style={styles.nav}
+							className='nav__iconLink'
+						>
+							<FontAwesomeIcon
+								className='nav__icon'
+								style={styles.icon}
+								size='3x'
+								icon={['fab', 'github']}
+								id='iconID2'
+							/>
+						</Nav.Link>
+						<Nav.Link
+							href='@mailto:chelsea.angelena@gmail.com'
+							style={styles.nav}
+							className='nav__iconLink'
+							id='iconID'
+						>
+							<FontAwesomeIcon
+								className='nav__icon'
+								style={styles.icon}
+								size='3x'
+								icon={['far', 'envelope']}
+							/>
+						</Nav.Link>
+					</div>
+				</Container>
+			</Container>
+		</Jumbotron>
 	);
 }
+
+// 		{/* <div style={styles.view} className='ContactForm'>
+
+// 					</div>
+// 				</Container>
+// 			</Container>
+// 		</div> */}
+// 	);
+// }
 
 const styles = {
 	view: {

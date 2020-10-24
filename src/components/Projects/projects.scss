@@ -1,0 +1,13 @@
+.projects__header {
+	align-self: center;
+	margin-top: 40px;
+	margin-bottom: 32px;
+}
+@media (min-width: 768px) {
+	.projects__card--ol {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-evenly;
+	}
+}

@@ -1,5 +1,45 @@
 @import '../../styles/fonts.scss';
-
+nav#Footer.nav {
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	justify-content: center;
+	max-width: 100%;
+	min-width: 320px;
+}
+div#Footer.nav {
+	display: flex;
+	flex-direction: row;
+	height: 100px;
+	justify-content: space-evenly;
+	max-width: 100%;
+	min-width: 320px;
+	align-self: center;
+	align-items: center;
+}
+.nav__iconLink {
+	color: white;
+	border-width: 2;
+	border-color: white;
+	border-style: solid;
+	border-radius: 6px;
+	margin-right: 24;
+	margin-left: 24;
+}
+.nav__icon {
+	display: 'inline-block';
+	margin-top: 24;
+	margin-bottom: 24;
+	flex-direction: 'row';
+	margin: 0 24px 0 24px 0;
+}
+a.nav__icon:hover {
+	color: hsl(195, 83%, 38%);
+}
+a.nav__icon:visited {
+	color: hsl(96, 5%, 81%);
+}
 .projects {
 	font-family: 'Montserrat';
 	font-weight: 300;
@@ -22,7 +62,13 @@
 
 	cursor: default;
 }
-
+#bg {
+	background-image: url('https:images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
+	background-size: cover;
+	background-repeat: no-repeat;
+	width: 100%;
+	background-position: center;
+}
 .header__text--div {
 	width: 100%;
 	display: flex;
@@ -95,18 +141,12 @@ h1.header__text {
 }
 .brand-icon-small {
 	text-shadow: black 0.1em 0.1em 0.2em;
-	min-width: 40px;
-	max-width: 40px;
-	min-height: 40px;
-	max-height: 40px;
-	padding: 5px;
-	margin: 24px;
+	width: 50px;
+	height: 50px;
+
 	border-radius: 6px;
 	outline: black 0.1em 0.1em 0.1em;
 	animation: fadeIn 4s;
-	margin-top: 32px;
-	margin-left: 32px;
-	margin-right: 32px;
 }
 .brand-icon:hover {
 	animation: backOutDown 3s;
@@ -140,6 +180,19 @@ h1.header__text {
 }
 
 @media screen and (min-width: 768px) {
+	div#Footer.nav {
+		display: flex;
+		flex-direction: row;
+		height: 100px;
+		justify-content: space-evenly;
+		max-width: 100%;
+		min-width: 768px;
+		align-self: center;
+		align-items: center;
+	}
+	.nav__iconLink {
+		height: 75;
+	}
 	.header__text--div {
 		justify-content: center;
 		width: '100%';

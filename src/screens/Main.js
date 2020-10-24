@@ -1,29 +1,26 @@
 import React from 'react';
 import About from '../components/about/about';
-import Portfolio from '../components/portfolio/portfolio';
-import NavBar from '../components/NavBar';
-import Intro from '../components/intro/intro';
+import IntroFile from '../components/intro/IntroFile';
 import ContactSection from './Contact';
-import ClassProjects from '../components/portfolio/ClassProjects';
+import ClassProjects from '../components/Projects/ClassProjects';
+import Projects from '../components/Projects/Projects';
 
 function Main() {
 	return (
-		// <div style={styles.div}>
 		<>
 			<div className='bg'>
 				<div className='main'>
-					<NavBar />
-					<Intro />
+					<IntroFile />
 				</div>
 			</div>
-			<div>
-				<div id='about'>
-					<About />
-				</div>
-				<div id='projects'>
-					<Portfolio />
-					<ClassProjects />
-				</div>
+			<div id='about'>
+				<About />
+			</div>
+			<div id='projects'>
+				<Projects />
+				<ClassProjects />
+			</div>
+			<div id='projects'>
 				<ContactSection />
 			</div>
 		</>

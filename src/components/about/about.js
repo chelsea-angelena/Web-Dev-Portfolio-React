@@ -3,61 +3,66 @@ import './about.scss';
 import { Link, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import bio from '../../assets/bio';
+import { Container, Lead, Display4 } from 'bootstrap-4-react';
 
 export default function About() {
 	return (
 		<div className='about' id='About' style={styles.background}>
-			<div styles={styles.aboutDiv}>
-				<div className='about__body'>
-					<div className='about__subHeader'>
-						<h3>{bio.header}</h3>
-					</div>
-					<div className='about__divider--2'></div>
-					<div>
-						<img
-							style={styles.profile}
-							alt='profile'
-							width='150px'
-							src={require('../../assets/profile.png')}
-						/>
-					</div>
+			<div className='about__body'>
+				<div className='about__subHeader'>
+					<Display4 style={styles.headerText}>{bio.header}</Display4>
+				</div>
+				<div className='about__divider--2'></div>
+				<div>
+					<img
+						style={styles.profile}
+						alt='profile'
+						width='150px'
+						src={require('../../assets/profile.png')}
+					/>
+				</div>
 
-					<div className='about__text'>
-						<p>{bio.intro}</p>
-						<p>{bio.intro0}</p>
-						<p>{bio.intro5}</p>
-						<p>{bio.intro1}</p>
-						<p>{bio.intro2}</p>
-						<p>{bio.intro3}</p>
+				<div className='about__text'>
+					<Container fluid>
+						<Lead style={styles.lead}>{bio.intro}</Lead>
+						<Lead style={styles.lead}>{bio.intro0}</Lead>
+						<Lead style={styles.lead}>{bio.intro1}</Lead>
+						<Lead style={styles.lead}>{bio.intro5}</Lead>
+						<Lead style={styles.lead}>{bio.intro4}</Lead>
+						<Lead style={styles.lead}>{bio.intro3}</Lead>
 						<div className='about__divider--2'></div>
 						<div className='about__stats'>
-							<h4>
-								<span className='stats__header'>Full Name:</span>
-								<span className='stats__text'>Chelsea Angelena Brown</span>
-							</h4>
-							<h4>
-								<span className='stats__header'>Location:</span>
-								<span className='stats__text'>
-									Victoria, British Columbia, Canada
-								</span>
-							</h4>
-							<h4>
-								<span className='stats__header'>Credentials:</span>
-								<span className='stats__text'>Web Development Diploma</span>
-							</h4>
-							<h4>
-								<span className='stats__header'>School: </span>
-								<span className='stats__text'>
-									BrainStation, Vancouver, B.C. 2020
-								</span>
-							</h4>
+							<Container fluid>
+								<Lead style={styles.lead}>
+									<span className='stats__header'>Full Name:</span>
+									<span className='stats__text'>Chelsea Angelena Brown</span>
+								</Lead>
+								<Lead style={styles.lead}>
+									<span className='stats__header'>Location:</span>
+									<span className='stats__text'>
+										Victoria, British Columbia, Canada
+									</span>
+								</Lead>
+								<Lead style={styles.lead}>
+									<span className='stats__header'>Credentials:</span>
+									<span className='stats__text'>Web Development Diploma</span>
+								</Lead>
+								<Lead style={styles.lead}>
+									<span className='stats__header'>School: </span>
+									<span className='stats__text'>
+										BrainStation, Vancouver, B.C. 2020
+									</span>
+								</Lead>
+							</Container>
 						</div>
 						<div className='about__divider--3'></div>
-						<p className='about__snippet'>
+
+						<Lead style={styles.lead} className='about__snippet'>
 							I am available to work! I'm also interested in collaborating on
-							cool projects. Feel free to email me, or get in touch using any of
-							the links below
-						</p>
+							projects. Feel free to email me, or get in touch using any of the
+							links below
+						</Lead>
+
 						<div className='about__divider--3'></div>
 						<div style={styles.nav} className='icon__div'>
 							<Route
@@ -69,9 +74,9 @@ export default function About() {
 							/>
 							<Link to='/linked' style={styles.nav}>
 								<FontAwesomeIcon
-									className='icon'
+									className='icon projects'
 									style={styles.icon}
-									size='3x'
+									size='5x'
 									icon={['fab', 'linkedin-in']}
 								/>
 							</Link>
@@ -83,9 +88,9 @@ export default function About() {
 							/>
 							<Link to='/github' style={styles.nav}>
 								<FontAwesomeIcon
-									className='icon'
+									className='icon projects'
 									style={styles.icon}
-									size='3x'
+									size='5x'
 									icon={['fab', 'github']}
 								/>
 							</Link>
@@ -97,14 +102,14 @@ export default function About() {
 							/>
 							<Link to='/myemail' style={styles.nav}>
 								<FontAwesomeIcon
-									className='icon'
+									className='icon projects'
 									style={styles.icon}
-									size='3x'
+									size='5x'
 									icon={['far', 'envelope']}
 								/>
 							</Link>
 						</div>
-					</div>
+					</Container>
 				</div>
 			</div>
 		</div>
@@ -118,6 +123,7 @@ const styles = {
 		borderColor: 'black',
 		padding: 4,
 		borderRadius: 6,
+		marginRight: 24,
 	},
 	nav: {
 		display: 'flex',
@@ -141,5 +147,14 @@ const styles = {
 		border: 'solid',
 		padding: 32,
 		margin: 32,
+	},
+	lead: {
+		fontFamily: 'Montserrat',
+		fontSize: 16,
+	},
+	headerText: {
+		fontFamily: 'Montserrat',
+		fontSize: 48,
+		maxWidth: '100%',
 	},
 };
