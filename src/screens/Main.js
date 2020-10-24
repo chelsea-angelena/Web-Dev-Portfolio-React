@@ -9,7 +9,7 @@ function Main() {
 	return (
 		<>
 			<div className='bg'>
-				<div className='main'>
+				<div>
 					<IntroFile />
 				</div>
 			</div>

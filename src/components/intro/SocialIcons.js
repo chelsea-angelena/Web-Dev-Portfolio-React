@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 export default function SocialIcons() {
 	return (
-		<Container style={styles.container}>
+		<Container fluid style={styles.container}>
 			<Nav.Link
 				rel='noopener noreferrer'
 				href='https://www.linkedin.com/in/chelsea-a-brown'
@@ -17,7 +17,7 @@ export default function SocialIcons() {
 					size='3x'
 					icon={['fab', 'linkedin-in']}
 					className='nav__icon projects'
-					id='iconID3'
+					// id='iconID3'
 				/>
 			</Nav.Link>
 			<Nav.Link
@@ -29,13 +29,13 @@ export default function SocialIcons() {
 					className='nav__icon projects'
 					size='3x'
 					icon={['fab', 'github']}
-					id='iconID2'
+					// id='iconID2'
 				/>
 			</Nav.Link>
 			<Nav.Link
 				href='@mailto:chelsea.angelena@gmail.com'
 				style={styles.nav}
-				id='iconID'
+				// id='iconID'
 			>
 				<FontAwesomeIcon
 					className='nav__icon projects'
@@ -63,7 +63,6 @@ const styles = {
 		marginTop: 40,
 		display: 'flex',
 		alignSelf: 'center',
-
 		maxWidth: '100%',
 		justifyContent: 'space-evenly',
 	},
