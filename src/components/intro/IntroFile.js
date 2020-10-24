@@ -1,18 +1,19 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './intro.scss';
 import '../../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import '../../styles/fonts.scss';
 import '../nav.scss';
 import Jumbotron from 'react-bootstrap/Jumbotron';
+import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import Button from 'react-bootstrap/Button';
-import Birds from './Birds';
 import { Display3, Display4, Lead } from 'bootstrap-4-react';
 import SocialIcons from './SocialIcons';
 import './intro.scss';
 import '../../styles/fonts.scss';
-import InternalLink from './InternalLink';
+import SiteNav from './InternalLink';
+import IconsRow from './IconsRow';
+import { Link } from 'react-scroll';
 
 const intro = {
 	title: 'Chelsea Angelena Brown',
@@ -21,14 +22,9 @@ const intro = {
 };
 
 export default function IntroFile() {
-	const [clicked, setClicked] = useState(false);
-
-	const onScreenPress = () => {
-		setClicked(!clicked);
-	};
-
 	return (
 		<Jumbotron
+			id='intro'
 			fluid
 			style={{
 				backgroundImage: `url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60')`,
@@ -42,9 +38,26 @@ export default function IntroFile() {
 				fontFamily: 'Montserrat',
 			}}
 		>
+			<Navbar
+				// className='navbar'
+				collapseOnSelect
+				expand='sm'
+				variant='light'
+				fixed='top'
+				style={styles.nav}
+			>
+				<Navbar.Brand fixed='top'>
+					<Link to='intro' spy={true} smooth='true'>
+						<FontAwesomeIcon
+							size='2x'
+							color='black'
+							icon={['fa', 'angle-up']}
+						/>
+					</Link>
+				</Navbar.Brand>
+			</Navbar>
 			<Container fluid style={{ textAlign: 'center', maxWidth: 800 }}>
 				<Display3 style={styles.title}>{intro.title}</Display3>
-				{clicked ? <Birds /> : null}
 
 				<Display4 style={styles.subtitle}> {intro.subtitle}</Display4>
 				<Lead>MOBILE APPLICATIONS • WEB DEVELOPMENT</Lead>
@@ -71,15 +84,9 @@ export default function IntroFile() {
 						/>
 					</p>
 				</div>
-				<InternalLink />
+				<SiteNav />
 				<SocialIcons />
-				<Button
-					onClick={onScreenPress}
-					variant='outline-dark'
-					style={{ marginTop: 32 }}
-				>
-					(click me)
-				</Button>
+				<IconsRow />
 			</Container>
 		</Jumbotron>
 	);

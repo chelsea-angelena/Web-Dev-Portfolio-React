@@ -6,7 +6,7 @@ import { Link } from 'react-scroll';
 import '../nav.scss';
 import Container from 'react-bootstrap/Container';
 
-export default function InternalLink() {
+export default function SiteNav() {
 	return (
 		<Container
 			fluid

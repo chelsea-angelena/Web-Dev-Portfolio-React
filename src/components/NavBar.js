@@ -22,10 +22,10 @@ export default function MyNavBar() {
 						Home
 					</Link>
 				</Navbar.Brand>
-				<Navbar.Toggle />
-				<Navbar.Collapse id='basic-navbar-nav'>
+				{/* <Navbar.Toggle />
+				<Navbar.Collapse id='basic-navbar-nav'> */}
 					{/* <Nav className='mr-auto'></Nav> */}
-					<Nav
+					{/* <Nav
 						// bg='dark'
 						style={{
 							display: 'flex',
@@ -35,8 +35,8 @@ export default function MyNavBar() {
 							// backgroundColor: 'hsl(10%, 10%, 0%)',
 							cursor: 'default',
 						}}
-					>
-						<Link
+					> */}
+						{/* <Link
 							bg='dark'
 							to='projects'
 							spy={true}
@@ -76,7 +76,7 @@ export default function MyNavBar() {
 							Resume
 						</Nav.Link>
 					</Nav>
-				</Navbar.Collapse>
+				</Navbar.Collapse> */}
 			</Navbar>
 		</Container>
 	);

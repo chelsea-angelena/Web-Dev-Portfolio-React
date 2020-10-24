@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/custom.scss';
 import About from '../components/about/about';
 import IntroFile from '../components/intro/IntroFile';
 import ContactSection from './Contact';
@@ -8,11 +9,8 @@ import Projects from '../components/Projects/Projects';
 function Main() {
 	return (
 		<>
-			<div className='bg'>
-				<div>
-					<IntroFile />
-				</div>
-			</div>
+			<IntroFile />
+
 			<div id='about'>
 				<About />
 			</div>
@@ -20,7 +18,7 @@ function Main() {
 				<Projects />
 				<ClassProjects />
 			</div>
-			<div id='projects'>
+			<div id='footer'>
 				<ContactSection />
 			</div>
 		</>

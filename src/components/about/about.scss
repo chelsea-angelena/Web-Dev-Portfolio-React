@@ -64,7 +64,7 @@ span.stats__text {
 		font-weight: 200;
 	}
 	&__stats {
-		padding: 24px;
+		padding: 24px 0px;
 		text-align: left;
 		align-self: flex-start;
 	}
@@ -79,36 +79,36 @@ div.about__border {
 }
 div.about__body {
 	background-color: 'white';
+	max-width: '100%';
+	padding: 0;
 }
 @media only screen and (min-width: 768px) {
-	.about {
-		background-color: #fafafa;
-		align-items: center;
-		justify-content: center;
-	}
 	h3 {
 		display: 'flex';
 		align-self: center;
 	}
-
-	.about__pic {
-		align-self: flex-start;
-		margin: 0;
-		position: relative;
-		padding: 0;
-	}
-
-	.about__stats {
-		display: flex;
-		flex-wrap: wrap;
-		align-items: center;
-		justify-content: space-between;
-	}
-	.about__divider--3 {
-		width: 700px;
-	}
 	div.about__body {
 		background-color: 'white';
+	}
+	.about {
+		background-color: #fafafa;
+		align-items: center;
+		justify-content: center;
+		&__pic {
+			align-self: flex-start;
+			margin: 0;
+			position: relative;
+			padding: 0;
+		}
+		&__stats {
+			display: flex;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: space-between;
+		}
+		&__divider--3 {
+			width: 700px;
+		}
 	}
 }
 @media (min-width: 1200px) {

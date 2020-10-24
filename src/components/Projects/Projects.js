@@ -20,7 +20,16 @@ export default function Projects() {
 			</Lead>
 			<CardGroup style={styles.list}>
 				{content.map((content) => (
-					<Card key={content.id} style={styles.card} className='projects'>
+					<Card
+						key={content.id}
+						style={styles.card}
+						className='projects'
+						shadow='true'
+						p='3'
+						mb='5'
+						bg='light'
+						rounded='true'
+					>
 						<Card.Img
 							variant='top'
 							style={styles.image}

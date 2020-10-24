@@ -1,4 +1,5 @@
 import React from 'react';
+
 import './about.scss';
 import { Link, Route } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -18,10 +19,9 @@ export default function About() {
 						style={styles.profile}
 						alt='profile'
 						width='150px'
-						src={require('../../assets/profile.png')}
+						src={require('../../assets/profile3.png')}
 					/>
 				</div>
-
 				<div className='about__text'>
 					<Container fluid>
 						<Lead style={styles.lead}>{bio.intro}</Lead>
@@ -47,7 +47,7 @@ export default function About() {
 									<span className='stats__header'>Credentials:</span>
 									<span className='stats__text'>Web Development Diploma</span>
 								</Lead>
-								<Lead style={styles.lead}>
+								<Lead style={styles.leadStats}>
 									<span className='stats__header'>School: </span>
 									<span className='stats__text'>
 										BrainStation, Vancouver, B.C. 2020
@@ -136,6 +136,7 @@ const styles = {
 	profile: {
 		borderRadius: 150,
 		marginTop: 32,
+		marginLeft: 24,
 	},
 	background: {
 		backgroundColor: 'white',
@@ -152,9 +153,24 @@ const styles = {
 		fontFamily: 'Montserrat',
 		fontSize: 16,
 	},
+	leadStats: {
+		fontFamily: 'Montserrat',
+		fontSize: 12,
+		textAlign: 'left',
+		justifyContent: 'flex-start',
+		alignItems: 'flex-start',
+		alignSelf: 'flex-start',
+	},
 	headerText: {
 		fontFamily: 'Montserrat',
-		fontSize: 48,
+		fontSize: 40,
 		maxWidth: '100%',
+		paddingLeft: 24,
+	},
+	homeButton: {
+		alignSelf: 'flex-end',
+		marginBottom: 24,
+		position: 'fixed',
+		zIndex: 3,
 	},
 };

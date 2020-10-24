@@ -48,7 +48,7 @@ export default function SocialIcons() {
 	);
 }
 const styles = {
-	nav: {},
+
 	icon: {
 		color: 'black',
 		borderWidth: 3,

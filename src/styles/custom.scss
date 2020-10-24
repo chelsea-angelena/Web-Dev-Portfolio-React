@@ -3,6 +3,7 @@
 :root {
 	box-sizing: border-box;
 	font-size: 16px;
+	min-width: 320px;
 	max-width: 100%;
 }
 
@@ -11,8 +12,6 @@ ul {
 	text-decoration: none;
 	list-style: none;
 }
-
-
 
 .projects:hover {
 	background-color: rgba(0, 0, 0, 0.5);
@@ -32,6 +31,6 @@ a {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 @import '../styles/fonts.scss';
-@import '../components/about/about.scss';
-@import '../components/intro/intro.scss';
+// @import '../components/about/about.scss';
+// @import '../components/intro/intro.scss';
 @import '~bootstrap/scss/bootstrap';

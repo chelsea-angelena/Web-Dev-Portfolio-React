@@ -20,6 +20,7 @@ import {
 	faDatabase,
 	faCodeBranch,
 	faCode,
+	faAngleUp,
 	faAngleDown,
 } from '@fortawesome/free-solid-svg-icons';
 
@@ -45,5 +46,6 @@ library.add(
 	faAppStore,
 	faAndroid,
 	faHtml5,
-	faCode
+	faCode,
+	faAngleUp
 );
