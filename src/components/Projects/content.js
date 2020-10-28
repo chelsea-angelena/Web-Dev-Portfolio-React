@@ -6,7 +6,7 @@ const content = [
 		image: require('../../assets/saturday.png'),
 		title: 'Saturday Market',
 		text:
-			'		This is a mobile application built with React-Native. It is a social application and virtual market place for selling handcrafted goods and art. Currently it has been built for ios, and will be released on an Apple Test Flight in the next few days. The Android version will be coming soon, as well as new features such as in app messaging.',
+			'		Mobile application built with React-Native and firebase. This is a social application and virtual market place for selling handcrafted goods and art. This application is built to be multi-platform, including ios, android and web. The Firebase SDK provides user authentication and date persistence for this app.',
 		link: 'https://github.com/chelsea-angelena/Expo-SaturdayMarket',
 		linkName: '/SaturdayMarket',
 		demolink: 'https://chelsea-angelena.github.io/',
@@ -19,8 +19,8 @@ const content = [
 		image: require('../../assets/simulatorshot.png'),
 		title: 'OMDB Movie App',
 		text:
-			'A movie search app, built with React-Native and the open movie database API. Search for your favorite movies and save the list to reference later',
-		link: 'https://github.com/chelsea-angelena/react-native-omdb',
+			'A movie search app. Search for your favorite movies and save the list to reference later. This app uses React-Native and Expo for the client side, as well as the Firebase SDK for user Authentication and data persistence, and also has a Node.js/Express.js server for interacting with the Open-Movie-DataBase.',
+		link: 'https://github.com/chelsea-angelena/movie-app',
 		linkName: '/react-native-omdb',
 		demolink: 'https://chelsea-angelena.github.io',
 		demolinkName: '/demo2',

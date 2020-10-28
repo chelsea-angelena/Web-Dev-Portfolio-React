@@ -1,10 +1,9 @@
 import React from 'react';
-
 import './about.scss';
-import { Link, Route } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
 import bio from '../../assets/bio';
 import { Container, Lead, Display4 } from 'bootstrap-4-react';
+import SocialIcons from '../intro/SocialIcons.js';
 
 export default function About() {
 	return (
@@ -65,49 +64,7 @@ export default function About() {
 
 						<div className='about__divider--3'></div>
 						<div style={styles.nav} className='icon__div'>
-							<Route
-								path='linked'
-								component={() => {
-									window.location.href =
-										'https://www.linkedin.com/in/chelsea-a-brown';
-								}}
-							/>
-							<Link to='/linked' style={styles.nav}>
-								<FontAwesomeIcon
-									className='icon projects'
-									style={styles.icon}
-									size='5x'
-									icon={['fab', 'linkedin-in']}
-								/>
-							</Link>
-							<Route
-								path='/github'
-								component={() => {
-									window.location.href = 'https://github.com/chelsea-angelena';
-								}}
-							/>
-							<Link to='/github' style={styles.nav}>
-								<FontAwesomeIcon
-									className='icon projects'
-									style={styles.icon}
-									size='5x'
-									icon={['fab', 'github']}
-								/>
-							</Link>
-							<Route
-								path='/myemail'
-								component={() => {
-									window.location.href = '@mailto:chelsea.angelena@gmail.com';
-								}}
-							/>
-							<Link to='/myemail' style={styles.nav}>
-								<FontAwesomeIcon
-									className='icon projects'
-									style={styles.icon}
-									size='5x'
-									icon={['far', 'envelope']}
-								/>
-							</Link>
+							<SocialIcons />
 						</div>
 					</Container>
 				</div>

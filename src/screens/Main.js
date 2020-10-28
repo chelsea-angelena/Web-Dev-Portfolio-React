@@ -3,7 +3,6 @@ import '../styles/custom.scss';
 import About from '../components/about/about';
 import IntroFile from '../components/intro/IntroFile';
 import ContactSection from './Contact';
-import ClassProjects from '../components/Projects/ClassProjects';
 import Projects from '../components/Projects/Projects';
 
 function Main() {
@@ -16,7 +15,6 @@ function Main() {
 			</div>
 			<div id='projects'>
 				<Projects />
-				<ClassProjects />
 			</div>
 			<div id='footer'>
 				<ContactSection />

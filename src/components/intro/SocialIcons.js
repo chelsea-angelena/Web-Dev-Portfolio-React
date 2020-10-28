@@ -5,7 +5,7 @@ import Container from 'react-bootstrap/Container';
 
 export default function SocialIcons() {
 	return (
-		<Container fluid style={styles.container}>
+		<Container style={styles.container}>
 			<Nav.Link
 				rel='noopener noreferrer'
 				href='https://www.linkedin.com/in/chelsea-a-brown'
@@ -48,22 +48,25 @@ export default function SocialIcons() {
 	);
 }
 const styles = {
-
 	icon: {
 		color: 'black',
 		borderWidth: 3,
 		borderRadius: 6,
 		borderColor: 'black',
 		borderStyle: 'solid',
-		width: 75,
-		height: 75,
-		padding: 8,
+		width: 50,
+		height: 50,
+		padding: 4,
+
+		// marginBottom: 80,
 	},
 	container: {
-		marginTop: 40,
+		// marginBottom: 40,
+		alignItems: 'center',
 		display: 'flex',
+		flexDirection: 'row',
 		alignSelf: 'center',
 		maxWidth: '100%',
-		justifyContent: 'space-evenly',
+		justifyContent: 'center',
 	},
 };

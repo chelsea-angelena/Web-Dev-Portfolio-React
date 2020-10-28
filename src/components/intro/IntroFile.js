@@ -12,7 +12,6 @@ import SocialIcons from './SocialIcons';
 import './intro.scss';
 import '../../styles/fonts.scss';
 import SiteNav from './InternalLink';
-import IconsRow from './IconsRow';
 import { Link } from 'react-scroll';
 
 const intro = {
@@ -56,11 +55,16 @@ export default function IntroFile() {
 					</Link>
 				</Navbar.Brand>
 			</Navbar>
-			<Container fluid style={{ textAlign: 'center', maxWidth: 800 }}>
+			<Container
+				fluid
+				style={{ textAlign: 'center', maxWidth: 800, marginTop: 88 }}
+			>
 				<Display3 style={styles.title}>{intro.title}</Display3>
 
 				<Display4 style={styles.subtitle}> {intro.subtitle}</Display4>
-				<Lead>MOBILE APPLICATIONS • WEB DEVELOPMENT</Lead>
+				<Lead style={{ fontSize: 18 }}>
+					MOBILE APPLICATIONS • WEB DEVELOPMENT
+				</Lead>
 				<div className='tech__icons'>
 					<p>
 						<FontAwesomeIcon
@@ -85,16 +89,23 @@ export default function IntroFile() {
 					</p>
 				</div>
 				<SiteNav />
+
+				{/* <IconsRow /> */}
 				<SocialIcons />
-				<IconsRow />
 			</Container>
 		</Jumbotron>
 	);
 }
 const styles = {
-	title: { fontFamily: 'Oleo Script', fontWeight: '', fontSize: 64 },
+	title: {
+		fontFamily: 'Montserrat',
+		fontWeight: 'bold',
+		fontSize: 54,
+		marginTop: 24,
+		marginBottom: 32,
+	},
 	subtitle: {
 		fontFamily: 'Montserrat',
-		fontSize: 40,
+		fontSize: 32,
 	},
 };

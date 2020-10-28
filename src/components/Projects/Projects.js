@@ -12,7 +12,7 @@ export default function Projects() {
 	return (
 		<Container style={styles.projects} id='projects' fluid>
 			<h2 style={styles.header} className='projects__header'>
-				React-Native Projects
+				Projects
 			</h2>
 			<Lead style={styles.lead}>
 				These are the projects that I have built since gradutation using
