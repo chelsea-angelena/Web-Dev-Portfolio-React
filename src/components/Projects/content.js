@@ -25,7 +25,7 @@ const content = [
 		projectLink:
 			'https://expo.io/@angelena/projects/movie-search-app?release-channel=prod-v2',
 		projectLinkName: '/expo-movie-app',
-		link: 'https://github.com/chelsea-angelena/movie-app',
+		link: 'https://github.com/chelsea-angelena/expo-movie-app',
 		linkName: '/react-native-omdb',
 		demolink: '/movieAppDemo',
 		demolinkName: '/Movie',
