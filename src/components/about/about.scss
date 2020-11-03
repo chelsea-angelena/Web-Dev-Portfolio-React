@@ -13,6 +13,8 @@ span.stats__text {
 
 .about {
 	background-color: #fafafa;
+	// background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 132px;
 	border: 2px solid black;
 	box-sizing: border-box;
 	max-width: 100%;
@@ -23,19 +25,12 @@ span.stats__text {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	&__border--3 {
-		border: 2px solid #827717;
-		margin: 72px 72px 72px 72px;
-	}
-	&__pic--div {
-		margin-top: 72px;
-		align-self: center;
-	}
 	&__body {
 		display: flex;
 		flex-direction: column;
 		padding: 24px;
 		max-width: '100%';
+		background-color: rgba(0, 0, 0, 0.5);
 	}
 	&__divider {
 		border-bottom: 2px solid grey;
@@ -78,7 +73,7 @@ div.about__border {
 	max-width: '100%';
 }
 div.about__body {
-	background-color: 'white';
+	background-color: white;
 	max-width: '100%';
 	padding: 0;
 }
@@ -88,10 +83,10 @@ div.about__body {
 		align-self: center;
 	}
 	div.about__body {
-		background-color: 'white';
+		background-color: white;
 	}
 	.about {
-		background-color: #fafafa;
+		background-color: rgba(0, 0, 0, 0.5);
 		align-items: center;
 		justify-content: center;
 		&__pic {
@@ -114,5 +109,7 @@ div.about__body {
 @media (min-width: 1200px) {
 	.about {
 		padding: 0px 120px 0px 120px;
+		margin: 64px 180px;
+		// margin-top: 132px;
 	}
 }

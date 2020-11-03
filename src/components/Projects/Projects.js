@@ -6,7 +6,7 @@ import Card from 'react-bootstrap/Card';
 import CardGroup from 'react-bootstrap/CardGroup';
 import content from './content';
 import { Link, Route } from 'react-router-dom';
-import { Container, Lead } from 'bootstrap-4-react';
+import { Lead, Container } from 'bootstrap-4-react';
 
 export default function Projects() {
 	return (
@@ -15,7 +15,7 @@ export default function Projects() {
 				Projects
 			</h2>
 			<Lead style={styles.lead}>
-				These are the projects that I have built since gradutation using
+				These are the projects that I have built since graduation using
 				React-Native and Expo.
 			</Lead>
 			<CardGroup style={styles.list}>
@@ -44,6 +44,21 @@ export default function Projects() {
 						</Card.Body>
 						<Card.Footer className='text-muted' style={{ width: '100%' }}>
 							<Route
+								path={content.projectLinkName}
+								component={() => {
+									window.location.href = content.projectLink;
+								}}
+							/>
+							<Link to={content.projectLinkName} target='_blank'>
+								<FontAwesomeIcon
+									size='2x'
+									icon={['fa', 'link']}
+									color='black'
+								/>
+							</Link>
+						</Card.Footer>
+						<Card.Footer className='text-muted' style={{ width: '100%' }}>
+							<Route
 								path={content.demolinkName}
 								component={() => {
 									window.location.href = content.demolink;
@@ -54,7 +69,11 @@ export default function Projects() {
 								style={{ color: 'black' }}
 								target='_blank'
 							>
-								Demo
+								<FontAwesomeIcon
+									size='2x'
+									icon={['fa', 'images']}
+									color='black'
+								/>
 							</Link>
 						</Card.Footer>
 						<Card.Footer className='text-muted' style={{ width: '100%' }}>

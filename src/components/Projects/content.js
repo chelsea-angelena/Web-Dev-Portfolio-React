@@ -7,6 +7,8 @@ const content = [
 		title: 'Saturday Market',
 		text:
 			'		Mobile application built with React-Native and firebase. This is a social application and virtual market place for selling handcrafted goods and art. This application is built to be multi-platform, including ios, android and web. The Firebase SDK provides user authentication and date persistence for this app.',
+		projectLink: 'https://chelsea-angelena.github.io/',
+		projectLinkName: '/expo-app-1',
 		link: 'https://github.com/chelsea-angelena/Expo-SaturdayMarket',
 		linkName: '/SaturdayMarket',
 		demolink: 'https://chelsea-angelena.github.io/',
@@ -16,16 +18,18 @@ const content = [
 		id: 2,
 		tech: 'React-Native',
 		tech2: 'OMDB API',
-		image: require('../../assets/simulatorshot.png'),
-		title: 'OMDB Movie App',
+		image: require('../../assets/MovieAppLogo.png'),
+		title: 'The Movie App',
 		text:
-			'A movie search app. Search for your favorite movies and save the list to reference later. This app uses React-Native and Expo for the client side, as well as the Firebase SDK for user Authentication and data persistence, and also has a Node.js/Express.js server for interacting with the Open-Movie-DataBase.',
+			'A movie search app. Search for your favorite movies and save the list to reference later. This app uses React-Native and Expo for the client side, as well as the Firebase SDK for user Authentication and Firestore as the database. There is also has a Node.js/Express.js server for interacting with the Open-Movie-DataBase.',
+		projectLink:
+			'https://expo.io/@angelena/projects/movie-search-app?release-channel=prod-v2',
+		projectLinkName: '/expo-movie-app',
 		link: 'https://github.com/chelsea-angelena/movie-app',
 		linkName: '/react-native-omdb',
-		demolink: 'https://chelsea-angelena.github.io',
-		demolinkName: '/demo2',
+		demolink: '/movieAppDemo',
+		demolinkName: '/Movie',
 	},
-
 	{
 		id: 3,
 		tech: 'React-Native',
@@ -34,6 +38,8 @@ const content = [
 		title: 'Good Eats',
 		text:
 			'Mobile App, built with React-Native. Search for  nearby restaurants by the type of cuisine, or business name. The app will automatically use location, only after explicit permission has been granted by the user, so all search results are local. Find the hours, location, ratings and price range of restuarants near you.',
+		projectLink: 'https://chelsea-angelena.github.io/',
+		projectLinkName: '/expo-app-2',
 		link:
 			'https://github.com/chelsea-angelena/react-native-local-restaurant-search',
 		linkName: '/goodEats',

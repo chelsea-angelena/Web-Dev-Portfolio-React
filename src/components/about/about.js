@@ -92,8 +92,8 @@ const styles = {
 	},
 	profile: {
 		borderRadius: 150,
-		marginTop: 32,
-		marginLeft: 24,
+		// marginTop: 32,
+		// marginLeft: 24,
 	},
 	background: {
 		backgroundColor: 'white',
@@ -103,8 +103,8 @@ const styles = {
 		borderColor: 'black',
 		borderWidth: 2,
 		border: 'solid',
-		padding: 32,
-		margin: 32,
+		// padding: 32,
+		// margin: 32,
 	},
 	lead: {
 		fontFamily: 'Montserrat',

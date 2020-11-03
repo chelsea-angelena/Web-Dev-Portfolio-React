@@ -1,17 +1,20 @@
 const styles = {
 	projects: {
-		paddingTop: 32,
-		paddingBottom: 32,
+		
+
 		fontFamily: 'Montserrat',
-		backgroundColor: '#FFECB3',
+		marginTop: 64,
+		paddingBottom: 64,
+
 		display: 'flex',
 		flexDirection: 'column',
-		maxWidth: '100%',
 		justifyContent: 'center',
 		textAlign: 'center',
 		alignSelf: 'center',
 		alignItems: 'center',
-		backgroundImage: `url('https://images.unsplash.com/photo-1487147264018-f937fba0c817?ixlib=rb-1.2.1&auto=format&fit=crop&w=934&q=80')`,
+		borderWidth: 2,
+		borderColor: 'black',
+		borderStyle: 'solid',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
 	},
@@ -37,13 +40,13 @@ const styles = {
 	},
 	card: {
 		alignSelf: 'center',
-		minWidth: '18rem',
-		maxWidth: '23rem',
+		minWidth: '17rem',
+		maxWidth: '22rem',
 		marginTop: 24,
 		display: 'flex',
 		alignItems: 'center',
 		flexDirection: 'column',
-		height: 800,
+		height: 900,
 		marginRight: 24,
 		marginLeft: 24,
 		borderColor: 'grey',
@@ -57,7 +60,6 @@ const styles = {
 		},
 		shadowOpacity: 0.55,
 		shadowRadius: 14.78,
-
 		elevation: 22,
 	},
 	text: {
@@ -65,9 +67,10 @@ const styles = {
 		fontWeight: 200,
 		cursor: 'default',
 		color: '#263238',
+		fontSize: 18,
 	},
 	title: {
-		fontSize: 28,
+		fontSize: 26,
 		fontWeight: 'bold',
 		color: '#263238',
 		borderBottomColor: 'grey',
@@ -80,25 +83,11 @@ const styles = {
 		padding: 0,
 		margin: 0,
 	},
-	// row: {
-	// 	display: 'flex',
-	// 	justifyContent: 'center',
-	// 	flexDirection: 'row',
-	// },
 	lead: {
 		paddingLeft: 32,
 		paddingRight: 32,
 		textAlign: 'center',
 	},
-	// list: {
-	// 	display: 'flex',
-	// 	flexWrap: 'wrap',
-	// 	maxWidth: '95%',
-	// 	margin: 0,
-	// 	padding: 0,
-	// 	alignSelf: 'center',
-	// 	justifyContent: 'space-evenly',
-	// },
 	header: {
 		fontFamily: 'Montserrat',
 		fontWeight: 'bold',
