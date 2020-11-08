@@ -6,13 +6,13 @@ const content = [
 		image: require('../../assets/saturday.png'),
 		title: 'Saturday Market',
 		text:
-			'		Mobile application built with React-Native and firebase. This is a social application and virtual market place for selling handcrafted goods and art. This application is built to be multi-platform, including ios, android and web. The Firebase SDK provides user authentication and date persistence for this app.',
-		projectLink: 'https://chelsea-angelena.github.io/',
+			'Mobile application built with React-Native and firebase. This is a social application and virtual market place for selling handcrafted goods and art. This application is built to be multi-platform, including ios, android and web. The Firebase SDK provides user authentication and date persistence for this app.',
+		projectLink: 'https://expo.io/@angelena/projects/saturdaymarket',
 		projectLinkName: '/expo-app-1',
 		link: 'https://github.com/chelsea-angelena/Expo-SaturdayMarket',
 		linkName: '/SaturdayMarket',
-		demolink: 'https://chelsea-angelena.github.io/',
-		demolinkName: '/demo1',
+		demolink: '/MarketDemo',
+		demolinkName: '/MarketDemo',
 	},
 	{
 		id: 2,
@@ -22,8 +22,7 @@ const content = [
 		title: 'The Movie App',
 		text:
 			'A movie search app. Search for your favorite movies and save the list to reference later. This app uses React-Native and Expo for the client side, as well as the Firebase SDK for user Authentication and Firestore as the database. There is also has a Node.js/Express.js server for interacting with the Open-Movie-DataBase.',
-		projectLink:
-			'https://expo.io/@angelena/projects/movie-search-app?release-channel=prod-v2',
+		projectLink: 'https://expo.io/@angelena/projects/movie-search-app',
 		projectLinkName: '/expo-movie-app',
 		link: 'https://github.com/chelsea-angelena/expo-movie-app',
 		linkName: '/react-native-omdb',

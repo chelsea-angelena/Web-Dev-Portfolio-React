@@ -22,61 +22,6 @@ export default function MyNavBar() {
 						Home
 					</Link>
 				</Navbar.Brand>
-				{/* <Navbar.Toggle />
-				<Navbar.Collapse id='basic-navbar-nav'> */}
-					{/* <Nav className='mr-auto'></Nav> */}
-					{/* <Nav
-						// bg='dark'
-						style={{
-							display: 'flex',
-							listStyle: 'none',
-							justifyContent: 'space-around',
-							maxWidth: '100%',
-							// backgroundColor: 'hsl(10%, 10%, 0%)',
-							cursor: 'default',
-						}}
-					> */}
-						{/* <Link
-							bg='dark'
-							to='projects'
-							spy={true}
-							smooth='true'
-							className='nav-link draw'
-							style={{ color: 'black', backgroundColor: 'hsl(10%, 10%, 0%)' }}
-						>
-							Projects
-						</Link>
-
-						<Link
-							to='About'
-							spy={true}
-							smooth='true'
-							className='nav-link draw'
-							style={{ color: 'black' }}
-						>
-							About
-						</Link>
-
-						<Link
-							className='draw nav-link'
-							to='Footer'
-							spy={true}
-							smooth='true'
-							style={{ color: 'black' }}
-						>
-							Contact
-						</Link>
-						<Nav.Link
-							className='nav-link draw'
-							eventKey={2}
-							to='/resume'
-							href='/resume'
-							style={{ color: 'black' }}
-						>
-							Resume
-						</Nav.Link>
-					</Nav>
-				</Navbar.Collapse> */}
 			</Navbar>
 		</Container>
 	);

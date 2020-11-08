@@ -49,7 +49,7 @@ export default function Projects() {
 									window.location.href = content.projectLink;
 								}}
 							/>
-							<Link to={content.projectLinkName} target='_blank'>
+							<Link to={content.projectLinkName}>
 								<FontAwesomeIcon
 									size='2x'
 									icon={['fa', 'link']}
@@ -64,11 +64,7 @@ export default function Projects() {
 									window.location.href = content.demolink;
 								}}
 							/>
-							<Link
-								to={content.demolinkName}
-								style={{ color: 'black' }}
-								target='_blank'
-							>
+							<Link to={content.demolinkName} style={{ color: 'black' }}>
 								<FontAwesomeIcon
 									size='2x'
 									icon={['fa', 'images']}
@@ -83,7 +79,7 @@ export default function Projects() {
 									window.location.href = content.link;
 								}}
 							/>
-							<Link to={content.linkName} target='_blank'>
+							<Link to={content.linkName}>
 								<FontAwesomeIcon
 									size='2x'
 									icon={['fa', 'code']}

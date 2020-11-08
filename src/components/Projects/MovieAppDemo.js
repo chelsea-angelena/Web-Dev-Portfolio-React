@@ -5,10 +5,9 @@ import { Display4, Lead } from 'bootstrap-4-react';
 const text = {
 	title: 'Movie Search App',
 	lead:
-		'This app was built using React-Native/Expo, the Open Movie Database, Node.js/Express.js, and Firebase. The Node server communicates with the Open-Movie-Database, and Firebase/Firestore authenticates users and stores saved user data. In an effort to learn react hooks, this has been built using only hooks and functional components. This app runs on iOS, Android, and in the browser, though it is best suited for mobile. Currently it is published through Expo. You can check it out at the link below. To scan the QR code and access the app you will need to have the Expo-App installed on your mobile device (this is free, just search expo in the Google-Play store or AppStore). Otherwise you can use an Android simulator in the broswer directly from the page.',
+		'This app was built using React-Native/Expo, the Open Movie Database, Node.js/Express.js, and Firebase. The Node server communicates with the Open-Movie-Database, and Firebase/Firestore authenticates users and stores saved user data. In an effort to learn react hooks, this has been built using only hooks and functional components. This app runs on iOS, Android, and in the browser, though it is best suited for mobile. Currently it is published through Expo. You can check it out at the link below. To scan the QR code and access the app you will need to have the Expo-App installed on your mobile device (this is free, just search expo in the Google-Play store or AppStore). Otherwise you can use an Android simulator in the browser directly from the page.',
 	linkName: '/Movie-App',
-	link:
-		'https://expo.io/@angelena/projects/movie-search-app?release-channel=prod-v2',
+	link: 'https://expo.io/@angelena/projects/movie-search-app',
 };
 
 export default function MovieAppDemo() {
