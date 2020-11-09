@@ -4,17 +4,15 @@ import { Nav } from 'bootstrap-4-react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contact from './contactData';
 import { Jumbotron, Container } from 'bootstrap-4-react';
-import '../components/footer/footer.scss';
 
 export default function ContactSection() {
 	return (
 		<Jumbotron
 			fluid
 			style={{
-				backgroundImage: `url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60')`,
+				backgroundImage: `url('https://images.unsplash.com/photo-1499946981954-e7f4b234d7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')`,
 				backgroundRepeat: 'no-repeat',
 				backgroundSize: 'cover',
-				minHeight: 700,
 				display: 'flex',
 				flexDirection: 'column',
 				alignSelf: 'center',
@@ -22,75 +20,65 @@ export default function ContactSection() {
 				justifyContent: 'center',
 			}}
 		>
-			<Container
+			{/* <Container
 				fluid
 				mx='auto'
 				style={{
 					textAlign: 'center',
 				}}
-			>
-				<Container style={styles.innerView} className='contactOverlay'>
-					<div style={styles.title}>{contact.title}</div>
-					<div style={styles.blurb}>{contact.blurb}</div>
-					<div style={styles.email}>{contact.emailBlurb}</div>
-					<div style={styles.email}>{contact.email}</div>
-					<div style={styles.navBarIcons} className='nav' id='Footer'>
-						<Nav.Link
-							rel='noopener noreferrer'
-							href='https://www.linkedin.com/in/chelsea-a-brown'
-							active
-							style={styles.nav}
-							className='nav__iconLink'
-						>
-							<FontAwesomeIcon
-								style={styles.icon}
-								size='3x'
-								icon={['fab', 'linkedin-in']}
-								className='nav__icon'
-								id='iconID3'
-							/>
-						</Nav.Link>
-						<Nav.Link
-							href='https://github.com/chelsea-angelena'
-							style={styles.nav}
-							className='nav__iconLink'
-						>
-							<FontAwesomeIcon
-								className='nav__icon'
-								style={styles.icon}
-								size='3x'
-								icon={['fab', 'github']}
-								id='iconID2'
-							/>
-						</Nav.Link>
-						<Nav.Link
-							href='@mailto:chelsea.angelena@gmail.com'
-							style={styles.nav}
-							className='nav__iconLink'
-							id='iconID'
-						>
-							<FontAwesomeIcon
-								className='nav__icon'
-								style={styles.icon}
-								size='3x'
-								icon={['far', 'envelope']}
-							/>
-						</Nav.Link>
-					</div>
-				</Container>
+			> */}
+			<Container style={styles.innerView} id='contactOverlay'>
+				<div style={styles.title}>{contact.title}</div>
+				<div style={styles.blurb}>{contact.blurb}</div>
+				<div style={styles.email}>{contact.emailBlurb}</div>
+				<div style={styles.email}>{contact.email}</div>
+				<div style={styles.navBarIcons} className='nav' id='Footer'>
+					<Nav.Link
+						rel='noopener noreferrer'
+						href='https://www.linkedin.com/in/chelsea-a-brown'
+						active
+						style={styles.nav}
+						className='nav__iconLink'
+					>
+						<FontAwesomeIcon
+							style={styles.icon}
+							size='3x'
+							icon={['fab', 'linkedin-in']}
+							className='nav__icon'
+							id='iconID3'
+						/>
+					</Nav.Link>
+					<Nav.Link
+						href='https://github.com/chelsea-angelena'
+						style={styles.nav}
+						className='nav__iconLink'
+					>
+						<FontAwesomeIcon
+							className='nav__icon'
+							style={styles.icon}
+							size='3x'
+							icon={['fab', 'github']}
+							id='iconID2'
+						/>
+					</Nav.Link>
+					<Nav.Link
+						href='@mailto:chelsea.angelena@gmail.com'
+						style={styles.nav}
+						className='nav__iconLink'
+						id='iconID'
+					>
+						<FontAwesomeIcon
+							className='nav__icon'
+							style={styles.icon}
+							size='3x'
+							icon={['far', 'envelope']}
+						/>
+					</Nav.Link>
+				</div>
 			</Container>
 		</Jumbotron>
 	);
 }
-
-// 		{/* <div style={styles.view} className='ContactForm'>
-
-// 					</div>
-// 				</Container>
-// 			</Container>
-// 		</div> */}
-// 	);
-// }
 
 const styles = {
 	view: {
@@ -107,9 +95,11 @@ const styles = {
 		paddingBottom: 64,
 	},
 	innerView: {
-		width: '95%',
-		paddingTop: 32,
-		paddingBottom: 32,
+		width: '100%',
+		height: '100%',
+		backgroundColor: 'rgba(0,0,0,.4)',
+		paddingTop: 64,
+		paddingBottom: 64,
 		display: 'flex',
 		alignSelf: 'center',
 		alignItems: 'center',
@@ -136,6 +126,7 @@ const styles = {
 		fontSize: 18,
 		paddingBottom: 32,
 	},
+	icon: { width: 35 },
 	email: {
 		fontFamily: 'Montserrat',
 		color: 'white',

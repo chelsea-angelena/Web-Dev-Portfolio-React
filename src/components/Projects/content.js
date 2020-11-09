@@ -3,7 +3,7 @@ const content = [
 		id: 1,
 		tech: 'React-Native',
 		tech2: '../../assets/logo-logomark.png',
-		image: require('../../assets/saturday.png'),
+		image: require('../../assets/saturdaymarket-logo.png'),
 		title: 'Saturday Market',
 		text:
 			'Mobile application built with React-Native and firebase. This is a social application and virtual market place for selling handcrafted goods and art. This application is built to be multi-platform, including ios, android and web. The Firebase SDK provides user authentication and date persistence for this app.',
@@ -18,7 +18,7 @@ const content = [
 		id: 2,
 		tech: 'React-Native',
 		tech2: 'OMDB API',
-		image: require('../../assets/MovieAppLogo.png'),
+		image: require('../../assets/movie-app-logo.png'),
 		title: 'The Movie App',
 		text:
 			'A movie search app. Search for your favorite movies and save the list to reference later. This app uses React-Native and Expo for the client side, as well as the Firebase SDK for user Authentication and Firestore as the database. There is also has a Node.js/Express.js server for interacting with the Open-Movie-DataBase.',

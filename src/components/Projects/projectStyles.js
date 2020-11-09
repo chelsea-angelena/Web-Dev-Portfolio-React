@@ -1,11 +1,14 @@
 const styles = {
 	projects: {
-		
-
+		backgroundColor: 'hsl(201, 43%, 45%)',
+		padding: 0,
+		margin: 0,
+	},
+	projectsOverlay: {
 		fontFamily: 'Montserrat',
 		marginTop: 64,
+		marginBottom: 64,
 		paddingBottom: 64,
-
 		display: 'flex',
 		flexDirection: 'column',
 		justifyContent: 'center',
@@ -17,6 +20,7 @@ const styles = {
 		borderStyle: 'solid',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
+		backgroundColor: 'rgba(0,0,0,.5)',
 	},
 	projectsClass: {
 		paddingTop: 32,
@@ -40,13 +44,13 @@ const styles = {
 	},
 	card: {
 		alignSelf: 'center',
-		minWidth: '17rem',
+		minWidth: '16rem',
 		maxWidth: '22rem',
 		marginTop: 24,
 		display: 'flex',
 		alignItems: 'center',
 		flexDirection: 'column',
-		height: 900,
+		height: 700,
 		marginRight: 24,
 		marginLeft: 24,
 		borderColor: 'grey',
@@ -67,19 +71,20 @@ const styles = {
 		fontWeight: 200,
 		cursor: 'default',
 		color: '#263238',
-		fontSize: 18,
+		fontSize: 16,
 	},
 	title: {
-		fontSize: 26,
-		fontWeight: 'bold',
+		fontSize: 28,
+		fontWeight: 'medium',
+		paddingBottom: 16,
 		color: '#263238',
-		borderBottomColor: 'grey',
+		borderBottomColor: 'white',
 		borderBottomWidth: 1,
 		borderBottomStyle: 'solid',
 	},
 	image: {
-		height: 300,
-		maxWidth: '100%',
+		maxheight: 250,
+		maxWidth: 375,
 		padding: 0,
 		margin: 0,
 	},
@@ -87,11 +92,13 @@ const styles = {
 		paddingLeft: 32,
 		paddingRight: 32,
 		textAlign: 'center',
+		color: 'white',
 	},
 	header: {
 		fontFamily: 'Montserrat',
 		fontWeight: 'bold',
-		fontSize: 40,
+		fontSize: 32,
+		color: 'white',
 	},
 };
 

@@ -9,7 +9,6 @@ function Main() {
 	return (
 		<>
 			<IntroFile />
-
 			<div id='about'>
 				<About />
 			</div>

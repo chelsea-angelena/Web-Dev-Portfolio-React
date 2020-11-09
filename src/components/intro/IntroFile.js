@@ -22,90 +22,81 @@ const intro = {
 
 export default function IntroFile() {
 	return (
-		<Jumbotron
-			id='intro'
-			fluid
-			style={{
-				backgroundImage: `url('https://images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60')`,
-				backgroundRepeat: 'no-repeat',
-				backgroundSize: 'cover',
-				minHeight: 1000,
-				flexDirection: 'column',
-				alignSelf: 'center',
-				alignItems: 'center',
-				justifyContent: 'center',
-				fontFamily: 'Montserrat',
-			}}
-		>
-			<Navbar
-				// className='navbar'
-				collapseOnSelect
-				expand='sm'
-				variant='light'
-				fixed='top'
-				style={styles.nav}
-			>
-				<Navbar.Brand fixed='top'>
-					<Link to='intro' spy={true} smooth='true'>
-						<FontAwesomeIcon
-							size='2x'
-							color='black'
-							icon={['fa', 'angle-up']}
-						/>
-					</Link>
-				</Navbar.Brand>
-			</Navbar>
-			<Container
-				fluid
-				style={{ textAlign: 'center', maxWidth: 800, marginTop: 88 }}
-			>
-				<Display3 style={styles.title}>{intro.title}</Display3>
+		<Jumbotron id='intro' fluid>
+			<div id='overlay'>
+				<Navbar
+					collapseOnSelect
+					expand='sm'
+					variant='light'
+					fixed='top'
+					style={styles.nav}
+				>
+					<Navbar.Brand fixed='top'>
+						<Link to='intro' spy={true} smooth='true'>
+							<FontAwesomeIcon
+								size='1x'
+								color='black'
+								icon={['fa', 'angle-up']}
+							/>
+						</Link>
+					</Navbar.Brand>
+				</Navbar>
 
-				<Display4 style={styles.subtitle}> {intro.subtitle}</Display4>
-				<Lead style={{ fontSize: 18 }}>
-					MOBILE APPLICATIONS • WEB DEVELOPMENT
-				</Lead>
-				<div className='tech__icons'>
-					<p>
-						<FontAwesomeIcon
-							size='6x'
-							className='brand-icon'
-							icon={['fab', 'node']}
-						/>
-					</p>
-					<p>
-						<FontAwesomeIcon
-							size='6x'
-							className='brand-icon'
-							icon={['fab', 'react']}
-						/>
-					</p>
-					<p>
-						<FontAwesomeIcon
-							size='6x'
-							className='brand-icon'
-							icon={['fab', 'sass']}
-						/>
-					</p>
-				</div>
-				<SiteNav />
+				<Container
+					fluid
+					style={{ textAlign: 'center', maxWidth: 800, marginTop: 88 }}
+				>
+					<Display3 style={styles.title}>{intro.title}</Display3>
 
-				{/* <IconsRow /> */}
-				<SocialIcons />
-			</Container>
+					<Display4 style={styles.subtitle}> {intro.subtitle}</Display4>
+					<Lead style={{ fontSize: 18 }}>
+						MOBILE APPLICATIONS • WEB DEVELOPMENT
+					</Lead>
+					<div className='tech__icons'>
+						<p>
+							<FontAwesomeIcon
+								size='6x'
+								className='brand-icon'
+								icon={['fab', 'node']}
+								// color='white'
+							/>
+						</p>
+						<p>
+							<FontAwesomeIcon
+								size='6x'
+								className='brand-icon'
+								icon={['fab', 'react']}
+								// color='white'
+							/>
+						</p>
+						<p>
+							<FontAwesomeIcon
+								size='6x'
+								className='brand-icon'
+								icon={['fab', 'sass']}
+								// color='white'
+							/>
+						</p>
+					</div>
+					<SiteNav />
+					<SocialIcons />
+				</Container>
+			</div>
 		</Jumbotron>
 	);
 }
 const styles = {
 	title: {
 		fontFamily: 'Montserrat',
-		fontWeight: 'bold',
+		fontWeight: 'demi-bold',
 		fontSize: 54,
-		marginTop: 24,
-		marginBottom: 32,
+		// color: 'white',
+		paddingTop: 72,
+		paddingBottom: 40,
 	},
 	subtitle: {
 		fontFamily: 'Montserrat',
 		fontSize: 32,
+		// color: 'white',
 	},
 };

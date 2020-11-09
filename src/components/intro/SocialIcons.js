@@ -49,14 +49,14 @@ export default function SocialIcons() {
 }
 const styles = {
 	icon: {
-		color: 'black',
 		borderWidth: 3,
 		borderRadius: 6,
-		borderColor: 'black',
+		color: 'black',
+		bordercolor: 'black',
 		borderStyle: 'solid',
-		width: 50,
-		height: 50,
-		padding: 4,
+		width: 60,
+		height: 60,
+		padding: 8,
 
 		// marginBottom: 80,
 	},

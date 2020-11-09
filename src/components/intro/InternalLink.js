@@ -15,7 +15,7 @@ export default function SiteNav() {
 				flexWrap: 'wrap',
 				justifyContent: 'space-around',
 				maxWidth: '100%',
-				marginTop: 32,
+
 				marginBottom: 40,
 			}}
 		>
@@ -63,14 +63,13 @@ const styles = {
 		width: 150,
 		height: 56,
 		fontSize: 24,
+		marginTop: 32,
 		fontFamily: 'Montserrat',
 		fontWeight: 300,
 		borderWidth: 1,
-		borderColor: 'white',
 		borderRadius: 6,
 		border: 'solid',
 		padding: 8,
-		marginTop: 24,
 		cursor: 'pointer',
 	},
 };

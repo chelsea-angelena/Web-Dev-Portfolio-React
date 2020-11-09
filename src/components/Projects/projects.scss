@@ -1,8 +1,13 @@
 .projects__header {
 	align-self: center;
 	margin-top: 40px;
-	margin-bottom: 32px;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+	min-width: 225;
+	max-width: 400px;
+	border-bottom: 2px solid white;
 }
+
 @media (min-width: 768px) {
 	.projects__card--ol {
 		display: flex;
