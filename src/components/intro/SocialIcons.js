@@ -51,9 +51,8 @@ const styles = {
 	icon: {
 		borderWidth: 3,
 		borderRadius: 6,
-
-		borderStyle: 'solid',
 		width: 60,
+		borderStyle: 'solid',
 		height: 60,
 		padding: 8,
 

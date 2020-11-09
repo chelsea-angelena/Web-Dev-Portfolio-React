@@ -1,6 +1,6 @@
 const styles = {
 	projects: {
-		backgroundColor: 'hsl(201, 43%, 45%)',
+		backgroundColor: '#BBDEFB',
 		padding: 0,
 		margin: 0,
 	},
