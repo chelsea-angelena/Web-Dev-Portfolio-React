@@ -51,13 +51,13 @@ const styles = {
 	icon: {
 		borderWidth: 3,
 		borderRadius: 6,
-		color: 'black',
-		bordercolor: 'black',
+
 		borderStyle: 'solid',
 		width: 60,
 		height: 60,
 		padding: 8,
 
+		color: 'black',
 		// marginBottom: 80,
 	},
 	container: {
