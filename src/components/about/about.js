@@ -42,8 +42,8 @@ export default function About() {
 const styles = {
 	profile: {
 		borderRadius: 150,
-		marginTop: 32,
-		// marginLeft: 24,
+		marginTop: 40,
+		marginLeft: 24,
 	},
 	background: {
 		backgroundColor: 'white',
@@ -64,15 +64,14 @@ const styles = {
 		fontFamily: 'Montserrat',
 		fontSize: 12,
 		textAlign: 'left',
-		justifyContent: 'flex-start',
-		alignItems: 'flex-start',
-		alignSelf: 'flex-start',
 	},
 	headerText: {
 		fontFamily: 'Montserrat',
-		fontSize: 40,
+		fontSize: 32,
 		maxWidth: '100%',
 		paddingLeft: 24,
+		paddingTop: 24,
+		paddingBottom: 24,
 	},
 	homeButton: {
 		alignSelf: 'flex-end',
