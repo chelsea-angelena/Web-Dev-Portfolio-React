@@ -17,7 +17,7 @@ const content = [
 	{
 		id: 2,
 		tech: 'React-Native',
-		tech2: 'OMDB API',
+		tech2: 'Movie App',
 		image: require('../../assets/movie-app-logo.png'),
 		title: 'The Movie App',
 		text:
@@ -37,10 +37,9 @@ const content = [
 		title: 'Good Eats',
 		text:
 			'Mobile App, built with React-Native. Search for  nearby restaurants by the type of cuisine, or business name. The app will automatically use location, only after explicit permission has been granted by the user, so all search results are local. Find the hours, location, ratings and price range of restuarants near you.',
-		projectLink: 'https://chelsea-angelena.github.io/',
+		projectLink: 'https://expo.io/@angelena/projects/restaurantsearch',
 		projectLinkName: '/expo-app-2',
-		link:
-			'https://github.com/chelsea-angelena/react-native-local-restaurant-search',
+		link: 'https://github.com/chelsea-angelena/restaurant-app',
 		linkName: '/goodEats',
 		demolink: 'https://chelsea-angelena.github.io',
 		demolinkName: '/demo3',

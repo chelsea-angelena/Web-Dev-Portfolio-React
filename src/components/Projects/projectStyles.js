@@ -2,6 +2,9 @@ const styles = {
 	projects: {
 		backgroundColor: '#BBDEFB',
 		padding: 0,
+		alignItems: 'center',
+		flexDirection: 'column',
+		justifyContent: 'center',
 		margin: 0,
 	},
 	projectsOverlay: {
@@ -20,7 +23,7 @@ const styles = {
 		borderStyle: 'solid',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
-		backgroundColor: 'rgba(0,0,0,.5)',
+		backgroundColor: 'rgba(0,0,0,.4)',
 	},
 	projectsClass: {
 		paddingTop: 32,
@@ -50,6 +53,7 @@ const styles = {
 		display: 'flex',
 		alignItems: 'center',
 		flexDirection: 'column',
+		justifyContent: 'center',
 		height: 700,
 		marginRight: 24,
 		marginLeft: 24,

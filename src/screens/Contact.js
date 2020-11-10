@@ -20,13 +20,6 @@ export default function ContactSection() {
 				justifyContent: 'center',
 			}}
 		>
-			{/* <Container
-				fluid
-				mx='auto'
-				style={{
-					textAlign: 'center',
-				}}
-			> */}
 			<Container style={styles.innerView} id='contactOverlay'>
 				<div style={styles.title}>{contact.title}</div>
 				<div style={styles.blurb}>{contact.blurb}</div>
@@ -85,7 +78,6 @@ const styles = {
 		width: '100%',
 		backgroundColor: 'hsl(0, 0%, 100%)',
 		marginTop: 40,
-		// marginBottom: 40,
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
@@ -100,6 +92,7 @@ const styles = {
 		backgroundColor: 'rgba(0,0,0,.4)',
 		paddingTop: 64,
 		paddingBottom: 64,
+		margin: 0,
 		display: 'flex',
 		alignSelf: 'center',
 		alignItems: 'center',
