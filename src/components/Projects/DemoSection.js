@@ -9,8 +9,7 @@ export default function DemoSection() {
 				<Lead style={styles.header}>Demo App</Lead>
 				<Lead style={styles.lead}>
 					This is a simulator build of mobile project, which was built using
-					React-Native. Run the app right here in the browser to preview the
-					app, no need to download or install required.
+					React-Native. Run the app right here in the browser. This app has been built for both iOS and Android. Check out the links in the project section for more info. 
 				</Lead>
 				<EmbedMovie />
 			</Card>
