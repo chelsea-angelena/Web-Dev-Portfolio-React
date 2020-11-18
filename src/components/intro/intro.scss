@@ -1,17 +1,17 @@
-@import '../../styles/fonts.scss';
-
 #intro {
-	background-image: url('https://images.unsplash.com/photo-1499946981954-e7f4b234d7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80');
+	background-image: url('https://images.unsplash.com/photo-1496660818001-d4f9b64f68f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2160&q=80');
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 1400px;
+	background-position: bottom 0;
 	padding: 0px;
 	margin: 0px;
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
-	justify-content: center;
+	justify-content: space-evenly;
 	font-family: 'Montserrat';
+	// overflow: hidden;
+	height: 825px;
 }
 
 nav#Footer.nav {
@@ -21,7 +21,7 @@ nav#Footer.nav {
 	height: 100px;
 	justify-content: center;
 	max-width: 100%;
-	min-width: 320px;
+	// min-width: 320px;
 }
 div#Footer.nav {
 	display: flex;
@@ -45,60 +45,34 @@ div#Footer.nav {
 .nav__icon {
 	display: 'inline-block';
 	margin-top: 24;
-	margin-bottom: 24;
 	flex-direction: 'row';
+	margin-bottom: 24;
 	margin: 0 24px 0 24px 0;
 }
 a.nav__icon:hover {
-	color: hsl(195, 83%, 38%);
+	color: white;
 }
 a.nav__icon:visited {
 	color: hsl(96, 5%, 81%);
 }
-.projects {
-	font-family: 'Montserrat';
-	font-weight: 300;
-	width: 100%;
-}
+
 #overlay {
 	position: relative;
 	display: flex;
 	align-self: center;
 	max-width: 100%;
-	height: 1400px;
+	height: 825px;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: rgba(0, 0, 0, 0.5);
+	margin-top: 75px;
 	z-index: 3;
 	cursor: default;
-}
-#bg {
-	background-image: url('https:images.unsplash.com/photo-1508615039623-a25605d2b022?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60');
-	background-size: cover;
-	background-repeat: no-repeat;
-	width: 100%;
-	background-position: center;
-}
-.header__text--div {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	padding: 24px 0 24px 0;
-	margin-top: 64px;
-	padding-bottom: 64px;
-	text-shadow: black 0.1em 0.1em 0.1em 0.1em;
-	z-index: 5;
-}
-
-.header__second {
-	font-size: 1rem;
-	line-height: 1.5rem;
-	display: flex;
 	justify-content: space-between;
 }
+
 span.ellipse {
 	padding: 0px 16px;
 }
@@ -107,27 +81,25 @@ span.ellipse {
 	font-size: 2.5rem;
 	line-height: 4.5rem;
 	font-weight: demi-bold;
-	// margin: 24px 24px 24px 24px;
+	color: white;
+
 	text-align: center;
 }
 div.container-fluid {
 	margin-top: 64px;
 }
-h1.header__text {
-	font-size: 2.5rem;
-	line-height: 4.5rem;
-	margin: 32px 24px 24px 24px;
-	text-align: center;
-	padding-bottom: 24px;
-	border-bottom: 0.5px solid white;
-}
+
 .brand-icon {
 	-webkit-text-stroke: 1.5px black;
 	// color:white;
 	text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 2px 2px 0 #000, 2px 1px 0 #000,
 		1px 1px 0 #000;
 }
-
+.row {
+	display: flex;
+	max-width: 100%;
+	flex-direction: row-wrap;
+}
 @keyframes bounceInUp {
 	0% {
 		transform: scale(0.1);
@@ -147,6 +119,7 @@ h1.header__text {
 	align-items: center;
 	justify-content: space-evenly;
 	margin-top: 32px;
+	color: white;
 }
 .brand-icon {
 	text-shadow: black 0.1em 0.1em 0.2em;
@@ -156,8 +129,10 @@ h1.header__text {
 	border-radius: 6px;
 	outline: black 0.1em 0.1em 0.1em;
 	animation: fadeIn 4s;
+	color: white;
 }
 .brand-icon-small {
+	color: white;
 	text-shadow: black 0.1em 0.1em 0.2em;
 	width: 50px;
 	height: 50px;
@@ -198,12 +173,6 @@ h1.header__text {
 }
 
 @media screen and (min-width: 768px) {
-	#intro {
-		height: 1000px;
-	}
-	#overlay {
-		height: 1000px;
-	}
 	div#Footer.nav {
 		display: flex;
 		flex-direction: row;
@@ -215,38 +184,40 @@ h1.header__text {
 		align-items: center;
 	}
 	.nav__iconLink {
-		height: 75;
+		height: 75px;
 	}
-	.header__text--div {
-		justify-content: center;
-		width: '100%';
-		padding-bottom: 64px;
+	#intro {
+		height: 750px;
 	}
-	.header__second {
-		padding-bottom: 40px;
-		font-size: 1rem;
-		line-height: 1.5rem;
+	#overlay {
+		height: 750px;
+	}
+}
+// .stars {
+// 	background: black
+// 		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
+// 	position: absolute;
+// 	top: 0;
+// 	bottom: 0;
+// 	left: 0;
+// 	right: 0;
+// 	display: block;
+// 	z-index: 0;
+// }
+@media screen and (min-width: 1024) {
+	#intro__content {
 		display: flex;
-		justify-content: space-between;
-	}
-	span.ellipse {
-		padding: 0px 16px;
-	}
-
-	.header__text {
-		font-size: 2.5rem;
-		line-height: 4.5rem;
-		padding-bottom: 40px;
-		font-weight: demi-bold;
-		// margin: 24px 24px 24px 24px;
-		text-align: center;
+		flex-wrap: wrap;
+		flex-direction: row;
+		max-width: 700px;
+		padding-left: 42;
+		padding-right: 42;
 	}
 
-	h1.header__text {
-		font-size: 2.5rem;
-		line-height: 4.5rem;
-		margin: 24px 24px 24px 24px;
-		text-align: center;
-		padding-bottom: 40px;
+	div.tech__icons {
+		max-width: 400px;
+	}
+	#tech {
+		max-width: 400px;
 	}
 }

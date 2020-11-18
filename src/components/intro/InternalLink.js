@@ -5,6 +5,9 @@ import Nav from 'react-bootstrap/Nav';
 import { Link } from 'react-scroll';
 import '../nav.scss';
 import Container from 'react-bootstrap/Container';
+import '../../styles/fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import '../../styles/fonts.scss';
 
 export default function SiteNav() {
 	return (
@@ -27,6 +30,12 @@ export default function SiteNav() {
 				style={styles.anchorLink}
 			>
 				Projects
+				<FontAwesomeIcon
+					size='1x'
+					color='black'
+					icon={['fa', 'angle-right']}
+					style={{ marginLeft: 16 }}
+				/>
 			</Link>
 			<Link
 				to='About'
@@ -36,6 +45,12 @@ export default function SiteNav() {
 				style={styles.anchorLink}
 			>
 				About
+				<FontAwesomeIcon
+					size='1x'
+					color='black'
+					icon={['fa', 'angle-right']}
+					style={{ marginLeft: 16 }}
+				/>
 			</Link>
 
 			<Nav.Link
@@ -45,8 +60,14 @@ export default function SiteNav() {
 				style={styles.anchorLink}
 			>
 				Resume
+				<FontAwesomeIcon
+					size='1x'
+					color='black'
+					icon={['fa', 'angle-right']}
+					style={{ marginLeft: 16 }}
+				/>
 			</Nav.Link>
-			<Link
+			{/* <Link
 				to='Footer'
 				spy={true}
 				smooth='true'
@@ -54,7 +75,7 @@ export default function SiteNav() {
 				style={styles.anchorLink}
 			>
 				Contact
-			</Link>
+			</Link> */}
 		</Container>
 	);
 }

@@ -7,25 +7,32 @@ import { Jumbotron, Container } from 'bootstrap-4-react';
 
 export default function ContactSection() {
 	return (
-		<Jumbotron
-			fluid
-			style={{
-				backgroundImage: `url('https://images.unsplash.com/photo-1499946981954-e7f4b234d7fa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80')`,
-				backgroundRepeat: 'no-repeat',
-				backgroundSize: 'cover',
-				display: 'flex',
-				flexDirection: 'column',
-				alignSelf: 'center',
-				alignItems: 'center',
-				justifyContent: 'center',
-			}}
-		>
-			<Container style={styles.innerView} id='contactOverlay'>
-				<div style={styles.title}>{contact.title}</div>
-				<div style={styles.blurb}>{contact.blurb}</div>
-				<div style={styles.email}>{contact.emailBlurb}</div>
-				<div style={styles.email}>{contact.email}</div>
-				<div style={styles.navBarIcons} className='nav' id='Footer'>
+		<Jumbotron id='contact' fluid className='jumbo'>
+			<div id='overlay'>
+				<Container
+					fluid
+					className='contact__body'
+					style={{
+						display: 'flex',
+						flexDirection: 'column',
+						alignItems: 'center',
+					}}
+				>
+					<div style={styles.title}>{contact.title}</div>
+					<div style={styles.blurb}>{contact.blurb}</div>
+					<div style={styles.blurb}>{contact.emailBlurb}</div>
+					<div
+						style={{
+							overflow: 'hidden',
+							fontFamily: 'Montserrat',
+							color: '#ffffff',
+							fontSize: '1.25rem',
+						}}
+					>
+						{contact.email}
+					</div>
+				</Container>
+				<div style={styles.navBarIcons}>
 					<Nav.Link
 						rel='noopener noreferrer'
 						href='https://www.linkedin.com/in/chelsea-a-brown'
@@ -37,7 +44,7 @@ export default function ContactSection() {
 							style={styles.icon}
 							size='3x'
 							icon={['fab', 'linkedin-in']}
-							className='nav__icon'
+							// className='nav__icon'
 							id='iconID3'
 						/>
 					</Nav.Link>
@@ -47,7 +54,7 @@ export default function ContactSection() {
 						className='nav__iconLink'
 					>
 						<FontAwesomeIcon
-							className='nav__icon'
+							// className='nav__icon'
 							style={styles.icon}
 							size='3x'
 							icon={['fab', 'github']}
@@ -61,65 +68,23 @@ export default function ContactSection() {
 						id='iconID'
 					>
 						<FontAwesomeIcon
-							className='nav__icon'
+							// className='nav__icon'
 							style={styles.icon}
 							size='3x'
 							icon={['far', 'envelope']}
 						/>
 					</Nav.Link>
 				</div>
-			</Container>
+			</div>
 		</Jumbotron>
+		// </Container>
 	);
 }
 
 const styles = {
-	view: {
-		width: '100%',
-		backgroundColor: 'hsl(0, 0%, 100%)',
-		marginTop: 40,
-		display: 'flex',
-		alignItems: 'center',
-		justifyContent: 'center',
-		alignSelf: 'center',
-		textAlign: 'center',
-		paddingTop: 64,
-		paddingBottom: 64,
+	icon: {
+		width: 35,
 	},
-	innerView: {
-		width: '100%',
-		height: '100%',
-		backgroundColor: 'rgba(0,0,0,.4)',
-		paddingTop: 64,
-		paddingBottom: 64,
-		margin: 0,
-		display: 'flex',
-		alignSelf: 'center',
-		alignItems: 'center',
-		color: 'white',
-		flexDirection: 'column',
-		paddingLeft: 12,
-		paddingRight: 12,
-	},
-	title: {
-		fontFamily: 'Montserrat',
-		fontWeight: '500',
-		fontSize: 40,
-		color: 'white',
-		paddingTop: 24,
-	},
-	blurb: {
-		fontFamily: 'Montserrat',
-		lineHeight: '2rem',
-		paddingLeft: 64,
-		paddingRight: 64,
-		paddingTop: 32,
-		textAlign: 'center',
-		color: 'white',
-		fontSize: 18,
-		paddingBottom: 32,
-	},
-	icon: { width: 35 },
 	email: {
 		fontFamily: 'Montserrat',
 		color: 'white',
@@ -128,4 +93,40 @@ const styles = {
 	form: {
 		flexDirection: 'column',
 	},
+
+	blurb: {
+		paddingLeft: 16,
+		paddingRight: 16,
+		paddingTop: 24,
+		textAlign: 'center',
+		alignSelf: 'center',
+		justifyContent: 'center',
+		alignItems: 'center',
+		fontFamily: 'Montserrat',
+		color: '#ffffff',
+		fontSize: '1.25rem',
+		display: 'flex',
+		flexWrap: 'wrap',
+	},
+	title: {
+		fontFamily: 'Abril Fatface',
+		fontWeight: 'bold',
+		fontSize: 54,
+		color: '#ffffff',
+		alignSelf: 'center',
+		width: '100%',
+		justifyContent: 'center',
+		alignItems: 'center',
+		textAlign: 'center',
+		paddingTop: 42,
+	},
+	navBarIcons: {
+		display: 'flex',
+		justifyContent: 'space evenly',
+		alignSelf: 'center',
+		maxWidth: '100%',
+		overflow: 'hidden',
+		paddingBottom: 40,
+	},
+	nav: { margin: 12 },
 };

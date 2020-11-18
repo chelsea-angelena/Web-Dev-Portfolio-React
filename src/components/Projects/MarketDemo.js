@@ -5,13 +5,12 @@ import { Display4, Lead } from 'bootstrap-4-react';
 const text = {
 	title: 'Saturday Market',
 	lead:
-		"This is a mobile app which runs in both ios and android. Saturday Market is a virtual meeting place for people to get together 'weekend-market-style' to sell handcrafted goods, works of art, or second hand treasures. Scan the QR code on your mobile phone, or run it in the browser with the simulator. Make a post, update your profile, and save favorite posts. User authentication and database has been created with Firebase/Firestore and the app has been built entirely using react functional components and hooks, on the React-Native/Expo framework.",
+		"This is a mobile app which runs on both iOS and android. Saturday Market is a virtual meeting place for people to get together 'weekend-market-style' to sell handcrafted goods, works of art, or second hand treasures. Scan the QR code on your mobile phone, or run it in the browser with the simulator. Make a post, update your profile, and save favorite posts. User authentication and database has been created with Firebase/Firestore and the app has been built entirely using react functional components and hooks, on the React-Native/Expo framework.",
 	linkName: '/saturdaymarket',
 	link: 'https://expo.io/@angelena/projects/saturdaymarket',
 };
 
 const photos = {
-	photo1: require('../../assets/Market/M1.png'),
 	photo2: require('../../assets/Market/M2.png'),
 	photo3: require('../../assets/Market/M3.png'),
 	photo4: require('../../assets/Market/M4.png'),
@@ -33,9 +32,6 @@ export default function MarketDemo() {
 				<Lead style={styles.titleLead}>Screenshots</Lead>
 
 				<div style={styles.row}>
-					<div style={styles.imageWrap}>
-						<img src={photos.photo1} alt='' style={styles.image} />
-					</div>
 					<div style={styles.imageWrap}>
 						<img src={photos.photo2} alt='' style={styles.image} />
 					</div>
@@ -103,11 +99,19 @@ const styles = {
 		borderBottomWidth: 1,
 		borderBottomColor: 'black',
 		padding: 24,
+		fontFamily: 'Abril Fatface',
 	},
 	lead: {
 		alignSelf: 'center',
 		textAlign: 'center',
-		fontSize: 20,
+
+		fontFamily: 'Montserrat',
+		paddingLeft: 40,
+		paddingRight: 40,
+		paddingTop: 32,
+		paddingBottom: 32,
+		fontSize: '1.25rem',
+		lineHeight: '2.25rem',
 	},
 	titleLead: {
 		fontSize: '1.5rem',

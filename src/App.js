@@ -7,10 +7,14 @@ import MarketDemo from './components/Projects/MarketDemo';
 import './styles/App.scss';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
+
 function App() {
 	return (
 		<BrowserRouter>
-			<Switch>
+					<Switch>
+
+
+
 				<Route exact path='/YelpDemo'>
 					<YelpDemo />
 				</Route>

@@ -5,7 +5,8 @@ import Container from 'react-bootstrap/Container';
 
 export default function SocialIcons() {
 	return (
-		<Container style={styles.container}>
+		// <Container style={styles.container}>
+		<>
 			<Nav.Link
 				rel='noopener noreferrer'
 				href='https://www.linkedin.com/in/chelsea-a-brown'
@@ -16,7 +17,7 @@ export default function SocialIcons() {
 					style={styles.icon}
 					size='3x'
 					icon={['fab', 'linkedin-in']}
-					className='nav__icon projects'
+
 					// id='iconID3'
 				/>
 			</Nav.Link>
@@ -26,7 +27,6 @@ export default function SocialIcons() {
 			>
 				<FontAwesomeIcon
 					style={styles.icon}
-					className='nav__icon projects'
 					size='3x'
 					icon={['fab', 'github']}
 					// id='iconID2'
@@ -38,34 +38,34 @@ export default function SocialIcons() {
 				// id='iconID'
 			>
 				<FontAwesomeIcon
-					className='nav__icon projects'
 					style={styles.icon}
 					size='3x'
 					icon={['far', 'envelope']}
 				/>
 			</Nav.Link>
-		</Container>
+		</>
+		// </Container>
 	);
 }
 const styles = {
 	icon: {
-		borderWidth: 3,
-		borderRadius: 6,
-		width: 60,
+		borderWidth: 1,
+		borderRadius: 4,
+		width: 40,
 		borderStyle: 'solid',
-		height: 60,
-		padding: 8,
-
-		color: 'black',
+		height: 40,
+		padding: 6,
+		// backgroundColor: 'white',
+		color: 'white',
 		// marginBottom: 80,
 	},
 	container: {
 		// marginBottom: 40,
-		alignItems: 'center',
+		// alignItems: 'center',
 		display: 'flex',
 		flexDirection: 'row',
-		alignSelf: 'center',
-		maxWidth: '100%',
-		justifyContent: 'center',
+
+		// maxWidth: 250,
+		justifyContent: 'flex-end',
 	},
 };

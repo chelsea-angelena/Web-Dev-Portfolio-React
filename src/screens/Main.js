@@ -4,18 +4,24 @@ import About from '../components/about/about';
 import IntroFile from '../components/intro/IntroFile';
 import ContactSection from './Contact';
 import Projects from '../components/Projects/Projects';
+import DemoSection from '../components/Projects/DemoSection';
 
 function Main() {
 	return (
 		<>
-			<IntroFile />
+			<div id='intro'>
+				<IntroFile />
+			</div>
 			<div id='about'>
 				<About />
+			</div>
+			<div id='demo'>
+				<DemoSection />
 			</div>
 			<div id='projects'>
 				<Projects />
 			</div>
-			<div id='footer'>
+			<div id='contact'>
 				<ContactSection />
 			</div>
 		</>

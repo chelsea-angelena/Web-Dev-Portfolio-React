@@ -1,19 +1,28 @@
-@import '../styles/fonts.scss';
+* {
+	box-sizing: border-box;
+	font-size: 14px;
+	max-width: 320px;
+}
 
 :root {
 	box-sizing: border-box;
 	font-size: 16px;
-	min-width: 320px;
-	max-width: 100%;
-	background-color: rgba(0, 0, 0, 0.5);
 }
-
-ol,
+// body {
+// 	overflow-y: scroll;
+// }
+// ol;
 ul {
 	text-decoration: none;
 	list-style: none;
 }
-
+#embed {
+	width: 320px;
+	align-items: center;
+	align-self: center;
+	justify-content: center;
+	margin: 0;
+}
 .projects:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -31,7 +40,26 @@ a {
 #resumeLink:hover {
 	background-color: rgba(0, 0, 0, 0.5);
 }
-@import '../styles/fonts.scss';
-// @import '../components/about/about.scss';
-// @import '../components/intro/intro.scss';
+@media screen and (min-width: 340px) {
+	* {
+		max-width: 100%;
+	}
+	#embed {
+		width: 500;
+	}
+}
+@media screen and (min-width: 768px) {
+	* {
+		font-size: 18px;
+	}
+}
+// @media screen and (min-width: 768px) {
+// 	* {
+// 		max-width: 100%;
+// 	}
+// }
+@import './fonts.scss';
+@import '../components/Projects/projects.scss';
+// @import ../components/about/about.scss;
+// @import ../components/intro/intro.scss;
 @import '~bootstrap/scss/bootstrap';

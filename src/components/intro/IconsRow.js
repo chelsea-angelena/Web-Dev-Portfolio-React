@@ -2,11 +2,20 @@ import React from 'react';
 import './intro.scss';
 import '../../styles/fontawesome';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import '../../styles/fonts.scss';
+import { Container } from 'bootstrap-4-react';
 
 export default function IconsRow() {
 	return (
-		<div style={styles.row}>
+		<Container
+			fluid
+			style={{
+				display: 'flex',
+				flexDirection: 'row',
+				alignSelf: 'center',
+				justifyContent: 'space-evenly',
+				width: '100%',
+			}}
+		>
 			<p>
 				<FontAwesomeIcon
 					size='2x'
@@ -50,13 +59,7 @@ export default function IconsRow() {
 					icon={['fas', 'server']}
 				/>
 			</p>
-			<p>
-				<FontAwesomeIcon
-					size='2x'
-					className='brand-icon-small'
-					icon={['fab', 'android']}
-				/>
-			</p>
+
 			<p>
 				<FontAwesomeIcon
 					size='2x'
@@ -64,17 +67,6 @@ export default function IconsRow() {
 					icon={['fab', 'app-store-ios']}
 				/>
 			</p>
-		</div>
+		</Container>
 	);
 }
-const styles = {
-	row: {
-		display: 'flex',
-		flexDirection: 'row',
-		flexWrap: 'wrap',
-		maxWidth: '100%',
-		justifyContent: 'space-between',
-		position: 'relative',
-		bottom: -40,
-	},
-};

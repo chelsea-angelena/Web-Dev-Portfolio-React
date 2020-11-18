@@ -1,16 +1,14 @@
 import React from 'react';
-import './about.scss';
+
 import bio from '../../assets/bio';
-import { Container, Lead, Display4 } from 'bootstrap-4-react';
+import { Container, Lead, Display4, Card } from 'bootstrap-4-react';
 
 export default function About() {
 	return (
-		<div className='about' id='About' style={styles.background}>
-			<div className='about__body'>
-				<div className='about__subHeader'>
-					<Display4 style={styles.headerText}>{bio.header}</Display4>
-				</div>
-				<div className='about__divider--2'></div>
+		<Container fluid id='About' style={{ marginTop: 64, marginBottom: 64 }}>
+			<Card>
+				<Display4 style={styles.headerText}>{bio.header}</Display4>
+
 				<div>
 					<img
 						style={styles.profile}
@@ -19,64 +17,55 @@ export default function About() {
 						src={require('../../assets/profile3.png')}
 					/>
 				</div>
-				<div className='about__text'>
-					<Container fluid>
-						<Lead style={styles.lead}>{bio.intro}</Lead>
-						<div className='about__divider--2'></div>
-						<div className='about__stats'>
-							<Container fluid>
-								<Lead style={styles.lead}>
-									<span className='stats__header'>Credentials:</span>
-									<span className='stats__text'>
-										Web Development Diploma, BrainStation, Summer 2020
-									</span>
-								</Lead>
-							</Container>
-						</div>
-					</Container>
-				</div>
-			</div>
-		</div>
+
+				<Lead style={styles.lead}>{bio.intro}</Lead>
+
+				<Lead style={styles.lead}>
+					<span style={styles.bold}>Credentials:</span>
+					<br />
+					<span style={styles.lead}>
+						Web Development Diploma, BrainStation, Summer 2020
+					</span>
+				</Lead>
+			</Card>
+		</Container>
 	);
 }
 const styles = {
 	profile: {
 		borderRadius: 150,
-		marginTop: 40,
 		marginLeft: 24,
 	},
 	background: {
 		backgroundColor: 'white',
 	},
 	aboutDiv: {
-		maxWidth: '100%',
 		borderColor: 'black',
 		borderWidth: 2,
 		border: 'solid',
-		// padding: 32,
-		// margin: 32,
 	},
 	lead: {
 		fontFamily: 'Montserrat',
-		fontSize: 16,
+		fontSize: '1.25rem',
+
+		padding: 24,
+		lineHeight: '2.5rem',
+		maxWidth: 500,
 	},
 	leadStats: {
 		fontFamily: 'Montserrat',
-		fontSize: 12,
+		fontSize: '2rem',
 		textAlign: 'left',
 	},
 	headerText: {
-		fontFamily: 'Montserrat',
-		fontSize: 32,
-		maxWidth: '100%',
-		paddingLeft: 24,
-		paddingTop: 24,
-		paddingBottom: 24,
+		fontSize: 42,
+		display: 'flex',
+		padding: 24,
+		fontFamily: 'Abril Fatface',
 	},
-	homeButton: {
-		alignSelf: 'flex-end',
-		marginBottom: 24,
-		position: 'fixed',
-		zIndex: 3,
+	bold: {
+		fontWeight: 'bold',
+		fontFamily: 'Abril Fatface',
+		fontSize: '1.25rem',
 	},
 };
