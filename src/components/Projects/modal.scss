@@ -1,0 +1,21 @@
+.modal__div {
+	display: flex;
+	flex-flow: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 40px;
+	color: white;
+	background-color: hsl(196.6, 93.4%, 3.6%);
+}
+.modal__div__header {
+	font-family: 'Abril Fatface';
+	font-size: 2rem;
+	width: 200;
+	margin-top: 64px;
+	font-size: 56;
+}
+.button {
+	-webkit-box-shadow: 5px 15px 14px -1px rgba(0, 0, 0, 0.26);
+	box-shadow: 5px 15px 14px -1px rgba(0, 0, 0, 0.26);
+	border: 3px solid black;
+}

@@ -1,5 +1,5 @@
 #contact {
-	background-image: url('https://images.unsplash.com/photo-1496660818001-d4f9b64f68f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2160&q=80');
+	background-image: url(https://images.unsplash.com/photo-1496660818001-d4f9b64f68f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2160&q=80);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: bottom 0;
@@ -9,9 +9,8 @@
 	flex-direction: column;
 	align-self: center;
 	align-items: center;
-
-	font-family: 'Montserrat';
-
+	overflow: hidden;
+	font-family: Montserrat;
 	height: 700;
 }
 #overlay {
@@ -26,27 +25,121 @@
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
+	background-size: 'cover';
+	width: 100;
 	z-index: 3;
 	cursor: default;
-	justify-content: space-between;
 	height: 700;
 	margin: 0;
+	padding: 0;
+	justify-content: center;
+	font-size: 1rem;
+}
+.contact__body {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+	max-width: 100%;
+	align-items: center;
+	color: #ffffff;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+
+
+	width: 100;
+	z-index: 3;
+	cursor: default;
+	height: 700;
+	margin: 0;
+	padding: 0;
+	justify-content: center;
+	font-size: 1rem;
 }
 .jumbo {
-	height: 750px;
 	margin: 0;
 	padding: 0;
 }
+.contact {
+	justify-content: space-around;
+	&__icon {
+		width: 35;
+	}
+	&__email {
+		font-family: Montserrat;
+		color: white;
+		padding-bottom: 16px;
+	}
+	&__blurb {
+		padding: 24px;
+		text-align: center;
+		align-self: center;
+		justify-content: center;
+		align-items: center;
+		font-family: Montserrat;
+		color: #ffffff;
+		font-size: 1.25rem;
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__emailBlurb {
+		overflow: hidden;
+		font-family: 'Montserrat';
+		color: #ffffff;
+		font-size: 1.25rem;
+	}
+	&__title {
+		font-family: 'Abril Fatface', cursive;
+		font-size: 3rem;
+		line-height: 3.5;
+		color: #ffffff;
+		text-align: center;
+	}
+	&__nav {
+		width: 75px;
+		border-radius: 8px;
+		border: white solid 2px;
+		align-items: center;
+		align-self: center;
+		margin-top: 24px;
+		justify-content: center;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding-bottom: 32px;
+	}
+	&__nav--icon {
+		color: white;
+	}
+}
+.navBarIcons {
+	display: flex;
+	justify-content: space-evenly;
+	align-self: center;
+	width: 100%;
+	overflow: hidden;
 
+	padding-bottom: 56px;
+	margin-bottom: 40px;
+}
 @media screen and (min-width: 768px) {
 	.jumbo {
 		height: 650px;
 	}
+	#contact__body {
+		padding: 0 64px 0 64px;
+	}
 }
+
 @media screen and (min-width: 1024px) {
-	.contact__body {
-		padding-left: 42;
-		padding-right: 42;
+	#contact__body {
+		padding: 0 164px 0 164px;
+	}
+}
+@media screen and (min-width: 1200px) {
+	#contact__body {
+		padding-left: 380px;
+		padding-right: 380px;
 	}
 }

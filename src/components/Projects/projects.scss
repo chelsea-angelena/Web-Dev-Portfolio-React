@@ -8,10 +8,19 @@
 	font-family: Montserat;
 	margin-top: 64;
 	margin-bottom: 64;
-	padding-bottom: 64;
+	// padding-bottom: 64;
+	padding: 0;
 	text-align: center;
 	max-width: '100%';
 	border: none;
+	overflow: hidden;
+}
+.video__modal {
+	display: flex;
+	align-self: center;
+	justify-content: center;
+
+	width: 200;
 }
 .card {
 	align-self: center;
@@ -122,13 +131,6 @@ div.cardgroup {
 	div.cardgroup {
 		align-items: space-between;
 	}
-	// #projects {
-	// 	display: flex;
-	// 	flex-direction: row;
-	// 	flex-wrap: 'wrap';
-	// 	justify-content: space-between;
-	// 	width: '100%';
-	// }
 }
 
 @media screen and (min-width: 1024px) {
@@ -138,8 +140,9 @@ div.cardgroup {
 		padding: 0;
 		border-style: none;
 	}
-
-	#projects {
+	div#projects {
+		justify-content: space-between;
+		width: 100%;
 		display: flex;
 		flex-direction: row;
 		flex-wrap: wrap;

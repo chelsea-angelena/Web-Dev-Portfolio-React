@@ -24,11 +24,13 @@ import {
 	faCode,
 	faAngleUp,
 	faAngleDown,
+	faVideo
 } from '@fortawesome/free-solid-svg-icons';
 
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 
 library.add(
+	faVideo,
 	faGithub,
 	faLinkedinIn,
 	faEnvelope,

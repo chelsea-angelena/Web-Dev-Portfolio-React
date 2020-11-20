@@ -3,7 +3,7 @@ import './projects.scss';
 import styles from './projectStyles.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Card from 'react-bootstrap/Card';
-
+import VideoModal from './VideoModal';
 import content from './content';
 import { Link, Route } from 'react-router-dom';
 import { Lead, Container } from 'bootstrap-4-react';
@@ -31,111 +31,103 @@ export default function Projects() {
 					</Lead>
 					<Container style={styles.projects} id='projects' fluid>
 						{content.map((content) => (
-							<div className='card__div card__area' key={content.id}>
-								<Card
-									key={content.id}
-									style={styles.card}
-									className='projects flip-card'
-								>
-									<div className='flip-card-inner'>
-										<div className='flip-card-front'>
-											<Card.Img
-												variant='top'
-												style={styles.image}
-												src={content.image}
-												alt='Project-Image'
-												className='projects'
-											/>
-										</div>
-										<div className='flip-card-back' style={styles.body}>
-											<Card.Body style={styles.body}>
-												<Card.Title style={styles.title}>
-													{content.title}
-												</Card.Title>
-
-												<Card.Text style={styles.text}>
-													{content.text}
-												</Card.Text>
-											</Card.Body>
-										</div>
-									</div>
-									<Card.Footer
-										className='text-muted'
-										style={{
-											width: '100%',
-											display: 'flex',
-											justifyContent: 'space-around',
-										}}
+							<>
+								<div className='card__div card__area' key={content.id}>
+									<Card
+										key={content.id}
+										style={styles.card}
+										className='projects flip-card'
 									>
-										{/* {content.sim === 'movies' ? <MovieDemoApp /> : null}
+										<div className='flip-card-inner'>
+											<div className='flip-card-front'>
+												<Card.Img
+													variant='top'
+													style={styles.image}
+													src={content.image}
+													alt='Project-Image'
+													className='projects'
+												/>
+											</div>
+											<div className='flip-card-back' style={styles.body}>
+												<Card.Body style={styles.body}>
+													<Card.Title style={styles.title}>
+														{content.title}
+													</Card.Title>
+
+													<Card.Text style={styles.text}>
+														{content.text}
+													</Card.Text>
+												</Card.Body>
+											</div>
+										</div>
+										<Card.Footer
+											className='text-muted'
+											style={{
+												width: '100%',
+												display: 'flex',
+												justifyContent: 'space-around',
+											}}
+										>
+											{/* {content.sim === 'movies' ? <MovieDemoApp /> : null}
 									{content.sim === 'yelp' ? <YelpDemoApp /> : null}
 									{content.sim === 'market' ? <MarketDemoApp /> : null} */}
-										<Route
-											path={content.projectLinkName}
-											component={() => {
-												window.location.href = content.projectLink;
-											}}
-										/>
-
-										<Link
-											to={content.projectLinkName}
-											style={{ marginTop: 12 }}
-										></Link>
-										<Route
-											path={content.projectLinkName}
-											component={() => {
-												window.location.href = content.projectLink;
-											}}
-										/>
-									</Card.Footer>
-									<Card.Footer
-										className='text-muted'
-										style={{
-											width: '100%',
-											display: 'flex',
-											justifyContent: 'space-around',
-										}}
-									>
-										<Link to={content.projectLinkName}>
-											<FontAwesomeIcon
-												size='2x'
-												icon={['fa', 'link']}
-												color='black'
+											<Route
+												path={content.projectLinkName}
+												component={() => {
+													window.location.href = content.projectLink;
+												}}
 											/>
-										</Link>
 
-										<Route
-											path={content.demolinkName}
-											component={() => {
-												window.location.href = content.demolink;
+											<Link
+												to={content.projectLinkName}
+												style={{ marginTop: 12 }}
+											></Link>
+										</Card.Footer>
+										<Card.Footer
+											className='text-muted'
+											style={{
+												width: '100%',
+												display: 'flex',
+												justifyContent: 'space-around',
 											}}
-										/>
-										<Link to={content.demolinkName} style={{ color: 'black' }}>
-											<FontAwesomeIcon
-												size='2x'
-												icon={['fa', 'images']}
-												color='black'
+										>
+											<Route
+												path={content.projectLinkName}
+												component={() => {
+													window.location.href = content.projectLink;
+												}}
 											/>
-										</Link>
+											<Link
+												to={content.projectLinkName}
+												style={{ color: 'black' }}
+											>
+												<FontAwesomeIcon
+													size='2x'
+													icon={['fa', 'link']}
+													color='black'
+												/>
+											</Link>
 
-										<Route
-											path={content.linkName}
-											component={() => {
-												window.location.href = content.link;
-											}}
-										/>
-										<Link to={content.linkName}>
-											<FontAwesomeIcon
-												size='2x'
-												icon={['fa', 'code']}
-												color='black'
+											<Route
+												path={content.linkName}
+												component={() => {
+													window.location.href = content.link;
+												}}
 											/>
-										</Link>
-									</Card.Footer>
-
-									{/* </div> */}
-								</Card>
-							</div>
+											<Link to={content.linkName}>
+												<FontAwesomeIcon
+													size='2x'
+													icon={['fa', 'code']}
+													color='black'
+												/>
+											</Link>
+										</Card.Footer>
+									</Card>
+									<div className='video__modal'>
+										<VideoModal content={content} key={content.id} />
+									</div>
+								</div>
+							</>
 						))}
 					</Container>
 				</Card>

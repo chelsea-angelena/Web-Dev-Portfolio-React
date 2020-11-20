@@ -39,34 +39,33 @@ export default function IntroFile() {
 							</Lead>
 							<div className='intro__content' id='intro__content'>
 								<div className='tech__icons' id='tech'>
-									<p>
-										<FontAwesomeIcon
-											size='6x'
-											className='brand-icon'
-											icon={['fab', 'node']}
-											// color='white'
-										/>
-									</p>
-									<p>
-										<FontAwesomeIcon
-											size='6x'
-											className='brand-icon'
-											icon={['fab', 'react']}
-											// color='white'
-										/>
-									</p>
-									<p>
-										<FontAwesomeIcon
-											size='6x'
-											className='brand-icon'
-											icon={['fab', 'sass']}
-											// color='white'
-										/>
-									</p>
+									{/* <p> */}
+									<FontAwesomeIcon
+										size='6x'
+										className='brand-icon'
+										icon={['fab', 'node']}
+										// color='white'
+									/>
+									{/* </p> */}
+									{/* <p> */}
+									<FontAwesomeIcon
+										size='6x'
+										className='brand-icon'
+										icon={['fab', 'react']}
+										// color='white'
+									/>
+									{/* </p> */}
+									{/* <p> */}
+									<FontAwesomeIcon
+										size='6x'
+										className='brand-icon'
+										icon={['fab', 'sass']}
+										// color='white'
+									/>
+									{/* </p> */}
 								</div>
 							</div>
-							{/* <SiteNav /> */}
-							{/* <SocialIcons /> */}
+
 							<IconsRow />
 						</div>
 					</Container>

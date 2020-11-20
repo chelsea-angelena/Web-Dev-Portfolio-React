@@ -141,23 +141,15 @@ div.container-fluid {
 	outline: black 0.1em 0.1em 0.1em;
 	animation: fadeIn 4s;
 }
-.brand-icon:hover {
-	animation: backOutDown 3s;
+
+.brand-icon {
+	transition: transform 0.5s ease-in-out;
 }
 
-@keyframes backOutDown {
-	0% {
-		transform: scale(0.1);
-		opacity: 0;
-	}
-	60% {
-		transform: scale(1.2);
-		opacity: 1;
-	}
-	100% {
-		transform: scale(1);
-	}
+.brand-icon:hover {
+	transform: scale(1.35);
 }
+
 @keyframes fadeIn {
 	0% {
 		transform: scale(0.1);
@@ -193,17 +185,7 @@ div.container-fluid {
 		height: 750px;
 	}
 }
-// .stars {
-// 	background: black
-// 		url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1231630/stars.png) repeat;
-// 	position: absolute;
-// 	top: 0;
-// 	bottom: 0;
-// 	left: 0;
-// 	right: 0;
-// 	display: block;
-// 	z-index: 0;
-// }
+
 @media screen and (min-width: 1024) {
 	#intro__content {
 		display: flex;
@@ -218,6 +200,10 @@ div.container-fluid {
 		max-width: 400px;
 	}
 	#tech {
+		max-width: 400px;
+	}
+
+	.introIcons {
 		max-width: 400px;
 	}
 }
