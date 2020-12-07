@@ -1,6 +1,6 @@
 import React from 'react';
 import './contact.scss';
-import { Nav } from 'bootstrap-4-react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import contact from './contactData';
 import { Jumbotron, Container } from 'bootstrap-4-react';
@@ -25,10 +25,9 @@ export default function ContactSection() {
 					<div className='contact__blurb'>{contact.email}</div>
 
 					<div className='navBarIcons'>
-						<Nav.Link
+						<a
 							rel='noopener noreferrer'
 							href='https://www.linkedin.com/in/chelsea-a-brown'
-							active
 							className='contact__nav'
 						>
 							<FontAwesomeIcon
@@ -36,8 +35,9 @@ export default function ContactSection() {
 								size='3x'
 								icon={['fab', 'linkedin-in']}
 							/>
-						</Nav.Link>
-						<Nav.Link
+						</a>
+						<a
+							rel='noopener noreferrer'
 							href='https://github.com/chelsea-angelena'
 							className='contact__nav'
 						>
@@ -46,8 +46,9 @@ export default function ContactSection() {
 								size='3x'
 								icon={['fab', 'github']}
 							/>
-						</Nav.Link>
-						<Nav.Link
+						</a>
+						<a
+							rel='noopener noreferrer'
 							href='@mailto:chelsea.angelena@gmail.com'
 							className='contact__nav'
 						>
@@ -56,7 +57,7 @@ export default function ContactSection() {
 								size='3x'
 								icon={['far', 'envelope']}
 							/>
-						</Nav.Link>
+						</a>
 					</div>
 				</Container>
 			</div>

@@ -30,7 +30,9 @@ export default function IntroFile() {
 					>
 						<Header />
 						<div>
-							<Display3 style={styles.title}>{intro.title}</Display3>
+							<Display3 className='intro__title' style={styles.title}>
+								{intro.title}
+							</Display3>
 							<Display4 style={styles.subtitle}> {intro.subtitle}</Display4>
 							<Lead
 								style={{ fontSize: '1.25rem', color: 'white', padding: 42 }}
@@ -39,30 +41,24 @@ export default function IntroFile() {
 							</Lead>
 							<div className='intro__content' id='intro__content'>
 								<div className='tech__icons' id='tech'>
-									{/* <p> */}
 									<FontAwesomeIcon
 										size='6x'
 										className='brand-icon'
 										icon={['fab', 'node']}
-										// color='white'
 									/>
-									{/* </p> */}
-									{/* <p> */}
+
 									<FontAwesomeIcon
 										size='6x'
 										className='brand-icon'
 										icon={['fab', 'react']}
 										// color='white'
 									/>
-									{/* </p> */}
-									{/* <p> */}
+
 									<FontAwesomeIcon
 										size='6x'
 										className='brand-icon'
 										icon={['fab', 'sass']}
-										// color='white'
 									/>
-									{/* </p> */}
 								</div>
 							</div>
 
@@ -78,14 +74,14 @@ const styles = {
 	title: {
 		fontFamily: 'Abril Fatface',
 		fontWeight: 'bold',
-		fontSize: 40,
-		color: 'white',
+		fontSize: '5em',
+		color: 'hsl(240.2, 100%, 98.4%)',
 
 		paddingBottom: 40,
 	},
 	subtitle: {
 		fontFamily: 'Abril Fatface',
 		fontSize: 54,
-		color: 'white',
+		color: 'hsl(240.2, 100%, 98.4%)',
 	},
 };

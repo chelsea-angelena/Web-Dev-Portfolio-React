@@ -13,11 +13,12 @@ export default function Header() {
 				sticky
 				fixed='top'
 				style={{
-					backgroundColor: 'rgba(0,0,0,.5)',
+					backgroundColor: 'rgba(0,0,0,.8)',
 					color: 'white',
 					padding: 0,
 					height: 75,
 					margin: 0,
+					zIndex: 15,
 				}}
 			>
 				<Navbar.Toggler

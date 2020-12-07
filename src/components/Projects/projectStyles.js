@@ -1,23 +1,23 @@
 const styles = {
 	card: {
-		alignSelf: 'center',
+		// alignSelf: 'center',
 		borderRadius: 24,
 		marginTop: 24,
 		display: 'flex',
 		alignItems: 'center',
 		justifyContent: 'center',
 		height: 650,
-
+		alignSelf: 'center',
 		border: 'none',
-
+		width: 300,
 		borderColor: 'grey',
 		borderWidth: 1,
 
-		maxWidth: '100%',
 		marginLeft: 0,
 		marginRight: 0,
 		padding: 0,
 	},
+
 	text: {
 		fontFamily: 'Montserrat',
 		fontWeight: 200,
@@ -56,16 +56,14 @@ const styles = {
 		flexDirection: 'column',
 		lineHeight: '2rem',
 	},
-	projectCard: {
-		border: 'none',
-	},
+
 	title: {
 		fontFamily: 'Montserrat',
 		color: 'black',
 		borderBottomStyle: 'solid',
 		borderBottomWidth: 1,
 		borderBottomColor: 'grey',
-		fontSize: 28,
+		fontSize: '3.5rem',
 		fontWeight: 'medium',
 		paddingBottom: 16,
 

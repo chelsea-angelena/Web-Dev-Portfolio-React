@@ -93,7 +93,7 @@ const MovieModal = () => {
 									}}
 								>
 									<iframe
-										src='https://www.loom.com/embed/133e9fe547874affa262bb5b52ebd2da'
+										src='https://www.loom.com/embed/21ca1ce9b0a746f2925a7136d1fc37a9'
 										frameBorder='0'
 										title='MovieAppLoom'
 										// webkitallowfullscreen
@@ -154,7 +154,7 @@ const YelpModal = () => {
 								</div>
 							</Modal.Body>
 							<Modal.Footer>
-								<Button secondary data-dismiss='modal'>
+								<Button secondary data-dismiss='modal' style={styles.button}>
 									Close
 								</Button>
 							</Modal.Footer>
@@ -185,6 +185,8 @@ const styles = {
 		shadowRadius: 5,
 		marginBottom: 32,
 		width: 200,
+		color: 'black',
+		backgroundColor: '#FFFFFF',
 	},
 	imgStyle: {
 		height: 200,

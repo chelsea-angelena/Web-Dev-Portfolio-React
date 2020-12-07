@@ -21,6 +21,7 @@ export default function IconsRow() {
 					size='2x'
 					className='brand-icon-small'
 					icon={['fab', 'js-square']}
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 				/>
 			</p>
 			<p>
@@ -28,6 +29,7 @@ export default function IconsRow() {
 					size='2x'
 					className='brand-icon-small'
 					icon={['fab', 'html5']}
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 				/>
 			</p>
 			<p>
@@ -35,6 +37,7 @@ export default function IconsRow() {
 					size='2x'
 					className='brand-icon-small'
 					icon={['fab', 'css3']}
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 				/>
 			</p>
 			<p>
@@ -42,6 +45,7 @@ export default function IconsRow() {
 					size='2x'
 					className='brand-icon-small'
 					icon={['fas', 'database']}
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 				/>
 			</p>
 
@@ -50,6 +54,7 @@ export default function IconsRow() {
 					size='2x'
 					className='brand-icon-small'
 					icon={['fas', 'code-branch']}
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 				/>
 			</p>
 			<p>
@@ -57,6 +62,7 @@ export default function IconsRow() {
 					size='2x'
 					className='brand-icon-small'
 					icon={['fas', 'server']}
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 				/>
 			</p>
 
@@ -64,6 +70,7 @@ export default function IconsRow() {
 				<FontAwesomeIcon
 					size='2x'
 					className='brand-icon-small'
+					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
 					icon={['fab', 'app-store-ios']}
 				/>
 			</p>

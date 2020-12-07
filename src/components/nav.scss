@@ -7,6 +7,14 @@
 	margin: 0;
 	padding: 0;
 }
+.navItem {
+	width: 200;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	align-self: center;
+	padding-top: 16px;
+}
 a.draw {
 	margin: 0 0 0 24px;
 }
@@ -16,17 +24,17 @@ a.draw {
 	cursor: pointer;
 	display: block;
 	width: 0%;
-	border-bottom: 1px solid #ffffff;
+	border-bottom: 1px solid hsl(349, 100%, 90%);
 	transition: 0.5s;
 }
 
 .draw:hover:after {
-	width: 75%;
+	width: 100%;
 	cursor: pointer;
-	color: #ffffff;
+	border-bottom: 1px solid hsl(349, 100%, 90%);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (max-width: 574px) {
 	.draw:after {
 		content: '';
 		cursor: pointer;
@@ -38,9 +46,11 @@ a.draw {
 	}
 
 	.draw:hover:after {
-		width: 25%;
+		width: 100%;
 		cursor: pointer;
 		color: #ffffff;
+		margin: 0;
+		padding: 0;
 	}
 }
 .nav-link {
@@ -73,22 +83,30 @@ a.draw:visited {
 	background-color: 'hsl(10%, 10%, 0%)';
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 575px) {
 	.draw:after {
 		content: '';
 		cursor: pointer;
 		display: block;
 		width: 0%;
 		color: #ffffff;
-		border-bottom: 1px solid #FFCDD2;
+		border-bottom: 1px solid #ffcdd2;
 		transition: 0.5s;
 	}
 
 	.draw:hover:after {
-		width: 75%;
-		margin-left: 24px;
-		margin-right: 24px;
+		width: 100%;
+		// margin-left: 24px;
+		// margin-right: 24px;
 		color: #ffffff;
 		cursor: pointer;
+	}
+	.navItem {
+		width: 200;
+		margin: 0;
+		padding: 0;
+		display: flex;
+		align-self: center;
+		padding-top: 16px;
 	}
 }

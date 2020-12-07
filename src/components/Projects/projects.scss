@@ -1,20 +1,3 @@
-#projects {
-	padding: 0;
-	flex-direction: column;
-	align-items: center;
-	align-self: center;
-	justify-content: center;
-	margin: 0;
-	font-family: Montserat;
-	margin-top: 64;
-	margin-bottom: 64;
-	// padding-bottom: 64;
-	padding: 0;
-	text-align: center;
-	max-width: '100%';
-	border: none;
-	overflow: hidden;
-}
 .video__modal {
 	display: flex;
 	align-self: center;
@@ -33,7 +16,7 @@
 	flex-direction: column;
 	justify-content: center;
 	height: 650;
-
+	min-width: 300;
 	max-width: 100%;
 	margin-left: 0;
 	margin-right: 0;
@@ -123,15 +106,16 @@ div.cardgroup {
 	width: '100%';
 }
 
-@media screen and (min-width: 768px) {
-	.projects {
-		margin: 64px;
-	}
+// @media screen and (min-width: 768px) {
+// 	// .projects {
+// 	// 	// margin: 64px;
+// 	// }
 
-	div.cardgroup {
-		align-items: space-between;
-	}
-}
+// 	div.cardgroup {
+// 		align-items: space-between;
+// 		width: '100%';
+// 	}
+// }
 
 @media screen and (min-width: 1024px) {
 	div#projects.container-fluid {
@@ -141,7 +125,7 @@ div.cardgroup {
 		border-style: none;
 	}
 	div#projects {
-		justify-content: space-between;
+		justify-content: space-evenly;
 		width: 100%;
 		display: flex;
 		flex-direction: row;
@@ -155,7 +139,7 @@ div.cardgroup {
 	#projects {
 		padding: 24px;
 	}
-	#projects > div.card {
-		padding: 24;
-	}
+	// #projects > div.card {
+	// 	padding: 24;
+	// }
 }

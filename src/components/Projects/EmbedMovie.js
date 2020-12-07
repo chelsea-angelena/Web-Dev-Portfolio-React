@@ -14,15 +14,17 @@ export default function EmbedMovie() {
 					alignItems: 'center',
 					alignSelf: 'center',
 					justifyContent: 'center',
-					// overflow: 'hidden',
+					margin: 0,
+					padding: 0,
+					overflow: 'hidden',
 				}}
 			>
 				<iframe
 					title='App'
-					width='300px'
+					width='310px'
 					type='iframe'
 					scrolling='no'
-					src='https://appetize.io/embed/h96ch5mct9gc05ze9fkg2g6rfg?device=iphone8'
+					src="https://appetize.io/embed/1jnkqckwppcz8na7uzchc7df88?device=iphone6s&scale=75&orientation=portrait&osVersion=13.3"
 				></iframe>
 			</ResponsiveEmbed>
 		</div>
