@@ -63,7 +63,7 @@ const styles = {
 		borderBottomStyle: 'solid',
 		borderBottomWidth: 1,
 		borderBottomColor: 'grey',
-		fontSize: '3.5rem',
+		fontSize: '2.5rem',
 		fontWeight: 'medium',
 		paddingBottom: 16,
 

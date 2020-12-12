@@ -93,7 +93,7 @@ export default function Header() {
 						<Nav.Item className='navItem'>
 							<Nav.Link
 								to='/resume'
-								href='/resume'
+								href='https://www.canva.com/design/DAEQDzgoAm8/b1DidTB1vJwhSDx1-BuLaw/view?utm_content=DAEQDzgoAm8&utm_campaign=designshare&utm_medium=link&utm_source=viewer'
 								className='draw link'
 								style={{ color: 'white' }}
 							>
