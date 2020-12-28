@@ -2,6 +2,7 @@ import React from 'react';
 import Layout from '../layout/Layout';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import Animate from '../animate/Animations';
+import FadeAnimation from '../animate/Animations';
 const skills = [
 	{
 		id: '1',
@@ -41,7 +42,9 @@ function Info() {
 					</Animate>
 					<div className='info__row'>
 						{skills.map((skill) => (
-							<SkillItem item={skill} key={skill.id} />
+							<FadeAnimation>
+								<SkillItem item={skill} key={skill.id} />
+							</FadeAnimation>
 						))}
 					</div>
 				</div>

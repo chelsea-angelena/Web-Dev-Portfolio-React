@@ -12,13 +12,12 @@ const AppRoutes = () => {
 	return (
 		<BrowserRouter>
 			<Switch>
-				<Route exact path='/projects/unsplash-app' component={UnsplashApp} />
+				<Route exact path='/projects/unsplash' component={UnsplashApp} />
 				<Route exact path='/projects/:id' component={ProjectsPage} />
 
 				<Route exact path='/resume' component={Resume} />
 				<Route exact path='/code' component={Code} />
 				<Route exact path='/contact' component={Contact} />
-				{/* <Route exact path='/projects' component={Projects} /> */}
 				<Route exact path='/demo' component={Demo} />
 				<Route exact path='/' component={Main} />
 			</Switch>

@@ -36,6 +36,7 @@ a:active{
 a:hover {
 	color: rgba(0, 0, 0, 0.5);
 }
+
 .demo__title, .about__title, .intro__title, .contact__title, .info__title, .projects__title {
 	@include title($max-width: 25rem, $color: $smoke);
 	// background-color: rgba(0,0,0,.7);

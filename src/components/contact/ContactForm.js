@@ -5,15 +5,40 @@ export default function ContactForm() {
 	const [email, setEmail] = useState('');
 	const [message, setMessage] = useState('');
 
-	const onFormSubmit = (e) => {
-		e.preventDefault();
-		setEmail('');
-		setMessage('');
+	const encode = (data) => {
+		return Object.keys(data)
+			.map(
+				(key) => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])
+			)
+			.join('&');
 	};
+
+	const onFormSubmit = async (e) => {
+		e.preventDefault();
+		let res = await fetch('/', {
+			method: 'POST',
+			headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+
+			body: encode({ 'form-name': 'contact', email, message }),
+		})
+			.then(() => alert('Thank you for the message!'))
+			.finally(() => {
+				setEmail('');
+				setMessage('');
+			})
+			.catch((error) => alert(error));
+		console.log(res);
+	};
+
 	return (
 		<Layout>
 			{/* <div className='contact'> */}
-			<form name='contact' method='post' onSubmit={onFormSubmit}>
+			<form
+				name='contact'
+				data-netlify='true'
+				method='post'
+				onSubmit={onFormSubmit}
+			>
 				<input type='hidden' name='form-name' value='contact' />
 				<div className='field'>
 					<input
@@ -21,6 +46,7 @@ export default function ContactForm() {
 						value={email}
 						onChange={(e) => setEmail(e.target.value)}
 						type='email'
+						name='email'
 						placeholder='email'
 					/>
 				</div>
@@ -30,6 +56,7 @@ export default function ContactForm() {
 						cols='75'
 						className='contact__message'
 						type='textarea'
+						name='message'
 						value={message}
 						multiline='true'
 						height='100px'

@@ -28,14 +28,10 @@ export default function Animated({ children }) {
 	);
 }
 
-// const Animate = ({ children }) => (
-// 	<motion.div animate={{ scale: 1 }} transition={{ duration: 0.5 }}>
-// 		{children}
-// 	</motion.div>
-// );
-
-// // animationIn='fadeInLeft'
-// // animationInDuration={3000}
-// // animationOut='fadeOut'
-// // isVisible={true}
-// export default Animate;
+export const FadeAnimation = ({ children }) => {
+	return (
+		<div>
+			<Fade up>{children}</Fade>
+		</div>
+	);
+};

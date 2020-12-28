@@ -71,20 +71,20 @@ $flex-direction: column;
 @include col;
   font-family: $title-font;
   font-weight: $title-weight;
-  font-size: 3rem;
-max-width: $max-width;
+  font-size: 2.75rem;
+max-width: 75%;
   padding: 1.5rem;
   border:  2px solid;
   border-color: $color;
-  margin:0 auto;
   margin-bottom: 2rem;
   margin-top: 2.625rem;
+  align-self: center;
   color: $color;
   // background-color:$dark;
  @include shadow;
-  @if $max-width != 14rem {
-    max-width: $max-width
-    }
+  // @if $max-width != max-width {
+  //   max-width: $max-width
+  //   }
 }
 
 
@@ -116,7 +116,7 @@ max-width: $max-width;
 
 
 @mixin background{
-  background-image: url("https://images.unsplash.com/photo-1580684822403-559fa119d2f6?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1213&q=80");
+  background-image: url("../../../assets//hero-min.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

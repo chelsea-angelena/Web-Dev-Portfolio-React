@@ -10,7 +10,7 @@ export function SocialIcons() {
 				<Nav.Link
 					rel='noopener noreferrer'
 					href='https://www.linkedin.com/in/chelsea-a-brown'
-					active
+					// active
 					// style={styles.nav}
 				>
 					<FontAwesomeIcon
@@ -28,7 +28,10 @@ export function SocialIcons() {
 						style={styles.icon}
 					/>
 				</Nav.Link>
-				<Nav.Link href='https://github.com/chelsea-angelena' style={styles.nav}>
+				<Nav.Link
+					href='https://codesandbox.io/u/chelsea-angelena'
+					style={styles.nav}
+				>
 					<FontAwesomeIcon
 						size='4x'
 						icon={['fab', 'codepen']}

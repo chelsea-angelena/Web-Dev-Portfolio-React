@@ -29,7 +29,11 @@ export const NavBarIcons = ({ color }) => {
 			>
 				<FontAwesomeIcon color={color} size='2x' icon={['far', 'envelope']} />
 			</a>
-			<a rel='noopener noreferrer' href='/code' className='contact__nav'>
+			<a
+				rel='noopener noreferrer'
+				href='https://codesandbox.io/u/chelsea-angelena'
+				className='contact__nav'
+			>
 				<FontAwesomeIcon
 					size='2x'
 					icon={['fab', 'codepen']}

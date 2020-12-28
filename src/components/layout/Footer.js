@@ -4,7 +4,6 @@ import { Navbar } from 'bootstrap-4-react';
 
 import colors from '../../styles/js/colors';
 
-
 export default function Footer() {
 	return (
 		<Navbar
@@ -30,7 +29,7 @@ export default function Footer() {
 			{/* <div id='footer'> */}
 
 			<div className='footer__content'>
-				<NavBarIcons />
+				<NavBarIcons color='white' />
 			</div>
 			<div className='footer__content'>Made by Chelsea ©2020</div>
 			{/* </div> */}

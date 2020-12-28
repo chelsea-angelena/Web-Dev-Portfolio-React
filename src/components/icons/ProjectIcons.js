@@ -7,7 +7,6 @@ import colors from '../../styles/js/colors';
 export function ProjectIcons({
 	path,
 	codepen,
-	link,
 	github,
 	demo_video,
 	simulator,
@@ -63,7 +62,7 @@ export function ProjectIcons({
 					</Nav.Link>
 				)}
 				{simulator && (
-					<Nav.Link href={simulator} style={styles.nav}>
+					<Nav.Link href='/demo' style={styles.nav}>
 						<FontAwesomeIcon
 							size='3x'
 							icon={['fa', 'mobile']}

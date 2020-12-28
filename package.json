@@ -2,7 +2,7 @@
 	"name": "portfolio-site-react",
 	"homepage": ".",
 	"license": "MIT",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"dependencies": {
 		"@fortawesome/fontawesome-svg-core": "^1.2.30",
 		"@fortawesome/free-brands-svg-icons": "^5.14.0",
@@ -12,8 +12,6 @@
 		"axios": "^0.21.1",
 		"bootstrap": "^4.5.3",
 		"bootstrap-4-react": "0.0.59",
-		"framer-motion": "^3.0.0",
-		"mdbreact": "^5.0.1",
 		"netlify": "^6.0.6",
 		"node-sass": "^4.14.1",
 		"react": "^16.13.1",
@@ -21,12 +19,10 @@
 		"react-bootstrap": "^1.4.0",
 		"react-dom": "^16.13.1",
 		"react-iframe": "^1.8.0",
-		"react-overlays": "^0.9.3",
 		"react-reveal": "^1.2.2",
 		"react-router-dom": "^5.2.0",
 		"react-scripts": "^4.0.1",
 		"react-scroll": "^1.8.1",
-		"reactstrap": "^8.7.1",
 		"styled-components": "^5.2.1"
 	},
 	"scripts": {

@@ -2,6 +2,7 @@ import React from 'react';
 import EmbedMovie from '../projects/EmbedMovie';
 import Layout from '../layout/Layout';
 import Animate from '../animate/Animations';
+
 export default function Demo() {
 	return (
 		<Layout>

@@ -1,18 +1,44 @@
+
+
 #intro {
 
+	// @include background;
+	// // @include col;
+	// @include shadow;
+	display: flex;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
 	@include background;
-	@include col;
-	@include shadow;
-
+margin: 0 auto;
+padding: 0;
+width: 100%;
 }
 #intro__overlay{
+	width: 100%;
+margin:0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+	// @include col;
 	@include overlay;
-	@include col;
+	// @include col;
+
 }
-h1.intro__title {
-	margin-top: 64px;
-	@include title($color: white, $max-width: 300px);
-	@include text-shadow;
+div.react-reveal{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-self: center;
+	align-items: center;
+}
+.intro__title {
+
+	@include title($color: white);
+
+
 }
 .intro__subtitle {
 	@include caption($color: white);
@@ -21,7 +47,7 @@ h1.intro__title {
 	@include caption($color: white);
 }
 @media screen and (min-width: 768px){
-	h1.intro__title {
+	.intro__title {
 		@include title($color: white, $max-width: 600px);
 		@include text-shadow;
 	}
