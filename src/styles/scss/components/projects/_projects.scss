@@ -1,0 +1,51 @@
+#projects{
+  width: 100%;
+  margin: 0px auto;
+  padding: 4rem 0px 4rem 0px;
+  background-image: url('../../../../assets/background_imgs/crossword.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+@include col;
+}
+.card-style{
+  height: 18.75rem;
+  margin:1.5rem;
+  @include shadow;
+}
+.projects__title{
+  padding: 4rem 0px 4rem 0px;
+  @include title($color: $dark);
+  // background-color: $dark;
+}
+
+.projects__grid{
+width: 100%;
+display: flex;
+@include col;
+padding-bottom: 4rem;
+}
+
+@media screen and (min-width: 768px){
+  .projects__title{
+    margin-top: 5rem;
+  }
+  .projects__grid{
+    width:100%;
+    margin: 0 auto;
+    // padding: 4rem 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    align-self:center;
+    // @include row;
+  }
+}
+
+// .projects__hover:hover{
+//   		display: block;
+// 	}
+

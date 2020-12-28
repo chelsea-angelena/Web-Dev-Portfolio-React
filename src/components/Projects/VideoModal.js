@@ -1,14 +1,12 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import './modal.scss';
 import { Modal, Button } from 'bootstrap-4-react';
-import './modal.scss';
 
 export default function VideoModal({ content }) {
 	let { id } = content;
 	return (
 		<>
-			<div>
+			<div className='video__modal__button' style={styles.buttonDiv}>
 				<Button
 					outline
 					dark
@@ -177,6 +175,7 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'row',
 		alignItems: 'center',
+		alignSelf: 'center',
 		justifyContent: 'center',
 		fontFamily: 'Montserrat',
 		shadowColor: '#000',
@@ -184,7 +183,7 @@ const styles = {
 		shadowOpacity: 0.5,
 		shadowRadius: 5,
 		marginBottom: 32,
-		width: 200,
+		width: '100%',
 		color: 'black',
 		backgroundColor: '#FFFFFF',
 	},
@@ -194,5 +193,11 @@ const styles = {
 		borderRadius: 6,
 		alignSelf: 'center',
 		marginTop: 32,
+	},
+	buttonDiv: {
+		width: '300',
+		alignItems: 'center',
+		alignSelf: 'center',
+		justifyContent: 'center',
 	},
 };

@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Mulish:ital,wght@0,200;0,300;0,700;0,800;0,900;1,200&display=swap');
+;
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Heebo:wght@100;200;300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,900;1,100;1,200&display=swap');
+
+
+@font-face {
+    font-family: 'sifonnbasic';
+    src: url('../../../assets/font/sifon_webkit/sifonn_basic-webfont.woff2') format('woff2'),
+         url('../../../assets/font//sifon_webkit/sifonn_basic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@use 'sass:map';
+
+@font-face{
+  font-family: makbold;
+  src: url('../../../assets/font/Mak/webkit/mak-bold-webfont.woff');
+  src: url('../../../assets/font/Mak/webkit/mak-bold-webfont.woff2')
+}
+@font-face{
+  font-family: maklight;
+  src: url('../../../assets/font/Mak/Web/MAK.woff')
+}
+

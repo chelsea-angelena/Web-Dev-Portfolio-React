@@ -1,0 +1,32 @@
+//Base
+@import './base/fonts';
+@import './base/variables';
+@import './base/mixins';
+@import './base/global';
+@import './base/animations';
+@import './base/icons';
+
+//layout
+@import './components/layout/footer';
+@import './components/layout/nav';
+
+//main
+@import './components/main/intro';
+@import './components/main/info';
+@import './components/main/about';
+@import './components/main/contact';
+
+//projects
+@import './components/projects/projects';
+@import './components/projects/demo';
+@import './components/projects/modal';
+@import './components/projects/flip';
+@import './components/projects/gallery';
+
+//pages
+@import './pages/resume';
+@import './pages/code';
+
+//bootstrap
+
+@import '~bootstrap/scss/bootstrap';

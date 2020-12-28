@@ -1,0 +1,88 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	max-width: 100%;
+	font-size: 14px;
+}
+.bg-dark{
+background-color: $dark;
+}
+:root {
+	box-sizing: border-box;
+	margin: 0 auto;
+	padding:0;
+}
+.main{
+	background-image: url('../../../assets/background_imgs/debut_dark.png');
+	margin: 0 auto;
+	padding: 0;
+	max-width: 100%;
+}
+ul, a {
+	text-decoration: none;
+	list-style: none;
+}
+a.nav__iconLink:hover {
+	color: white;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+a:visited{
+	color: white;
+}
+a:active{
+	color: white;
+}
+a:hover {
+	color: rgba(0, 0, 0, 0.5);
+}
+.demo__title, .about__title, .intro__title, .contact__title, .info__title, .projects__title {
+	@include title($max-width: 25rem, $color: $smoke);
+	// background-color: rgba(0,0,0,.7);
+}
+#home__icon{
+	position: fixed;
+	bottom: 0;
+	z-index: 5;
+
+	width: 75px;
+	height: 150px;
+	display: flex;
+	@include col;
+	justify-content: flex-start;
+
+}
+.home__icon--icon{
+	position: sticky;
+	bottom: 0;
+	z-index: 5;
+	width: 50px;
+	height: 50px;
+	background-color: white;
+	border-color: $dark;
+	border: 2px solid;
+	border-radius: 50px;
+	align-items: center;
+	padding-top: 4px;
+
+}
+@media screen and (min-width: 768px){
+	* {
+		font-size: 16px;
+	}
+.demo__title,	.about__title, .projects__title,	.intro__title, .contact__title, .info__title {
+		@include title($max-width: 30rem);
+
+		// background-color: $dark;
+	}
+	#home__icon{
+		height: 200px;
+	}
+}
+
+
+@media screen and (min-width: 1024px){
+	*{
+		font-size: 18px;
+	}
+}

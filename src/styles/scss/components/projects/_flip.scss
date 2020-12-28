@@ -1,0 +1,54 @@
+.card__main{
+@include col;
+}
+$text-color: black;
+.flip-card {
+	background-color: transparent;
+	width: 300px;
+	height: 200px;
+	border: 1px solid #f1f1f1;
+	perspective: 1000px;
+	display: flex;
+	align-self: center;
+	-webkit-box-shadow: 10px 8px 22px 4px rgba(0, 0, 0, 0.37);
+	box-shadow: 10px 8px 22px 4px rgba(0, 0, 0, 0.37);
+	height: 400px;
+	@include center;
+}
+
+.flip-card-inner {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	transition: transform 0.8s;
+	transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+	transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+.flip-card-front {
+
+	color: black;
+	border-radius: 56px;
+}
+
+.flip-card-back {
+	background-color: whitesmoke;
+	color:$text-color;
+	transform: rotateY(180deg);
+}
+.video__modal__button{
+	@include col;
+}

@@ -1,0 +1,35 @@
+#footer {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  // height: 56px;
+  // display: flex;
+  // flex-direction: column;
+  // background-color:$dark;
+  @include col;
+  color:$lightText;
+
+  // padding-top: 64px;
+
+  // padding-top: 1rem;
+
+  &__content{
+   font-family: $title;
+   font-weight: bold;
+  }
+}
+.footer__subtitle{
+  @include subtitle;
+  padding: 24px;
+}
+.contact__icons--div{
+	color: whitesmoke
+}
+
+
+// @media screen and (min-width: 768px){
+// #footer {
+//   height: 5rem;
+//   // @include row($flex-wrap: wrap);
+// }
+// }

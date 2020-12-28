@@ -1,0 +1,28 @@
+#intro {
+
+	@include background;
+	@include col;
+	@include shadow;
+
+}
+#intro__overlay{
+	@include overlay;
+	@include col;
+}
+h1.intro__title {
+	margin-top: 64px;
+	@include title($color: white, $max-width: 300px);
+	@include text-shadow;
+}
+.intro__subtitle {
+	@include caption($color: white);
+}
+.intro__caption {
+	@include caption($color: white);
+}
+@media screen and (min-width: 768px){
+	h1.intro__title {
+		@include title($color: white, $max-width: 600px);
+		@include text-shadow;
+	}
+}

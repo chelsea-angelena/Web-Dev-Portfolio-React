@@ -1,0 +1,45 @@
+.tech__icons {
+	// display: flex;
+	// align-items: center;
+	// justify-content: space-evenly;
+	// align-self: center;
+
+	// margin-top: 32px;
+	// margin-right: 16px;
+	// margin-left: 16px;
+	@include row;
+	max-width: 100%;
+margin: 16px;
+	color: 'hsl(240, 1%, 86%)';
+}
+.brand-icon {
+	text-shadow: black 0.1em 0.1em 0.2em;
+	max-width: 100px;
+	max-height: 100px;
+	padding: 5px;
+	border-radius: 6px;
+	outline: black 0.1em 0.1em 0.1em;
+	animation: fadeIn 4s;
+	color: 'hsl(240, 1%, 86%)';
+}
+.brand-icon-small {
+	color: hsl(240, 1%, 86%);
+	text-shadow: black 0.1em 0.1em 0.2em;
+	width: 50px;
+	height: 50px;
+
+	border-radius: 6px;
+	outline: black 0.1em 0.1em 0.1em;
+	animation: fadeIn 4s;
+}
+
+.brand-icon {
+	transition: transform 0.5s ease-in-out;
+}
+@media screen and (min-width: 768px){
+.tech__icons{
+
+margin: 32px;
+max-width: 700px;
+}
+}
