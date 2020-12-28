@@ -15,7 +15,7 @@ background-position: center;
 .info{
   max-width: 20rem;
   margin: 1.5rem;
-height: 42rem;
+  height: 42rem;
   border: 1.4rem $smoke solid;
   @include shadow;
   &__col{
@@ -30,7 +30,7 @@ height: 42rem;
   color: $lightText;
 }
 &__title{
-  background-color: $dark;
+  @include title($color: white);
 }
 &__list{
 color: $lightText;
@@ -64,6 +64,9 @@ margin: 1.5rem;
   div.info__col, div.info__row{
     width: 100%;
     @include row;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
   }
-}
+  h1.info__title {
+		@include title($color: white, $max-width: 600px);
+		@include text-shadow;
+}}

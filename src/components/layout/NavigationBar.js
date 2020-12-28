@@ -14,7 +14,7 @@ const colors = {
 export default function NavigationBar() {
 	return (
 		<Navbar
-			expand='medium'
+			expand='sm'
 			dark
 			fluid='true'
 			sticky

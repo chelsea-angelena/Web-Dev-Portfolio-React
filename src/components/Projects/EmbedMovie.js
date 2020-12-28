@@ -21,7 +21,7 @@ export default function EmbedMovie() {
 				</ResponsiveEmbed>
 			</div>
 			<div className='embed__div'>
-				<Lead style={styles.title}>Restaurant </Lead>
+				<Lead style={styles.title}>Restaurant App</Lead>
 				<ResponsiveEmbed style={styles.embed}>
 					<iframe
 						title='demo_app_2'

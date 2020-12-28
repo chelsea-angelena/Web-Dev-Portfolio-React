@@ -22,11 +22,7 @@ export const NavBarIcons = ({ color }) => {
 			>
 				<FontAwesomeIcon color={color} size='2x' icon={['fab', 'github']} />
 			</a>
-			<a
-				rel='noopener noreferrer'
-				href='@mailto:chelsea.angelena@gmail.com'
-				className='contact__nav'
-			>
+			<a rel='noopener noreferrer' href='/contact' className='contact__nav'>
 				<FontAwesomeIcon color={color} size='2x' icon={['far', 'envelope']} />
 			</a>
 			<a

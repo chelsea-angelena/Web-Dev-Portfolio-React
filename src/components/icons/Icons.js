@@ -53,12 +53,12 @@ export function TechIcons() {
 				flexDirection: 'row',
 				alignSelf: 'center',
 				justifyContent: 'space-evenly',
-				width: '100%',
+				maxWidth: '100%',
 			}}
 		>
 			<p>
 				<FontAwesomeIcon
-					size='2x'
+					size='3x'
 					className='brand-icon-small'
 					icon={['fab', 'js-square']}
 					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
@@ -66,7 +66,7 @@ export function TechIcons() {
 			</p>
 			<p>
 				<FontAwesomeIcon
-					size='2x'
+					size='3x'
 					className='brand-icon-small'
 					icon={['fab', 'html5']}
 					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
@@ -74,7 +74,7 @@ export function TechIcons() {
 			</p>
 			<p>
 				<FontAwesomeIcon
-					size='2x'
+					size='3x'
 					className='brand-icon-small'
 					icon={['fab', 'css3']}
 					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
@@ -82,7 +82,7 @@ export function TechIcons() {
 			</p>
 			<p>
 				<FontAwesomeIcon
-					size='2x'
+					size='3x'
 					className='brand-icon-small'
 					icon={['fas', 'database']}
 					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
@@ -90,7 +90,7 @@ export function TechIcons() {
 			</p>
 			<p>
 				<FontAwesomeIcon
-					size='2x'
+					size='3x'
 					className='brand-icon-small'
 					icon={['fas', 'code-branch']}
 					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
@@ -98,18 +98,10 @@ export function TechIcons() {
 			</p>
 			<p>
 				<FontAwesomeIcon
-					size='2x'
+					size='3x'
 					className='brand-icon-small'
 					icon={['fas', 'server']}
 					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
-				/>
-			</p>
-			<p>
-				<FontAwesomeIcon
-					size='2x'
-					className='brand-icon-small'
-					style={{ color: 'hsl(240.2, 100%, 98.4%)' }}
-					icon={['fab', 'app-store-ios']}
 				/>
 			</p>
 		</Container>
@@ -120,7 +112,7 @@ export function TechIcons() {
 // 		<div className='gallery__icons'>
 // 			<a href='/' className='gallery__icons--link'>
 // 				<FontAwesomeIcon
-// 					size='2x'
+// 					size='3x'
 // 					icon={['fas', 'link']}
 // 					// id='iconID2'
 // 					color={colors.white}
@@ -128,7 +120,7 @@ export function TechIcons() {
 // 			</a>
 // 			<a href='/' className='gallery__icons--link'>
 // 				<FontAwesomeIcon
-// 					size='2x'
+// 					size='3x'
 // 					icon={['fas', 'code']}
 // 					// id='iconID2'
 // 					color={colors.white}
