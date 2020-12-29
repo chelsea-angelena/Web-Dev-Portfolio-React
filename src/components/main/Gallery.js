@@ -11,7 +11,7 @@ export default function Gallery({ project }) {
 		simulator,
 		description,
 		github,
-
+		tech,
 		codepen,
 	} = project;
 	const [show, setShow] = useState(false);
@@ -32,6 +32,7 @@ export default function Gallery({ project }) {
 					/>
 					<div className='middle'>
 						<h1 className='gallery__subtitle'>{title}</h1>
+						
 					</div>
 				</div>
 				<Modal
@@ -91,6 +92,12 @@ export default function Gallery({ project }) {
 							height='300px'
 						/>
 					</Modal.Body>
+					<Modal.Footer>
+						<h6 style={styles.techTitle}> Tech Stack:</h6>
+						{tech.map((tech) => (
+							<Tech tech={tech} />
+						))}
+					</Modal.Footer>
 					<Modal.Footer closeButton>
 						{/* <Links id={id} /> */}
 						<ProjectIcons
@@ -107,22 +114,31 @@ export default function Gallery({ project }) {
 	);
 }
 
-// const Links = ({ id }) => {
-// 	return (
-// 		<div
-// 			style={{
-// 				display: 'flex',
-// 				alignSelf: 'center',
-// 				width: '100%',
-// 				alignItems: 'center',
-// 				justifyContent: 'center',
-// 			}}
-// 		>
-// 			<Lead style={{ color: 'black' }}>
-// 				<a href={`/projects/${id}`} style={{ color: 'black' }}>
-// 					Project Page
-// 				</a>
-// 			</Lead>
-// 		</div>
-// 	);
-// };
+const Tech = ({ tech }) => {
+	return <div style={styles.tech}>{tech}</div>;
+};
+
+const styles = {
+	tech: {
+		display: 'flex',
+		width: '100%',
+		flexDirection: 'column',
+		alignItems: 'center',
+		justfyContent: 'center',
+		aignSelf: 'center',
+		fontFamily: 'Montserrat',
+		fontSize: '1rem',
+	},
+	techTitle: {
+		display: 'flex',
+		width: '100%',
+		flexDirection: 'column',
+		alignItems: 'center',
+		justfyContent: 'center',
+		aignSelf: 'center',
+		fontSize: '1.25rem',
+		fontFamily: 'Montserrat',
+		fontWeight: 600,
+		textDecoration: 'underline',
+	},
+};

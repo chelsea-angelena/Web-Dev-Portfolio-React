@@ -13,6 +13,7 @@ import {
 	faAndroid,
 	faHtml5,
 	faAppStoreIos,
+	faFreeCodeCamp,
 } from '@fortawesome/free-brands-svg-icons';
 import {
 	fas,
@@ -39,6 +40,7 @@ library.add(
 	faCodeBranch,
 	faServer,
 	faImages,
+	faFreeCodeCamp,
 	faDatabase,
 	fab,
 	fas,

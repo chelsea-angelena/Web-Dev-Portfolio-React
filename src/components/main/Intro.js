@@ -25,9 +25,6 @@ export default function Intro() {
 				</Animate>
 
 				<TechIconsLarge />
-				<div className='intro__techIcons--div'>
-					<TechIcons />
-				</div>
 			</div>
 		</div>
 	);

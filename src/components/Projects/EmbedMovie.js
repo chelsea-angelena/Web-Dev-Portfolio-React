@@ -31,7 +31,7 @@ export default function EmbedMovie() {
 						type='iframe'
 						style={styles.iframe}
 						scrolling='no'
-						src='https://appetize.io/embed/ag_h5qykj2yxb1vuaf0zhcw7wyqec?device=iphone6s&scale=75&orientation=portrait&osVersion=13.3'
+						src='https://appetize.io/embed/u2n69rr8ch8ab8hm26415j0umw?device=iphone6s&scale=75&orientation=portrait&osVersion=13.3'
 					></iframe>
 				</ResponsiveEmbed>
 			</div>

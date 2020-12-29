@@ -1,6 +1,5 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import { Icon, InlineIcon } from '@iconify/react';
 import codesandboxIcon from '@iconify-icons/simple-icons/codesandbox';
 
@@ -38,6 +37,18 @@ export const NavBarIcons = ({ color }) => {
 				className='contact__nav'
 			>
 				<Icon icon={codesandboxIcon} height='32' color={color} />
+			</a>
+
+			<a
+				rel='noopener noreferrer'
+				href='https://www.freecodecamp.org/fcc1e976f81-14ac-40a4-9b7d-137b7ee95780'
+				className='contact__nav'
+			>
+				<FontAwesomeIcon
+					color='white'
+					size='2x'
+					icon={['fab', 'free-code-camp']}
+				/>
 			</a>
 		</div>
 	);
