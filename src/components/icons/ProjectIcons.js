@@ -3,14 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container } from 'bootstrap-4-react';
 import Nav from 'react-bootstrap/Nav';
 import colors from '../../styles/js/colors';
+import { Icon, InlineIcon } from '@iconify/react';
+import codesandboxIcon from '@iconify-icons/simple-icons/codesandbox';
 
-export function ProjectIcons({
-	path,
-	codepen,
-	github,
-	demo_video,
-	simulator,
-}) {
+export function ProjectIcons({ path, codepen, github, demo_video, simulator }) {
 	return (
 		<Container fluid style={styles.container}>
 			<>
@@ -43,12 +39,7 @@ export function ProjectIcons({
 				)}
 				{codepen && (
 					<Nav.Link href={codepen} style={styles.nav}>
-						<FontAwesomeIcon
-							size='3x'
-							icon={['fab', 'codepen']}
-							color={colors.dark}
-							// id='iconID2'
-						/>
+						<Icon icon={codesandboxIcon} height='32' color={colors.dark} />
 					</Nav.Link>
 				)}
 				{demo_video && (
