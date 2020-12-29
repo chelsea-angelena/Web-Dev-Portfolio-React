@@ -5,13 +5,14 @@ import Nav from 'react-bootstrap/Nav';
 import colors from '../../styles/js/colors';
 import { Icon, InlineIcon } from '@iconify/react';
 import codesandboxIcon from '@iconify-icons/simple-icons/codesandbox';
+import { Link } from 'react-router-dom';
 
 export function ProjectIcons({ path, codepen, github, demo_video, simulator }) {
 	return (
 		<Container fluid style={styles.container}>
 			<>
 				{github && (
-					<Nav.Link
+					<a
 						rel='noopener noreferrer'
 						href={github}
 						active
@@ -24,43 +25,43 @@ export function ProjectIcons({ path, codepen, github, demo_video, simulator }) {
 							color={colors.dark}
 							// id='iconID3'
 						/>
-					</Nav.Link>
+					</a>
 				)}
 
 				{path && (
-					<Nav.Link href={path} style={styles.nav}>
+					<a href={path} style={styles.nav}>
 						<FontAwesomeIcon
 							size='3x'
 							icon={['fas', 'link']}
 							color={colors.dark}
 							// id='iconID2'
 						/>
-					</Nav.Link>
+					</a>
 				)}
 				{codepen && (
-					<Nav.Link href={codepen} style={styles.nav}>
+					<a href={codepen} style={styles.nav}>
 						<Icon icon={codesandboxIcon} height='32' color={colors.dark} />
-					</Nav.Link>
+					</a>
 				)}
 				{demo_video && (
-					<Nav.Link href={demo_video} style={styles.nav}>
+					<a href={demo_video} style={styles.nav}>
 						<FontAwesomeIcon
 							size='2x'
 							icon={['fas', 'video']}
 							color={colors.dark}
 							// id='iconID2'
 						/>
-					</Nav.Link>
+					</a>
 				)}
 				{simulator && (
-					<Nav.Link href='/demo' style={styles.nav}>
+					<Link to='/demo' style={styles.nav}>
 						<FontAwesomeIcon
 							size='3x'
 							icon={['fa', 'mobile']}
 							color={colors.dark}
 							// id='iconID2'
 						/>
-					</Nav.Link>
+					</Link>
 				)}
 			</>
 		</Container>
