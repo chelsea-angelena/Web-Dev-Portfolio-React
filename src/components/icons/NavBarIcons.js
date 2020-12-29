@@ -1,6 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Icon, InlineIcon } from '@iconify/react';
+import codesandboxIcon from '@iconify-icons/simple-icons/codesandbox';
+
 export const NavBarIcons = ({ color }) => {
 	return (
 		<div className='navBarIcons'>
@@ -22,7 +25,11 @@ export const NavBarIcons = ({ color }) => {
 			>
 				<FontAwesomeIcon color={color} size='2x' icon={['fab', 'github']} />
 			</a>
-			<a rel='noopener noreferrer' href='/contact' className='contact__nav'>
+			<a
+				rel='noopener noreferrer'
+				href='https://www.chelseaangelena.com/contact'
+				className='contact__nav'
+			>
 				<FontAwesomeIcon color={color} size='2x' icon={['far', 'envelope']} />
 			</a>
 			<a
@@ -30,12 +37,7 @@ export const NavBarIcons = ({ color }) => {
 				href='https://codesandbox.io/u/chelsea-angelena'
 				className='contact__nav'
 			>
-				<FontAwesomeIcon
-					size='2x'
-					icon={['fab', 'codepen']}
-					// id='iconID2'
-					color={color}
-				/>
+				<Icon icon={codesandboxIcon} height='32' color={color} />
 			</a>
 		</div>
 	);
