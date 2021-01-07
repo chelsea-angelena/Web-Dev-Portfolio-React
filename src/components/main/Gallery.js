@@ -32,7 +32,6 @@ export default function Gallery({ project }) {
 					/>
 					<div className='middle'>
 						<h1 className='gallery__subtitle'>{title}</h1>
-						
 					</div>
 				</div>
 				<Modal
@@ -87,15 +86,15 @@ export default function Gallery({ project }) {
 						<Image
 							src={image.default}
 							alt='Avatar'
-							className='image'
+							className='image--modal'
 							width='100%'
 							height='300px'
 						/>
 					</Modal.Body>
 					<Modal.Footer>
 						<h6 style={styles.techTitle}> Tech Stack:</h6>
-						{tech.map((tech) => (
-							<Tech tech={tech} />
+						{tech.map((tech, i) => (
+							<Tech tech={tech} key={i} />
 						))}
 					</Modal.Footer>
 					<Modal.Footer closeButton>

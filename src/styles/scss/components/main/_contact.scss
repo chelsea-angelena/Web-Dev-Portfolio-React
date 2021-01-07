@@ -2,13 +2,13 @@
 
 @include background;
 
-justify-content: flex-start;
+justify-content: center;
 }
 #contact__overlay {
 
 	@include overlay;
 	@include col;
-	justify-content: flex-start;
+	justify-content: center;
 }
 
 .contact {

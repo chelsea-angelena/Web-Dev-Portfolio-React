@@ -1,9 +1,9 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Container } from 'bootstrap-4-react';
-import Nav from 'react-bootstrap/Nav';
+
 import colors from '../../styles/js/colors';
-import { Icon, InlineIcon } from '@iconify/react';
+import { Icon } from '@iconify/react';
 import codesandboxIcon from '@iconify-icons/simple-icons/codesandbox';
 import { Link } from 'react-router-dom';
 
@@ -40,7 +40,7 @@ export function ProjectIcons({ path, codepen, github, demo_video, simulator }) {
 				)}
 				{codepen && (
 					<a href={codepen} style={styles.nav}>
-						<Icon icon={codesandboxIcon} height='32' color={colors.dark} />
+						<Icon icon={codesandboxIcon} height='40' color={colors.dark} />
 					</a>
 				)}
 				{demo_video && (
@@ -82,5 +82,9 @@ const styles = {
 		display: 'flex',
 		flexDirection: 'row',
 		justifyContent: 'center',
+	},
+	nav: {
+		paddingLeft: 24,
+		paddingRight: 24,
 	},
 };

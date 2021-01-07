@@ -1,12 +1,13 @@
 #demo{
   width: 100%;
   margin: 0px auto;
-  padding: 4rem 0px 4rem 0px;
+
   background-image: url('../../../../assets/background_imgs/black_lozenge.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 @include col;
+padding: 4rem 0px 4rem 0px;
 }
 
 .demo__title{

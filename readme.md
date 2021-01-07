@@ -2,4 +2,4 @@ Personal Portfolio, built with React and deployed through Netlify. Form Data is 
 
 Check it out at:
 
-https://www.chelseaangelena.com
+https://www.chelsea-angelena.com

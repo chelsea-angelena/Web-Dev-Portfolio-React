@@ -28,7 +28,7 @@ const skills = [
 		id: '3',
 		icon: ['fa', 'database'],
 		skill: 'Database Integration',
-		list: ['MySql', 'Firebase', 'MongoDB', 'GraphQL', 'WordPress Json'],
+		list: ['MySql', 'MongoDB', 'GraphQL'],
 	},
 ];
 
@@ -41,9 +41,9 @@ function Info() {
 						<h1 className='info__title'>Skills</h1>
 					</Animate>
 					<div className='info__row'>
-						{skills.map((skill) => (
+						{skills.map((skill, i) => (
 							<FadeAnimation>
-								<SkillItem item={skill} key={skill.id} />
+								<SkillItem item={skill} key={i} />
 							</FadeAnimation>
 						))}
 					</div>

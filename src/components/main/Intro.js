@@ -1,5 +1,4 @@
 import React from 'react';
-import { TechIcons } from '../icons/Icons';
 import TechIconsLarge from '../icons/TechIconsLarge';
 
 import Animate from '../animate/Animations';

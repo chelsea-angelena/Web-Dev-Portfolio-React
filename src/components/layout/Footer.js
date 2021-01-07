@@ -10,8 +10,8 @@ export default function Footer() {
 			expand='sm'
 			dark
 			fluid='true'
-			sticky
-			fixed='bottom'
+			// sticky
+			// fixed='bottom'
 			// className='bg-dark'
 			style={{
 				backgroundColor: colors.dark,
@@ -19,7 +19,7 @@ export default function Footer() {
 				paddingTop: 16,
 				paddingBottom: 16,
 				// height: 100,
-				marginTop: 75,
+				// marginTop: 75,
 				// margin: 0,
 				zIndex: 15,
 				textAlign: 'left',

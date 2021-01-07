@@ -51,7 +51,7 @@ const projects = [
 		tech: ['React.js', 'Unsplash API'],
 		description:
 			'Search for images, then get the link to see more like it, or to download. Uses the unsplash API. Check out the code examples to see a tutorial, or click the link symbol to try it out.',
-		project_page: 'https://www.chelseaangelena.com/projects/unsplash',
+		project_page: '/projects/unsplash',
 		github: 'https://github.com/chelsea-angelena/unsplash-api',
 		simulator: '',
 		demo_video: '',
@@ -65,7 +65,7 @@ const projects = [
 		title: 'ReactPress',
 		tech: ['React.js', 'WordPress'],
 		description:
-			'React on the fornt-end and WordPress behind the scenes. WordPress CMS and json Api is used to store user blog posts and media, and provides a convenient admin log in to update posts, but the front-end code is all JavaScript and React.',
+			'React app which uses WordPress CMS and json Api to store user blog posts and media. Provides a convenient admin user interface to update posts.',
 		// project_page: 'https://www.chelseaangelena.com/projects/react-press',
 		project_page: '',
 		github: 'https://github.com/chelsea-angelena/ReactPress',
@@ -76,13 +76,13 @@ const projects = [
 	},
 	{
 		id: 'search-and-filter',
-		image: require('../assets/projects/phone-min.jpg'),
+		image: require('../assets/projects/searchthree-min.jpg'),
 		title: 'Search and Filter',
 		tech: ['React.js'],
 		description:
-			'Basic example of using array methods to create a search box and filter data. Also shows api call exmaple using jsonplaceholder API and axios.',
+			'Make an API call to retrieve json data, then use custom the search bar to filter the results. Search by name, phone number, or username. Check out the CodeSandbox demo, or clone froom github to use this example in your own app.',
 		// project_page: 'https://www.chelseaangelena.com/projects/search-and-filter',
-		project_page: '',
+		project_page: '/projects/searchfilter',
 		github: '',
 		simulator: '',
 		demo_video: '',

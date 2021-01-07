@@ -2,22 +2,17 @@ import React from 'react';
 import bio from '../../data/bio';
 import { NavBarIcons } from '../icons/NavBarIcons';
 import Layout from '../layout/Layout';
-
-import { Link } from 'react-scroll';
 import colors from '../../styles/js/colors';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
+import { Link, animateScroll as scroll } from 'react-scroll';
 const photo = require('../../assets/profile3.jpg');
-
-const {
-	introTitle2,
-
-	email,
-	intro2,
-	intro4,
-} = bio;
+const { introTitle2, email, intro2, intro4 } = bio;
 
 export default function About() {
+	const scrollTo = () => {
+		scroll.scrollMore(1000);
+	};
 	return (
 		<Layout>
 			<div id='about'>
@@ -50,10 +45,10 @@ export default function About() {
 			</div>
 			<div id='home__icon'>
 				<div className='home__icon--icon'>
-					<Link to='intro' spy={true} smooth='true'>
+					<Link to='' onClick={scrollTo} spy={true} smooth='true'>
 						<FontAwesomeIcon
 							size='2x'
-							icon={['fas', 'chevron-up']}
+							icon={['fas', 'chevron-down']}
 							color={colors.dark}
 
 							// style={styles.icon}
