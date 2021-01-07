@@ -2,6 +2,7 @@ import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { Icon } from '@iconify/react';
 import codesandboxIcon from '@iconify-icons/simple-icons/codesandbox';
+import { Link } from 'react-scroll';
 
 export const NavBarIcons = ({ color }) => {
 	return (
@@ -24,13 +25,14 @@ export const NavBarIcons = ({ color }) => {
 			>
 				<FontAwesomeIcon color={color} size='2x' icon={['fab', 'github']} />
 			</a>
-			<a
-				rel='noopener noreferrer'
-				href='https://www.chelseaangelena.com/contact'
-				className='contact__nav'
+			<Link
+				to='contact'
+				spy={true}
+				smooth='true'
+				className='contact__nav contact__nav--link'
 			>
 				<FontAwesomeIcon color={color} size='2x' icon={['far', 'envelope']} />
-			</a>
+			</Link>
 			<a
 				rel='noopener noreferrer'
 				href='https://codesandbox.io/u/chelsea-angelena'

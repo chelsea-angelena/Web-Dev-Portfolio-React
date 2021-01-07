@@ -28,7 +28,7 @@ const skills = [
 		id: '3',
 		icon: ['fa', 'database'],
 		skill: 'Database Integration',
-		list: ['MySql', 'MongoDB', 'GraphQL'],
+		list: ['MySql', 'MongoDB', 'GraphQL', 'Firestore'],
 	},
 ];
 
